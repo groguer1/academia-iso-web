@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1A3A5C"/>
+  <rect x="0" y="0" width="28" height="630" fill="#E85820"/>
+  <text x="90" y="180" font-family="Georgia,serif" font-size="34" fill="#9FB8D0" letter-spacing="6">ACADEMIA ISO</text>
+  <text x="90" y="330" font-family="Georgia,serif" font-size="72" font-weight="bold" fill="#FFFFFF">Curso ISO/IEC 42001</text>
+  <text x="90" y="420" font-family="Helvetica,Arial,sans-serif" font-size="40" fill="#C9D8E6">Gestion de Inteligencia Artificial</text>
+  <text x="90" y="540" font-family="Helvetica,Arial,sans-serif" font-size="28" fill="#E85820">4 &#8226; 5 &#8226; 6 &#8226; 7 &#8226; 8 &#8226; 9 &#8226; 10</text>
+</svg>

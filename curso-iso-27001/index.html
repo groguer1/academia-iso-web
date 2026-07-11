@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Curso ISO 27001 y 27701 Online — Implementador SGSI</title>
+<meta name="description" content="Curso online de ISO 27001:2022 + ISO 27701 por 360 €. Implanta un SGSI certificable: análisis de riesgos, Anexo A, SoA, privacidad y auditoría.">
+<link rel="canonical" href="https://groguer1.github.io/academia-iso-web/curso-iso-27001/">
+<link rel="icon" type="image/svg+xml" href="https://groguer1.github.io/academia-iso-web/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="Curso ISO 27001 y 27701 Online — Implementador SGSI">
+<meta property="og:description" content="Curso online de ISO 27001:2022 + ISO 27701 por 360 €. Implanta un SGSI certificable: análisis de riesgos, Anexo A, SoA, privacidad y auditoría.">
+<meta property="og:url" content="https://groguer1.github.io/academia-iso-web/curso-iso-27001/">
+<meta property="og:image" content="https://groguer1.github.io/academia-iso-web/assets/og/iso-27001.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Curso ISO 27001 y 27701 Online — Implementador SGSI">
+<meta name="twitter:description" content="Curso online de ISO 27001:2022 + ISO 27701 por 360 €. Implanta un SGSI certificable: análisis de riesgos, Anexo A, SoA, privacidad y auditoría.">
+<meta name="twitter:image" content="https://groguer1.github.io/academia-iso-web/assets/og/iso-27001.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+.hero{background:#fff;border-bottom:1px solid var(--linea)}
+.hero .wrap{padding:64px 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2.5rem;align-items:center}
+.hero h1{font-size:clamp(1.9rem,4.4vw,2.9rem);margin:.7rem 0 1rem}
+.hero .sub{font-size:1.15rem;color:var(--gris);max-width:56ch;margin-bottom:1.4rem}
+.kicker{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--curso);font-weight:700}
+.precio{font-size:1.55rem;font-weight:700;color:var(--azul);margin-right:1.2rem;white-space:nowrap}
+.compra{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.cta{display:inline-block;background:var(--acento);color:#fff;text-decoration:none;padding:.85rem 1.7rem;border-radius:6px;font-weight:700;font-size:1.02rem;border:none}
+.cta:hover{background:#CF4A15}
+.nota-compra{font-size:.83rem;color:var(--gris);width:100%}
+.spine{display:flex;flex-direction:column;gap:.35rem;border-left:4px solid var(--curso);padding-left:1rem;font-family:'DM Serif Display',Georgia,serif;color:var(--gris)}
+.spine span{font-size:1.05rem;line-height:1.35}
+.spine .sp-num{color:var(--curso);font-size:1.25rem}
+.spine .sp-label{font-family:'Inter',sans-serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.4rem}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.spine{flex-direction:row;flex-wrap:wrap;border-left:none;border-top:4px solid var(--curso);padding:.8rem 0 0;gap:.9rem}.spine .sp-label{width:100%}}
+section{padding:54px 0}
+section.alt{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.1rem}
+.card{background:#fff;border:1px solid var(--linea);border-radius:8px;padding:1.3rem 1.4rem}
+section.alt .card{background:var(--fondo)}
+.card h3{font-size:1.12rem;margin-bottom:.5rem}
+.card p{font-size:.95rem;color:var(--gris);margin:0}
+ul.check{list-style:none;max-width:62ch}
+ul.check li{padding:.45rem 0 .45rem 2rem;position:relative}
+ul.check li::before{content:"✓";position:absolute;left:.3rem;color:var(--verde);font-weight:700}
+details.mod{background:#fff;border:1px solid var(--linea);border-radius:7px;margin-bottom:.65rem}
+section.alt details.mod{background:var(--fondo)}
+details.mod summary{padding:.95rem 1.15rem;cursor:pointer;font-weight:600;list-style:none;display:flex;gap:.9rem;align-items:baseline}
+details.mod summary::-webkit-details-marker{display:none}
+details.mod summary::after{content:"+";margin-left:auto;color:var(--curso);font-weight:700;font-size:1.2rem;line-height:1}
+details.mod[open] summary::after{content:"−"}
+details.mod .mnum{font-family:'DM Serif Display',Georgia,serif;color:var(--curso);min-width:2ch}
+details.mod ul{padding:0 1.2rem 1.1rem 3.1rem}
+details.mod li{margin-bottom:.3rem;color:var(--gris);font-size:.96rem}
+details.mod > div{padding:0 1.2rem 1.1rem;color:var(--gris)}
+.marco p{max-width:70ch}
+.cta-final{text-align:center;background:var(--azul);color:#fff}
+.cta-final h2{color:#fff}
+.cta-final p{color:#C9D8E6;max-width:60ch;margin:0 auto 1.4rem}
+.cta-final .precio{color:#fff}
+.garantia{font-size:.9rem;color:#9FB8D0;margin-top:1.2rem}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.fade{animation:fadeUp .5s ease-out both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.fade{animation:none}html{scroll-behavior:auto}}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.95rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.card .p-precio{font-weight:700;color:var(--azul);font-size:1.15rem;margin:.6rem 0}
+.card .cta{font-size:.95rem;padding:.65rem 1.3rem}
+.card ul{padding-left:1.1rem;color:var(--gris);font-size:.92rem;margin-bottom:.4rem}
+.hero,.temario,.faq{--curso:var(--azul-mid)}
+:root{--curso:var(--azul-mid)}</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Course", "name": "Gestor ISO 27001:2022 + ISO 27701 — De Cero a Implementador", "description": "Curso online de ISO 27001:2022 + ISO 27701 por 360 €. Implanta un SGSI certificable: análisis de riesgos, Anexo A, SoA, privacidad y auditoría.", "url": "https://groguer1.github.io/academia-iso-web/curso-iso-27001/", "inLanguage": "es", "provider": {"@type": "Organization", "name": "Academia ISO", "url": "https://groguer1.github.io/academia-iso-web/"}, "offers": {"@type": "Offer", "price": "360.00", "priceCurrency": "EUR", "url": "https://pay.hotmart.com/X106436634S", "availability": "https://schema.org/InStock", "category": "Paid"}, "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "online", "courseWorkload": "P14D"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿El curso emite certificado?", "acceptedAnswer": {"@type": "Answer", "text": "Al completarlo obtienes un certificado de finalización emitido a través de la plataforma Hotmart. No es una certificación acreditada de la norma —esa la emiten entidades de certificación a las empresas—, pero acredita tu formación como implementador de ISO 27001."}}, {"@type": "Question", "name": "¿Cubre la versión 2022 del Anexo A?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. El curso trabaja con los 93 controles del Anexo A de ISO 27001:2022 y explica los cambios respecto a la versión 2013, que todavía verás en muchos SGSI en transición."}}, {"@type": "Question", "name": "¿Incluye ISO 27701?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Un módulo completo cubre la extensión de privacidad ISO 27701 (SGPI) y su relación con el RGPD y la LOPDGDD."}}, {"@type": "Question", "name": "¿Cuánto dura y a qué ritmo se hace?", "acceptedAnswer": {"@type": "Answer", "text": "Es 100 % online y asincrónico: avanzas a tu ritmo. Son 14 módulos navegables que puedes repasar cuando quieras."}}, {"@type": "Question", "name": "¿Necesito ser informático?", "acceptedAnswer": {"@type": "Answer", "text": "No hace falta ser técnico de sistemas. La norma es de gestión: necesitas entender los riesgos y controles, y el curso los explica desde cero. Un perfil técnico avanza más rápido en algunos módulos, pero no es requisito."}}, {"@type": "Question", "name": "¿Cómo se compra y qué garantía tengo?", "acceptedAnswer": {"@type": "Answer", "text": "El pago se procesa de forma segura en Hotmart. Tienes la garantía de reembolso de 15 días estándar de la plataforma."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://groguer1.github.io/academia-iso-web/"}, {"@type": "ListItem", "position": 2, "name": "Curso Gestor ISO 27001:2022 + ISO 27701 — De Cero a Implementador", "item": "https://groguer1.github.io/academia-iso-web/curso-iso-27001/"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../">Academia ISO</a><nav class="main" aria-label="principal"><a href="../#cursos">Cursos</a><a href="../blog/">Blog</a><a class="lang" href="../pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
+<main>
+<div class="wrap breadcrumb"><ol><li><a href="../">Inicio</a></li><li aria-current="page">ISO/IEC 27001:2022 + 27701</li></ol></div>
+<section class="hero"><div class="wrap">
+<div class="fade">
+<p class="kicker">ISO/IEC 27001:2022 + 27701 · Seguridad de la Información y Privacidad</p>
+<h1>Curso Gestor ISO 27001:2022 + ISO 27701 — De Cero a Implementador</h1>
+<p class="sub">Monta un SGSI certificable con los 93 controles del Anexo A 2022 y añade la extensión de privacidad ISO 27701 alineada con el RGPD.</p>
+<p class="compra"><span class="precio">360,00 €</span> <a class="cta" href="https://pay.hotmart.com/X106436634S" rel="nofollow sponsored">Comprar el curso</a>
+<span class="nota-compra">Pago seguro a través de Hotmart · Garantía de reembolso de 15 días</span></p>
+</div>
+<aside class="spine" aria-label="Estructura de la norma"><span class="sp-label">Estructura de la norma · Cláusulas 4–10</span><span><span class="sp-num">4</span> Contexto</span><span><span class="sp-num">5</span> Liderazgo</span><span><span class="sp-num">6</span> Planificación</span><span><span class="sp-num">7</span> Soporte</span><span><span class="sp-num">8</span> Operación</span><span><span class="sp-num">9</span> Evaluación</span><span><span class="sp-num">10</span> Mejora</span></aside>
+</div></section>
+<section><div class="wrap"><h2>¿Para quién es este curso?</h2><div class="grid"><div class="card"><h3>Responsables de TI y seguridad</h3><p>Te piden 'sacar la 27001' y necesitas un método completo: riesgos, controles, SoA, documentación y auditoría.</p></div><div class="card"><h3>Consultores y auditores</h3><p>Quieres implantar o auditar SGSI con la versión 2022 del Anexo A y la extensión de privacidad 27701.</p></div><div class="card"><h3>DPO y perfiles de privacidad</h3><p>ISO 27701 conecta el sistema de gestión con el RGPD: el tándem 27001+27701 es tu terreno natural.</p></div><div class="card"><h3>Perfiles técnicos en transición</h3><p>Vienes de sistemas o ciberseguridad y quieres dar el salto a la capa de gestión, donde están los roles mejor pagados.</p></div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Qué vas a conseguir</h2><ul class="check"><li>Implantar un SGSI conforme a ISO 27001:2022 desde cero, con el análisis de riesgos como núcleo.</li><li>Dominar los 93 controles del Anexo A 2022 y construir una Declaración de Aplicabilidad defendible.</li><li>Extender el sistema a la privacidad con ISO 27701 y conectarlo con el RGPD y la LOPDGDD.</li><li>Redactar la documentación obligatoria del SGSI sin convertirla en burocracia.</li><li>Planificar y ejecutar la auditoría interna y llegar preparado a la certificación.</li><li>Terminar con tu propio SGSI documentado como proyecto final.</li></ul></div></section>
+<section class="temario"><div class="wrap"><h2>Temario completo — 14 módulos</h2>
+<details class="mod" open><summary><span class="mnum">01</span><span>Marco Normativo</span></summary><ul><li>La familia ISO 27000 y los conceptos del SGSI</li><li>Confidencialidad, integridad y disponibilidad en la práctica</li><li>Panorama de la certificación en seguridad de la información</li></ul></details>
+<details class="mod"><summary><span class="mnum">02</span><span>Cláusulas 4–10</span></summary><ul><li>Contexto, liderazgo y planificación del SGSI</li><li>Soporte y operación</li><li>Evaluación del desempeño y mejora</li></ul></details>
+<details class="mod"><summary><span class="mnum">03</span><span>Gestión de Riesgos</span></summary><ul><li>Metodología de análisis de riesgos paso a paso</li><li>Identificación de activos, amenazas y vulnerabilidades</li><li>Plan de tratamiento de riesgos</li></ul></details>
+<details class="mod"><summary><span class="mnum">04</span><span>Anexo A 2022</span></summary><ul><li>Los 93 controles y sus 4 temas</li><li>Qué cambió respecto al Anexo A de 2013</li><li>Cómo seleccionar y justificar controles</li></ul></details>
+<details class="mod"><summary><span class="mnum">05</span><span>Declaración de Aplicabilidad</span></summary><ul><li>Construcción de la SoA paso a paso</li><li>Justificación de inclusiones y exclusiones</li><li>Cómo mantenerla viva tras la certificación</li></ul></details>
+<details class="mod"><summary><span class="mnum">06</span><span>ISO 27701 / SGPI</span></summary><ul><li>La extensión de privacidad de ISO 27001</li><li>Roles de responsable y encargado del tratamiento</li><li>Controles adicionales de privacidad</li></ul></details>
+<details class="mod"><summary><span class="mnum">07</span><span>Sistema Integrado</span></summary><ul><li>Integrar 27001 con 9001 y otras normas</li><li>Documentación y procesos comunes</li><li>Auditorías combinadas</li></ul></details>
+<details class="mod"><summary><span class="mnum">08</span><span>Marco Legal</span></summary><ul><li>RGPD y LOPDGDD: lo que afecta al SGSI</li><li>Esquema Nacional de Seguridad y NIS2</li><li>Obligaciones contractuales y con terceros</li></ul></details>
+<details class="mod"><summary><span class="mnum">09</span><span>Implementación</span></summary><ul><li>Plan de proyecto del SGSI</li><li>Quick wins y priorización de controles</li><li>Errores habituales que retrasan la certificación</li></ul></details>
+<details class="mod"><summary><span class="mnum">10</span><span>Documentación</span></summary><ul><li>Documentos obligatorios del SGSI</li><li>Políticas y procedimientos clave</li><li>Gestión documental eficaz</li></ul></details>
+<details class="mod"><summary><span class="mnum">11</span><span>Auditoría Interna</span></summary><ul><li>Programa y plan de auditoría</li><li>Técnicas de auditoría del SGSI</li><li>Informe de auditoría y seguimiento</li></ul></details>
+<details class="mod"><summary><span class="mnum">12</span><span>Certificación</span></summary><ul><li>Cómo elegir entidad de certificación</li><li>Auditoría de fase 1 y fase 2</li><li>No conformidades típicas y cómo evitarlas</li></ul></details>
+<details class="mod"><summary><span class="mnum">13</span><span>Casos Prácticos</span></summary><ul><li>Escenarios reales por sector</li><li>Incidentes de seguridad y lecciones aprendidas</li><li>Resolución guiada de casos</li></ul></details>
+<details class="mod"><summary><span class="mnum">14</span><span>Implementa tu SGSI</span></summary><ul><li>Proyecto final: tu SGSI documentado</li><li>Plantillas de SoA, riesgos y políticas</li><li>Hoja de ruta de implantación</li></ul></details>
+</div></section>
+<section class="alt marco"><div class="wrap"><h2>ISO 27001 en el marco legal español y europeo</h2><p>La seguridad de la información dejó de ser opcional: el <strong>RGPD</strong> y la <strong>LOPDGDD 3/2018</strong> exigen medidas técnicas y organizativas apropiadas, la directiva <strong>NIS2</strong> amplía las obligaciones de ciberseguridad a miles de empresas, y el <strong>Esquema Nacional de Seguridad</strong> condiciona el trabajo con el sector público español. ISO 27001 es el estándar que ordena todo eso en un sistema auditable, y el curso dedica un módulo específico a este mapa legal.</p>
+<p>La extensión <strong>ISO 27701</strong> añade al SGSI la gestión de la privacidad (SGPI), el puente natural entre el sistema de gestión y las obligaciones del RGPD. Es una combinación cada vez más pedida en licitaciones y homologaciones de proveedores tecnológicos.</p></div></section>
+<section class="faq"><div class="wrap"><h2>Preguntas frecuentes</h2><details class="mod"><summary><span>¿El curso emite certificado?</span></summary><div><p>Al completarlo obtienes un certificado de finalización emitido a través de la plataforma Hotmart. No es una certificación acreditada de la norma —esa la emiten entidades de certificación a las empresas—, pero acredita tu formación como implementador de ISO 27001.</p></div></details>
+<details class="mod"><summary><span>¿Cubre la versión 2022 del Anexo A?</span></summary><div><p>Sí. El curso trabaja con los 93 controles del Anexo A de ISO 27001:2022 y explica los cambios respecto a la versión 2013, que todavía verás en muchos SGSI en transición.</p></div></details>
+<details class="mod"><summary><span>¿Incluye ISO 27701?</span></summary><div><p>Sí. Un módulo completo cubre la extensión de privacidad ISO 27701 (SGPI) y su relación con el RGPD y la LOPDGDD.</p></div></details>
+<details class="mod"><summary><span>¿Cuánto dura y a qué ritmo se hace?</span></summary><div><p>Es 100 % online y asincrónico: avanzas a tu ritmo. Son 14 módulos navegables que puedes repasar cuando quieras.</p></div></details>
+<details class="mod"><summary><span>¿Necesito ser informático?</span></summary><div><p>No hace falta ser técnico de sistemas. La norma es de gestión: necesitas entender los riesgos y controles, y el curso los explica desde cero. Un perfil técnico avanza más rápido en algunos módulos, pero no es requisito.</p></div></details>
+<details class="mod"><summary><span>¿Cómo se compra y qué garantía tengo?</span></summary><div><p>El pago se procesa de forma segura en Hotmart. Tienes la garantía de reembolso de 15 días estándar de la plataforma.</p></div></details>
+</div></section>
+<section class="cta-final"><div class="wrap">
+<h2>Empieza hoy, a tu ritmo</h2>
+<p>Acceso inmediato tras el pago. Si no es lo que esperabas, Hotmart te devuelve el dinero: 15 días de garantía.</p>
+<p class="compra" style="justify-content:center"><span class="precio">360,00 €</span> <a class="cta" href="https://pay.hotmart.com/X106436634S" rel="nofollow sponsored">Comprar el curso</a></p>
+<p class="garantia">También puedes ver la ficha del curso en el marketplace de Hotmart: <a href="https://hotmart.com/es/marketplace/productos/gestor-iso-27001-2022-iso-27701-de-cero-a-implementador/X106436634S" rel="nofollow" style="color:#C9D8E6">Hotmart</a></p>
+</div></section>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../blog/">Blog</a></li><li><a href="../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 Academia ISO · Pagos gestionados por Hotmart · Garantía de reembolso de 15 días</p></div></footer>
+</body>
+</html>
