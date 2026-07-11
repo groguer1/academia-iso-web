@@ -69,18 +69,83 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://groguer1.github.io/academia-iso-web/blog/iso-45001-vs-ohsas-18001/</loc>
-    <lastmod>2026-07-11</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://groguer1.github.io/academia-iso-web/pt/blog/</loc>
     <lastmod>2026-07-11</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/iso-45001-vs-ohsas-18001/</loc>
+    <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/consultor-iso-como-empezar/</loc>
+    <lastmod>2026-06-25</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/auditoria-interna-iso-45001/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/que-es-iso-42001/</loc>
+    <lastmod>2026-06-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/declaracion-de-aplicabilidad-soa-iso-27001/</loc>
+    <lastmod>2026-06-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/iso-27001-vs-ens/</loc>
+    <lastmod>2026-05-28</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/aspectos-ambientales-iso-14001-ejemplos/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/iso-9001-2026-cambios/</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/documentos-obligatorios-iso-9001/</loc>
+    <lastmod>2026-05-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/blog/cuanto-cuesta-certificarse-iso-9001/</loc>
+    <lastmod>2026-04-30</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://groguer1.github.io/academia-iso-web/pt/blog/o-que-e-fap-como-calcular/</loc>
     <lastmod>2026-07-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/pt/blog/cat-comunicacao-acidente-de-trabalho/</loc>
+    <lastmod>2026-07-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/pt/blog/o-que-e-iso-42001/</loc>
+    <lastmod>2026-06-21</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/pt/blog/quanto-custa-certificacao-iso-45001/</loc>
+    <lastmod>2026-05-31</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://groguer1.github.io/academia-iso-web/pt/blog/gro-pgr-nr1-iso-45001/</loc>
+    <lastmod>2026-05-10</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>

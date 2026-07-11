@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>O que é a ISO 42001 — Norma de gestão de IA explicada</title>
+<meta name="description" content="A ISO/IEC 42001 é a primeira norma certificável de gestão de IA. O que ela exige, o que são SGSIA e AIIA, e por que o PL 2338 a torna urgente no Brasil.">
+<link rel="canonical" href="https://groguer1.github.io/academia-iso-web/pt/blog/o-que-e-iso-42001/">
+<link rel="icon" type="image/svg+xml" href="https://groguer1.github.io/academia-iso-web/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="O que é a ISO 42001 — Norma de gestão de IA explicada">
+<meta property="og:description" content="A ISO/IEC 42001 é a primeira norma certificável de gestão de IA. O que ela exige, o que são SGSIA e AIIA, e por que o PL 2338 a torna urgente no Brasil.">
+<meta property="og:url" content="https://groguer1.github.io/academia-iso-web/pt/blog/o-que-e-iso-42001/">
+<meta property="og:image" content="https://groguer1.github.io/academia-iso-web/assets/og/iso-42001-pt.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="O que é a ISO 42001 — Norma de gestão de IA explicada">
+<meta name="twitter:description" content="A ISO/IEC 42001 é a primeira norma certificável de gestão de IA. O que ela exige, o que são SGSIA e AIIA, e por que o PL 2338 a torna urgente no Brasil.">
+<meta name="twitter:image" content="https://groguer1.github.io/academia-iso-web/assets/og/iso-42001-pt.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+.hero{background:#fff;border-bottom:1px solid var(--linea)}
+.hero .wrap{padding:64px 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2.5rem;align-items:center}
+.hero h1{font-size:clamp(1.9rem,4.4vw,2.9rem);margin:.7rem 0 1rem}
+.hero .sub{font-size:1.15rem;color:var(--gris);max-width:56ch;margin-bottom:1.4rem}
+.kicker{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--curso);font-weight:700}
+.precio{font-size:1.55rem;font-weight:700;color:var(--azul);margin-right:1.2rem;white-space:nowrap}
+.compra{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.cta{display:inline-block;background:var(--acento);color:#fff;text-decoration:none;padding:.85rem 1.7rem;border-radius:6px;font-weight:700;font-size:1.02rem;border:none}
+.cta:hover{background:#CF4A15}
+.nota-compra{font-size:.83rem;color:var(--gris);width:100%}
+.spine{display:flex;flex-direction:column;gap:.35rem;border-left:4px solid var(--curso);padding-left:1rem;font-family:'DM Serif Display',Georgia,serif;color:var(--gris)}
+.spine span{font-size:1.05rem;line-height:1.35}
+.spine .sp-num{color:var(--curso);font-size:1.25rem}
+.spine .sp-label{font-family:'Inter',sans-serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.4rem}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.spine{flex-direction:row;flex-wrap:wrap;border-left:none;border-top:4px solid var(--curso);padding:.8rem 0 0;gap:.9rem}.spine .sp-label{width:100%}}
+section{padding:54px 0}
+section.alt{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.1rem}
+.card{background:#fff;border:1px solid var(--linea);border-radius:8px;padding:1.3rem 1.4rem}
+section.alt .card{background:var(--fondo)}
+.card h3{font-size:1.12rem;margin-bottom:.5rem}
+.card p{font-size:.95rem;color:var(--gris);margin:0}
+ul.check{list-style:none;max-width:62ch}
+ul.check li{padding:.45rem 0 .45rem 2rem;position:relative}
+ul.check li::before{content:"✓";position:absolute;left:.3rem;color:var(--verde);font-weight:700}
+details.mod{background:#fff;border:1px solid var(--linea);border-radius:7px;margin-bottom:.65rem}
+section.alt details.mod{background:var(--fondo)}
+details.mod summary{padding:.95rem 1.15rem;cursor:pointer;font-weight:600;list-style:none;display:flex;gap:.9rem;align-items:baseline}
+details.mod summary::-webkit-details-marker{display:none}
+details.mod summary::after{content:"+";margin-left:auto;color:var(--curso);font-weight:700;font-size:1.2rem;line-height:1}
+details.mod[open] summary::after{content:"−"}
+details.mod .mnum{font-family:'DM Serif Display',Georgia,serif;color:var(--curso);min-width:2ch}
+details.mod ul{padding:0 1.2rem 1.1rem 3.1rem}
+details.mod li{margin-bottom:.3rem;color:var(--gris);font-size:.96rem}
+details.mod > div{padding:0 1.2rem 1.1rem;color:var(--gris)}
+.marco p{max-width:70ch}
+.cta-final{text-align:center;background:var(--azul);color:#fff}
+.cta-final h2{color:#fff}
+.cta-final p{color:#C9D8E6;max-width:60ch;margin:0 auto 1.4rem}
+.cta-final .precio{color:#fff}
+.garantia{font-size:.9rem;color:#9FB8D0;margin-top:1.2rem}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.fade{animation:fadeUp .5s ease-out both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.fade{animation:none}html{scroll-behavior:auto}}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.95rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.card .p-precio{font-weight:700;color:var(--azul);font-size:1.15rem;margin:.6rem 0}
+.card .cta{font-size:.95rem;padding:.65rem 1.3rem}
+.card ul{padding-left:1.1rem;color:var(--gris);font-size:.92rem;margin-bottom:.4rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "O que é a ISO 42001: a norma de gestão de inteligência artificial, explicada", "description": "A ISO/IEC 42001 é a primeira norma certificável de gestão de IA. O que ela exige, o que são SGSIA e AIIA, e por que o PL 2338 a torna urgente no Brasil.", "inLanguage": "pt-BR", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://groguer1.github.io/academia-iso-web/"}, "datePublished": "2026-06-21", "dateModified": "2026-06-21", "image": "https://groguer1.github.io/academia-iso-web/assets/og/iso-42001-pt.svg", "mainEntityOfPage": "https://groguer1.github.io/academia-iso-web/pt/blog/o-que-e-iso-42001/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://groguer1.github.io/academia-iso-web/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://groguer1.github.io/academia-iso-web/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "O que é a ISO 42001: a norma de gestão de inteligência artificial, explicada", "item": "https://groguer1.github.io/academia-iso-web/pt/blog/o-que-e-iso-42001/"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../../pt/">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../../pt/#cursos">Cursos</a><a href="../../../pt/blog/">Blog</a><a class="lang" href="../../../" hreflang="es" lang="es">ES</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../../pt/">Início</a></li><li><a href="../">Blog</a></li><li aria-current="page">Inteligência artificial</li></ol></div>
+<h1>O que é a ISO 42001: a norma de gestão de inteligência artificial, explicada</h1>
+<p class="meta">Academia ISO · 21 de junho de 2026 · Inteligência artificial</p>
+
+<p>Publicada em 2023, a <strong>ISO/IEC 42001</strong> é a primeira norma internacional certificável para gestão de inteligência artificial. Enquanto o Brasil discute seu marco legal de IA e a Europa já aplica o AI Act, ela virou a credencial de governança mais procurada do momento — e o Brasil está entre os mercados onde a demanda por especialistas mais cresce.</p>
+
+<h2>O que a norma define</h2>
+<p>A ISO 42001 estabelece os requisitos de um <strong>SGSIA</strong> (Sistema de Gestão de Inteligência Artificial; em inglês, AIMS): a estrutura organizacional para desenvolver, adquirir e usar sistemas de IA de forma responsável. A arquitetura é a mesma das cláusulas 4–10 da ISO 9001 ou da ISO 27001 — contexto, liderança, planejamento, apoio, operação, avaliação e melhoria — aplicada ao ciclo de vida da IA. Quem conhece qualquer norma de sistema de gestão já domina boa parte do mapa.</p>
+
+<h2>As três peças que a tornam diferente</h2>
+<ul>
+<li><strong>Avaliação de riscos de IA:</strong> além de segurança, entram viés e discriminação algorítmica, opacidade, deriva do modelo, uso indevido e dano a pessoas e grupos.</li>
+<li><strong>AIIA (avaliação de impacto de IA):</strong> a análise do impacto de cada sistema sobre indivíduos e sociedade — a peça que conversa diretamente com a LGPD e com o que o marco legal brasileiro desenha.</li>
+<li><strong>Os 38 controles do Anexo A:</strong> política de IA, papéis e responsabilidades, inventário de sistemas, qualidade de dados, supervisão humana, transparência, gestão de fornecedores de IA. Selecionados via análise de riscos e documentados em uma Declaração de Aplicabilidade, como na 27001.</li>
+</ul>
+
+<h2>Por que isso importa no Brasil, agora</h2>
+<p>Três razões convergem:</p>
+<ul>
+<li><strong>O PL 2338/2023</strong>, o marco legal da IA, avança no Congresso com abordagem baseada em risco — a mesma lógica da ISO 42001. Quem implanta a norma hoje constrói antecipadamente o que a lei vai cobrar.</li>
+<li><strong>A ANPD</strong> já atua sobre IA quando há dados pessoais (e quase sempre há): a LGPD se aplica a treinamento, inferência e decisões automatizadas, incluindo o direito à revisão de decisões automatizadas.</li>
+<li><strong>As cadeias globais:</strong> empresas brasileiras que fornecem para a Europa e os EUA já recebem questionários de governança de IA. O certificado responde de uma vez o que dezenas de formulários perguntam.</li>
+</ul>
+
+<h2>Quem já se certificou (e o que isso sinaliza)</h2>
+<p>AWS certificou serviços centrais da sua plataforma de IA, a Microsoft transformou seu programa de IA responsável no caso mais documentado do mercado, e a KPMG foi o primeiro Big 4 certificado. O padrão é conhecido de quem viveu a onda da ISO 27001: primeiro os gigantes, depois as cadeias de fornecedores inteiras. A janela para se posicionar como especialista é agora, enquanto a oferta de profissionais é escassa.</p>
+
+<h2>Para quem é a formação em ISO 42001</h2>
+<p>Profissionais de compliance e risco, consultores de sistemas de gestão que querem a próxima especialização, DPOs, e perfis de dados e IA que precisam da camada de governança. Não é preciso programar: a norma trabalha com riscos, controles e documentação — não com código.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Forme-se para implantar você mesmo:</strong> no <a href="../../../pt/curso-iso-42001/">curso ISO/IEC 42001 — Sistema de Gestão de IA</a> 18 módulos criados para o mercado brasileiro, do zero ao nível Lead Auditor, com casos da AWS, Microsoft e KPMG.</p></div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formação EAD em normas ISO para profissionais de gestão, qualidade, segurança e tecnologia.</p></div><div><h3>Cursos</h3><ul><li><a href="../../../pt/curso-iso-45001/">Curso ISO 45001 (PT-BR)</a></li><li><a href="../../../pt/curso-iso-42001/">Curso ISO/IEC 42001 (PT-BR)</a></li></ul></div><div><h3>Mais</h3><ul><li><a href="../../../pt/blog/">Blog</a></li><li><a href="../../../">Cursos en español</a></li></ul></div></div><p>© 2026 · Página gerenciada pela Isotecnia · Pagamentos processados pela Hotmart · Garantia de reembolso de 15 dias</p></div></footer>
+</body>
+</html>
