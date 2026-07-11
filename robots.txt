@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://groguer1.github.io/academia-iso-web/sitemap.xml
+Sitemap: https://cursosiso.com/sitemap.xml
