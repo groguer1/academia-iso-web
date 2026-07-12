@@ -105,9 +105,21 @@ article.post th{background:#fff;color:var(--azul)}
 .card .p-precio{font-weight:700;color:var(--azul);font-size:1.15rem;margin:.6rem 0}
 .card .cta{font-size:.95rem;padding:.65rem 1.3rem}
 .card ul{padding-left:1.1rem;color:var(--gris);font-size:.92rem;margin-bottom:.4rem}
+.comp{overflow-x:auto}
+.comp table{border-collapse:collapse;width:100%;min-width:660px;font-size:.94rem;margin-top:.4rem}
+.comp th,.comp td{border:1px solid var(--linea);padding:.62rem .7rem;text-align:left;vertical-align:top}
+.comp thead th{background:var(--azul);color:#fff;font-family:'Inter',sans-serif;font-weight:600;font-size:.88rem}
+.comp tbody th{background:#fff;color:var(--azul);font-family:'Inter',sans-serif;font-weight:700;font-size:.94rem;white-space:nowrap}
+.comp td .p{font-weight:700;color:var(--azul);white-space:nowrap}
+.comp a.verlink{white-space:nowrap;font-weight:700;color:var(--acento);text-decoration:none}
+.comp a.verlink:hover{text-decoration:underline}
+.hls-fig{background:#fff;border:1px solid var(--linea);border-radius:10px;padding:1.4rem 1.4rem 1rem;margin-top:1.2rem}
+.hls-fig svg{width:100%;height:auto;display:block}
+.hls-fig figcaption{color:var(--gris);font-size:.9rem;margin-top:.9rem;text-align:center}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/", "logo": "https://cursosiso.com/assets/og/home-es.svg", "description": "Formación online en normas ISO: calidad, medio ambiente, seguridad de la información, seguridad y salud en el trabajo y gestión de inteligencia artificial."}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Gestor ISO 9001:2026 — De Cero a Implementador", "url": "https://cursosiso.com/curso-iso-9001/"}, {"@type": "ListItem", "position": 2, "name": "Gestor ISO 14001:2015 — De Cero a Implementador", "url": "https://cursosiso.com/curso-iso-14001/"}, {"@type": "ListItem", "position": 3, "name": "Gestor ISO 27001:2022 + ISO 27701 — De Cero a Implementador", "url": "https://cursosiso.com/curso-iso-27001/"}, {"@type": "ListItem", "position": 4, "name": "Gestor ISO 45001 — De Cero a Implementador: Seguridad y Salud en el Trabajo (SST)", "url": "https://cursosiso.com/curso-iso-45001/"}, {"@type": "ListItem", "position": 5, "name": "ISO/IEC 42001 – Sistema de Gestión de Inteligencia Artificial", "url": "https://cursosiso.com/curso-iso-42001/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Los certificados de estos cursos sirven para trabajar?", "acceptedAnswer": {"@type": "Answer", "text": "Al completar un curso obtienes un certificado de finalización emitido a través de Hotmart. No es una certificación acreditada de la norma —esa la emiten las entidades de certificación a las empresas—, pero acredita tu formación como implementador y suma en un currículum o como consultor."}}, {"@type": "Question", "name": "¿Qué diferencia hay entre certificarme yo y certificar mi empresa?", "acceptedAnswer": {"@type": "Answer", "text": "Son cosas distintas. Tú te formas como persona para saber implantar la norma; la empresa se certifica como organización cuando una entidad acreditada (por ejemplo, por ENAC en España) audita su sistema de gestión. Estos cursos te preparan para lo primero: implantar el sistema y dejar a la empresa lista para esa auditoría."}}, {"@type": "Question", "name": "¿Puedo hacer varios cursos? ¿Hay una ruta recomendada?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Todas las normas de gestión comparten la misma estructura de alto nivel (cláusulas 4 a 10), así que aprender una te da ventaja en las demás. La ruta habitual empieza por ISO 9001 (la base de la calidad) y sigue con ISO 14001 o ISO 45001, que se integran sobre la misma estructura."}}, {"@type": "Question", "name": "¿Los cursos están actualizados a las últimas versiones de las normas?", "acceptedAnswer": {"@type": "Answer", "text": "Sí: ISO 9001:2026, el Anexo A 2022 de ISO 27001, ISO 45001, ISO 14001:2015 e ISO/IEC 42001, esta última alineada con el Reglamento europeo de IA. Cada curso indica la versión de la norma que trabaja."}}, {"@type": "Question", "name": "¿Necesito conocimientos previos?", "acceptedAnswer": {"@type": "Answer", "text": "No. Todos los cursos parten de cero: empiezan por los fundamentos antes de entrar en la norma. Si ya trabajas con un sistema de gestión, los módulos de auditoría y certificación te sirven para profundizar."}}, {"@type": "Question", "name": "¿Cómo se paga y qué garantía tengo?", "acceptedAnswer": {"@type": "Answer", "text": "El pago se procesa de forma segura en Hotmart (tarjeta, PayPal y otros métodos según país). Todos los cursos tienen la garantía de reembolso de 15 días de la plataforma: si el curso no es lo que esperabas, recuperas tu dinero."}}]}</script>
 </head>
 <body>
 <header class="site"><div class="wrap"><a class="logo" href="./">Academia ISO</a><nav class="main" aria-label="principal"><a href="./#cursos">Cursos</a><a href="./blog/">Blog</a><a class="lang" href="./pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
@@ -121,6 +133,58 @@ article.post th{background:#fff;color:var(--azul)}
 </div>
 </div></section>
 <section id="cursos"><div class="wrap"><h2>Cursos disponibles</h2><div class="grid"><div class="card"><h3><a href="curso-iso-9001/">Gestor ISO 9001:2026 — De Cero a Implementador</a></h3><p>Diseña, documenta y deja listo para auditoría un Sistema de Gestión de Calidad completo, actualizado a la nueva ISO 9001:2026.</p><p style="margin:.5rem 0 0;font-size:.85rem;color:var(--gris)">9 módulos · 100 % online, a tu ritmo</p><p class="p-precio">110,00 €</p><a class="cta" href="curso-iso-9001/">Ver curso</a></div><div class="card"><h3><a href="curso-iso-14001/">Gestor ISO 14001:2015 — De Cero a Implementador</a></h3><p>Implanta un Sistema de Gestión Ambiental auditable, con los aspectos ambientales, los requisitos legales y el control operacional bien resueltos.</p><p style="margin:.5rem 0 0;font-size:.85rem;color:var(--gris)">11 módulos · 100 % online, a tu ritmo</p><p class="p-precio">275,00 €</p><a class="cta" href="curso-iso-14001/">Ver curso</a></div><div class="card"><h3><a href="curso-iso-27001/">Gestor ISO 27001:2022 + ISO 27701 — De Cero a Implementador</a></h3><p>Monta un SGSI certificable con los 93 controles del Anexo A 2022 y añade la extensión de privacidad ISO 27701 alineada con el RGPD.</p><p style="margin:.5rem 0 0;font-size:.85rem;color:var(--gris)">14 módulos · 100 % online, a tu ritmo</p><p class="p-precio">360,00 €</p><a class="cta" href="curso-iso-27001/">Ver curso</a></div><div class="card"><h3><a href="curso-iso-45001/">Gestor ISO 45001 — De Cero a Implementador SST</a></h3><p>Implanta un Sistema de Gestión de SST auditable desde cero, alineado con la LPRL y listo para la auditoría de certificación.</p><p style="margin:.5rem 0 0;font-size:.85rem;color:var(--gris)">12 módulos · 100 % online, a tu ritmo</p><p class="p-precio">195,00 €</p><a class="cta" href="curso-iso-45001/">Ver curso</a></div><div class="card"><h3><a href="curso-iso-42001/">ISO/IEC 42001 — Sistema de Gestión de Inteligencia Artificial</a></h3><p>Domina el primer estándar certificable de gestión de IA: riesgos, evaluación de impacto, los 38 controles del Anexo A y su encaje con el Reglamento europeo de IA.</p><p style="margin:.5rem 0 0;font-size:.85rem;color:var(--gris)">18 módulos · 100 % online, a tu ritmo</p><p class="p-precio">145,00 €</p><a class="cta" href="curso-iso-42001/">Ver curso</a></div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Compara los cinco cursos de un vistazo</h2>
+<p style="max-width:70ch">Cada norma resuelve un problema distinto de la empresa. Esta tabla te ayuda a decidir cuál te conviene según lo que gestionas o hacia dónde quieres especializarte.</p>
+<div class="comp"><table>
+<thead><tr><th scope="col">Norma</th><th scope="col">Qué sistema implanta</th><th scope="col">Ideal para</th><th scope="col">Módulos</th><th scope="col">Precio</th><th scope="col"></th></tr></thead>
+<tbody>
+<tr><th scope="row">ISO 9001:2026</th><td>Gestión de la Calidad (SGC)</td><td>Cualquier empresa que quiera ordenar sus procesos o acceder a licitaciones. Es la base de todas las demás.</td><td>9</td><td><span class="p">110,00 €</span></td><td><a class="verlink" href="curso-iso-9001/">Ver curso →</a></td></tr>
+<tr><th scope="row">ISO 14001:2015</th><td>Gestión Ambiental (SGA)</td><td>Empresas con impacto ambiental o que necesitan el sello para licitar y homologarse como proveedor.</td><td>11</td><td><span class="p">275,00 €</span></td><td><a class="verlink" href="curso-iso-14001/">Ver curso →</a></td></tr>
+<tr><th scope="row">ISO 27001:2022<br>+ 27701</th><td>Seguridad de la Información (SGSI) y privacidad</td><td>Tecnológicas, SaaS y cualquier organización que maneje datos sensibles o clientes que lo exijan.</td><td>14</td><td><span class="p">360,00 €</span></td><td><a class="verlink" href="curso-iso-27001/">Ver curso →</a></td></tr>
+<tr><th scope="row">ISO 45001</th><td>Seguridad y Salud en el Trabajo (SST)</td><td>Empresas con riesgos laborales que quieren ir más allá del mínimo legal de PRL.</td><td>12</td><td><span class="p">195,00 €</span></td><td><a class="verlink" href="curso-iso-45001/">Ver curso →</a></td></tr>
+<tr><th scope="row">ISO/IEC 42001</th><td>Gestión de Inteligencia Artificial (SGIA)</td><td>Quien desarrolla o usa IA y quiere gobernarla conforme al Reglamento europeo de IA.</td><td>18</td><td><span class="p">145,00 €</span></td><td><a class="verlink" href="curso-iso-42001/">Ver curso →</a></td></tr>
+</tbody>
+</table></div>
+</div></section>
+<section><div class="wrap"><h2>Aprende una norma y partes con ventaja en todas las demás</h2>
+<p style="max-width:72ch">No es casualidad que las normas ISO de gestión se parezcan tanto entre sí. Todas comparten la misma <strong>Estructura de Alto Nivel</strong> (el Anexo SL): las mismas siete cláusulas, del 4 al 10. Por eso, cuando dominas una, ya tienes andado buena parte del camino de las otras: cambia el contenido técnico, pero el esqueleto es idéntico.</p>
+<figure class="hls-fig">
+<svg viewBox="0 0 920 380" role="img" aria-label="Diagrama: las cinco normas ISO comparten la misma Estructura de Alto Nivel, cláusulas 4 a 10">
+<title>Estructura de Alto Nivel común a las normas ISO de gestión</title>
+<!-- Pills de las 5 normas -->
+<g font-family="Inter,sans-serif" font-size="14" font-weight="700" text-anchor="middle">
+<g><rect x="30" y="20" width="150" height="40" rx="20" fill="#fff" stroke="#2563A8" stroke-width="2"/><circle cx="52" cy="40" r="5" fill="#2563A8"/><text x="108" y="45" fill="#1A3A5C">ISO 9001</text></g>
+<g><rect x="205" y="20" width="150" height="40" rx="20" fill="#fff" stroke="#2D8B5A" stroke-width="2"/><circle cx="227" cy="40" r="5" fill="#2D8B5A"/><text x="283" y="45" fill="#1A3A5C">ISO 14001</text></g>
+<g><rect x="380" y="20" width="160" height="40" rx="20" fill="#fff" stroke="#5B4B8A" stroke-width="2"/><circle cx="402" cy="40" r="5" fill="#5B4B8A"/><text x="463" y="45" fill="#1A3A5C">ISO 27001</text></g>
+<g><rect x="565" y="20" width="150" height="40" rx="20" fill="#fff" stroke="#C0392B" stroke-width="2"/><circle cx="587" cy="40" r="5" fill="#C0392B"/><text x="643" y="45" fill="#1A3A5C">ISO 45001</text></g>
+<g><rect x="740" y="20" width="150" height="40" rx="20" fill="#fff" stroke="#E85820" stroke-width="2"/><circle cx="762" cy="40" r="5" fill="#E85820"/><text x="818" y="45" fill="#1A3A5C">ISO 42001</text></g>
+</g>
+<!-- Conectores hacia la banda común -->
+<g stroke="#C7D2DE" stroke-width="2" fill="none">
+<path d="M105 60 L105 92 Q105 104 118 104 L452 104 Q465 104 465 116 L465 132"/>
+<path d="M283 60 L283 118 Q283 128 296 128"/>
+<path d="M463 60 L463 132"/>
+<path d="M643 60 L643 118 Q643 128 630 128"/>
+<path d="M818 60 L818 92 Q818 104 805 104 L478 104 Q465 104 465 116"/>
+</g>
+<text x="465" y="150" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" font-weight="600" fill="#54657A" letter-spacing="2">COMPARTEN LA MISMA ESTRUCTURA</text>
+<!-- Banda de las 7 cláusulas -->
+<g font-family="Inter,sans-serif" text-anchor="middle">
+<g><rect x="40" y="170" width="118" height="96" rx="8" fill="#1A3A5C"/><text x="99" y="212" font-family="DM Serif Display,Georgia,serif" font-size="26" fill="#E85820">4</text><text x="99" y="240" font-size="13" font-weight="600" fill="#fff">Contexto</text></g>
+<g><rect x="164" y="170" width="118" height="96" rx="8" fill="#1A3A5C"/><text x="223" y="212" font-family="DM Serif Display,Georgia,serif" font-size="26" fill="#E85820">5</text><text x="223" y="240" font-size="13" font-weight="600" fill="#fff">Liderazgo</text></g>
+<g><rect x="288" y="170" width="118" height="96" rx="8" fill="#1A3A5C"/><text x="347" y="212" font-family="DM Serif Display,Georgia,serif" font-size="26" fill="#E85820">6</text><text x="347" y="240" font-size="13" font-weight="600" fill="#fff">Planificación</text></g>
+<g><rect x="412" y="170" width="118" height="96" rx="8" fill="#1A3A5C"/><text x="471" y="212" font-family="DM Serif Display,Georgia,serif" font-size="26" fill="#E85820">7</text><text x="471" y="240" font-size="13" font-weight="600" fill="#fff">Soporte</text></g>
+<g><rect x="536" y="170" width="118" height="96" rx="8" fill="#1A3A5C"/><text x="595" y="212" font-family="DM Serif Display,Georgia,serif" font-size="26" fill="#E85820">8</text><text x="595" y="240" font-size="13" font-weight="600" fill="#fff">Operación</text></g>
+<g><rect x="660" y="170" width="118" height="96" rx="8" fill="#1A3A5C"/><text x="719" y="212" font-family="DM Serif Display,Georgia,serif" font-size="26" fill="#E85820">9</text><text x="719" y="240" font-size="13" font-weight="600" fill="#fff">Evaluación</text></g>
+<g><rect x="784" y="170" width="118" height="96" rx="8" fill="#1A3A5C"/><text x="843" y="212" font-family="DM Serif Display,Georgia,serif" font-size="26" fill="#E85820">10</text><text x="843" y="240" font-size="13" font-weight="600" fill="#fff">Mejora</text></g>
+</g>
+<!-- Ciclo PHVA -->
+<text x="465" y="312" text-anchor="middle" font-family="Inter,sans-serif" font-size="14" font-weight="600" fill="#1A3A5C">Todo sobre el ciclo PHVA: Planificar · Hacer · Verificar · Actuar</text>
+<text x="465" y="344" text-anchor="middle" font-family="Inter,sans-serif" font-size="13" fill="#54657A">Dominar este esqueleto es el 70 % del trabajo en cualquier norma ISO de gestión.</text>
+</svg>
+<figcaption>La Estructura de Alto Nivel (Anexo SL) común a las normas ISO de sistemas de gestión.</figcaption>
+</figure>
+</div></section>
 <section class="alt"><div class="wrap"><h2>¿Por qué formarte con Academia ISO?</h2>
 <ul class="check">
 <li><strong>Temarios completos y reales</strong>: cada curso publica su índice de módulos íntegro en esta web, sin sorpresas.</li>
@@ -129,6 +193,14 @@ article.post th{background:#fff;color:var(--azul)}
 <li><strong>Sin riesgo</strong>: garantía de reembolso de 15 días de Hotmart en todos los cursos.</li>
 </ul>
 <p><a href="blog/">Visita el blog</a> para artículos sobre normas ISO explicadas en claro. ¿Prefieres el contenido en portugués de Brasil? <a href="pt/" hreflang="pt-BR" lang="pt-BR">Cursos em português</a>.</p>
+</div></section>
+<section class="faq"><div class="wrap"><h2>Preguntas frecuentes</h2>
+<details class="mod" open><summary><span>¿Los certificados de estos cursos sirven para trabajar?</span></summary><div><p>Al completar un curso obtienes un certificado de finalización emitido a través de Hotmart. No es una certificación acreditada de la norma —esa la emiten las entidades de certificación a las empresas—, pero acredita tu formación como implementador y suma en un currículum o como consultor.</p></div></details>
+<details class="mod"><summary><span>¿Qué diferencia hay entre certificarme yo y certificar mi empresa?</span></summary><div><p>Son cosas distintas. Tú te formas como persona para saber implantar la norma; la empresa se certifica como organización cuando una entidad acreditada (por ejemplo, por ENAC en España) audita su sistema de gestión. Estos cursos te preparan para lo primero: implantar el sistema y dejar a la empresa lista para esa auditoría.</p></div></details>
+<details class="mod"><summary><span>¿Puedo hacer varios cursos? ¿Hay una ruta recomendada?</span></summary><div><p>Sí. Todas las normas de gestión comparten la misma estructura de alto nivel (cláusulas 4 a 10), así que aprender una te da ventaja en las demás. La ruta habitual empieza por <a href="curso-iso-9001/">ISO 9001</a> (la base de la calidad) y sigue con <a href="curso-iso-14001/">ISO 14001</a> o <a href="curso-iso-45001/">ISO 45001</a>, que se integran sobre la misma estructura.</p></div></details>
+<details class="mod"><summary><span>¿Los cursos están actualizados a las últimas versiones de las normas?</span></summary><div><p>Sí: ISO 9001:2026, el Anexo A 2022 de ISO 27001, ISO 45001, ISO 14001:2015 e ISO/IEC 42001, esta última alineada con el Reglamento europeo de IA. Cada curso indica la versión de la norma que trabaja.</p></div></details>
+<details class="mod"><summary><span>¿Necesito conocimientos previos?</span></summary><div><p>No. Todos los cursos parten de cero: empiezan por los fundamentos antes de entrar en la norma. Si ya trabajas con un sistema de gestión, los módulos de auditoría y certificación te sirven para profundizar.</p></div></details>
+<details class="mod"><summary><span>¿Cómo se paga y qué garantía tengo?</span></summary><div><p>El pago se procesa de forma segura en Hotmart (tarjeta, PayPal y otros métodos según país). Todos los cursos tienen la garantía de reembolso de 15 días de la plataforma: si el curso no es lo que esperabas, recuperas tu dinero.</p></div></details>
 </div></section>
 </main>
 <footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="./curso-iso-9001/">Curso ISO 9001</a></li><li><a href="./curso-iso-14001/">Curso ISO 14001</a></li><li><a href="./curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="./curso-iso-45001/">Curso ISO 45001</a></li><li><a href="./curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="./blog/">Blog</a></li><li><a href="./pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días</p></div></footer>
