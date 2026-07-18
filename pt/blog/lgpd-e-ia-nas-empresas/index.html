@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LGPD e IA nas empresas: o que muda e como se preparar</title>
+<meta name="description" content="Como a LGPD se aplica ao uso de inteligência artificial nas empresas: bases legais, decisões automatizadas, o PL 2338 e como a ISO 42001 ajuda a fazer certo.">
+<link rel="canonical" href="https://cursosiso.com/pt/blog/lgpd-e-ia-nas-empresas/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="LGPD e IA nas empresas: o que muda e como se preparar">
+<meta property="og:description" content="Como a LGPD se aplica ao uso de inteligência artificial nas empresas: bases legais, decisões automatizadas, o PL 2338 e como a ISO 42001 ajuda a fazer certo.">
+<meta property="og:url" content="https://cursosiso.com/pt/blog/lgpd-e-ia-nas-empresas/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-42001-pt.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="LGPD e IA nas empresas: o que muda e como se preparar">
+<meta name="twitter:description" content="Como a LGPD se aplica ao uso de IA nas empresas e como a ISO 42001 ajuda a governar isso.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-42001-pt.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.95rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "LGPD e IA nas empresas: o que muda e como se preparar", "description": "Como a LGPD se aplica ao uso de inteligência artificial nas empresas: bases legais, decisões automatizadas, o PL 2338 e como a ISO 42001 ajuda a fazer certo.", "inLanguage": "pt-BR", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-07-17", "dateModified": "2026-07-17", "image": "https://cursosiso.com/assets/og/iso-42001-pt.svg", "mainEntityOfPage": "https://cursosiso.com/pt/blog/lgpd-e-ia-nas-empresas/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://cursosiso.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "LGPD e IA nas empresas: o que muda e como se preparar", "item": "https://cursosiso.com/pt/blog/lgpd-e-ia-nas-empresas/"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../../pt/">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../../pt/#cursos">Cursos</a><a href="../../../pt/blog/">Blog</a><a class="lang" href="../../../" hreflang="es" lang="es">ES</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../../pt/">Início</a></li><li><a href="../">Blog</a></li><li aria-current="page">Inteligência artificial</li></ol></div>
+<h1>LGPD e IA nas empresas: o que muda e como se preparar</h1>
+<p class="meta">Academia ISO · 17 de julho de 2026 · Inteligência artificial</p>
+
+<p>As empresas adotaram a inteligência artificial mais rápido do que estruturaram como controlá-la. E quase toda IA útil funciona com um combustível que a lei protege: <strong>dados pessoais</strong>. É aí que a <strong>LGPD</strong> entra na conversa — e onde muitas organizações estão expostas sem perceber. Este artigo explica como a Lei Geral de Proteção de Dados se aplica ao uso de IA, o que vem pela frente com o PL 2338 e como se preparar sem travar a inovação.</p>
+
+<h2>Por que IA e LGPD andam juntas?</h2>
+<p>Um sistema de IA aprende e opera a partir de dados. Quando esses dados identificam ou permitem identificar uma pessoa — clientes, candidatos, colaboradores — todo o tratamento passa a estar sob a LGPD. Isso vale para treinar um modelo, para alimentá-lo em produção e, cada vez mais, para o uso de <strong>IA generativa</strong>: colar dados de clientes num chatbot externo é um tratamento (e muitas vezes uma transferência) de dados pessoais que a empresa precisa justificar.</p>
+
+<h2>O que a LGPD exige de quem usa IA</h2>
+<ul>
+<li><strong>Base legal</strong>: todo tratamento precisa de uma das hipóteses do art. 7º (consentimento, legítimo interesse, execução de contrato, etc.). "Porque melhora o modelo" não é base legal.</li>
+<li><strong>Finalidade e minimização</strong>: usar só os dados necessários para o propósito declarado — e não guardar tudo "por via das dúvidas" para treinar futuros modelos.</li>
+<li><strong>Transparência</strong>: informar o titular sobre o tratamento de forma clara.</li>
+<li><strong>Revisão de decisões automatizadas (art. 20)</strong>: o titular tem direito a solicitar a revisão de decisões tomadas unicamente por tratamento automatizado que afetem seus interesses — crédito, triagem de currículos, precificação.</li>
+<li><strong>Segurança</strong>: medidas técnicas e administrativas para proteger os dados, inclusive contra o vazamento por meio das próprias ferramentas de IA.</li>
+</ul>
+
+<h2>O PL 2338 e o futuro Marco Legal da IA</h2>
+<p>O Brasil caminha para uma regulação específica de inteligência artificial. O <strong>PL 2338</strong> propõe um marco baseado em <strong>risco</strong>: quanto maior o risco do sistema (por exemplo, os que afetam direitos fundamentais), mais obrigações de governança, documentação e avaliação de impacto. A direção é clara e converge com a europeia: não basta cumprir a LGPD sobre os dados; será preciso <strong>governar o ciclo de vida do próprio sistema de IA</strong>. As empresas que só começarem a se organizar quando a lei for aprovada chegarão atrasadas.</p>
+
+<h2>Os riscos concretos que preocupam</h2>
+<table>
+<tr><th>Risco</th><th>Exemplo</th></tr>
+<tr><td>Vazamento por IA generativa</td><td>Colaborador cola dados de clientes numa ferramenta pública e eles saem do controle da empresa</td></tr>
+<tr><td>Viés e discriminação</td><td>Modelo de triagem que reproduz vieses históricos e prejudica grupos protegidos</td></tr>
+<tr><td>Decisão automatizada opaca</td><td>Negar crédito sem conseguir explicar o porquê ao titular</td></tr>
+<tr><td>Base legal inexistente</td><td>Treinar modelos com dados coletados para outra finalidade</td></tr>
+</table>
+
+<h2>Como se preparar: governança em vez de improviso</h2>
+<p>Resolver isso caso a caso não escala. O caminho é ter um <strong>sistema de gestão</strong> que trate IA e privacidade de forma estruturada. Duas normas internacionais dão exatamente essa espinha dorsal: a <strong>ISO/IEC 42001</strong>, primeira norma certificável de gestão de inteligência artificial (o AIMS), que exige mapear os sistemas de IA, avaliar seus riscos e impactos e definir controles ao longo do ciclo de vida; e a <strong>ISO/IEC 27701</strong>, focada em privacidade, que operacionaliza a LGPD dentro do sistema de gestão. Juntas, cobrem os dois lados do problema: o dado (privacidade) e o sistema que o usa (IA). Se você ainda está entendendo a norma de IA, comece por <a href="../o-que-e-iso-42001/">o que é a ISO 42001</a>.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Aprenda a governar a IA da sua empresa:</strong> no <a href="../../../pt/curso-iso-42001/">curso Gestor ISO/IEC 42001 — Do Zero ao Implementador</a> você aprende a implantar um sistema de gestão de IA que trata riscos, decisões automatizadas e conformidade — a estrutura que a LGPD já cobra e que o Marco Legal da IA vai exigir.</p></div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formação EAD em normas ISO para profissionais de gestão, qualidade, segurança e tecnologia.</p></div><div><h3>Cursos</h3><ul><li><a href="../../../pt/curso-iso-45001/">Curso ISO 45001 (PT-BR)</a></li><li><a href="../../../pt/curso-iso-42001/">Curso ISO/IEC 42001 (PT-BR)</a></li></ul></div><div><h3>Mais</h3><ul><li><a href="../../../pt/blog/">Blog</a></li><li><a href="../../../">Cursos en español</a></li></ul></div></div><p>© 2026 · Página gerenciada pela Isotecnia · Pagamentos processados pela Hotmart · Garantia de reembolso de 15 dias</p></div></footer>
+</body>
+</html>
