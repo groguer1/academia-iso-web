@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evaluación de riesgos ISO 45001: 4 metodologías</title>
+<meta name="description" content="Cómo hacer la evaluación de riesgos en ISO 45001: qué exige el punto 6.1, la matriz probabilidad × consecuencia y 4 metodologías (William Fine, NTP 330, matriz simple y GTC 45) con ejemplos.">
+<link rel="canonical" href="https://cursosiso.com/blog/evaluacion-riesgos-iso-45001-metodologias/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="Evaluación de riesgos ISO 45001: 4 metodologías con ejemplos">
+<meta property="og:description" content="Qué exige el punto 6.1 de ISO 45001 y cómo evaluar los riesgos con 4 metodologías reales: matriz simple, William Fine, NTP 330 y GTC 45.">
+<meta property="og:url" content="https://cursosiso.com/blog/evaluacion-riesgos-iso-45001-metodologias/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-45001.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Evaluación de riesgos ISO 45001: 4 metodologías con ejemplos">
+<meta name="twitter:description" content="Qué exige el punto 6.1 de ISO 45001 y cómo evaluar los riesgos con 4 metodologías reales, con ejemplos y fórmulas.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-45001.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post h3{font-size:1.15rem;margin-top:1.6rem;margin-bottom:.4rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.93rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Evaluación de riesgos ISO 45001: 4 metodologías con ejemplos", "description": "Qué exige el punto 6.1 de ISO 45001 y cómo evaluar los riesgos laborales con 4 metodologías reales: matriz simple, William Fine, NTP 330 y GTC 45, con ejemplos y fórmulas.", "inLanguage": "es", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-07-19", "dateModified": "2026-07-19", "image": "https://cursosiso.com/assets/og/iso-45001.svg", "mainEntityOfPage": "https://cursosiso.com/blog/evaluacion-riesgos-iso-45001-metodologias/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cursosiso.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Evaluación de riesgos ISO 45001: 4 metodologías con ejemplos", "item": "https://cursosiso.com/blog/evaluacion-riesgos-iso-45001-metodologias/"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../#cursos">Cursos</a><a href="../../blog/">Blog</a><a class="lang" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../">Inicio</a></li><li><a href="../">Blog</a></li><li aria-current="page">Seguridad y salud</li></ol></div>
+<h1>Evaluación de riesgos ISO 45001: 4 metodologías con ejemplos</h1>
+<p class="meta">Academia ISO · 19 de julio de 2026 · Seguridad y salud en el trabajo</p>
+
+<p>La evaluación de riesgos es el corazón de cualquier sistema de gestión de seguridad y salud en el trabajo. En ISO 45001 no es un trámite: es el proceso del que salen las decisiones sobre qué controles poner, dónde invertir y qué vigilar cada día. Y sin embargo, es donde más empresas se equivocan, casi siempre por el mismo motivo: <strong>copian una metodología sin entender qué mide</strong>. Vamos a ver qué exige la norma y a comparar cuatro metodologías reales para que elijas la que encaja con tu organización.</p>
+
+<h2>¿Qué exige ISO 45001 sobre la evaluación de riesgos?</h2>
+<p>El punto <strong>6.1.2 de ISO 45001</strong> ("Identificación de peligros y evaluación de los riesgos y oportunidades") pide tres cosas encadenadas: primero <strong>identificar los peligros</strong> de forma proactiva y continua; después <strong>evaluar los riesgos</strong> para la seguridad y salud asociados a esos peligros; y por último, evaluar también los riesgos <em>del propio sistema de gestión</em>. Lo importante es que la norma <strong>no impone ninguna metodología concreta</strong>: exige que tengas una, que sea sistemática y que los criterios estén definidos y documentados de antemano.</p>
+<p>Esa libertad es una ventaja y una trampa a la vez. La ventaja: puedes adaptar el método a tu sector y tamaño. La trampa: si eliges mal, acabas con una matriz que da la misma puntuación a un resbalón en la oficina que a un trabajo en altura sin protección. La clave está en definir bien los criterios de <strong>probabilidad</strong> y <strong>consecuencia</strong> antes de puntuar nada.</p>
+
+<h2>La base común: matriz probabilidad × consecuencia</h2>
+<p>Casi todas las metodologías parten de la misma idea: el nivel de riesgo es el producto de la <strong>probabilidad</strong> de que ocurra un daño por la <strong>consecuencia</strong> (gravedad) que tendría. Cambia la escala y los factores que se añaden, pero el esqueleto es este:</p>
+<table>
+<tr><th>Consecuencia ↓ / Probabilidad →</th><th>Baja</th><th>Media</th><th>Alta</th></tr>
+<tr><td>Leve</td><td>Trivial</td><td>Tolerable</td><td>Moderado</td></tr>
+<tr><td>Grave</td><td>Tolerable</td><td>Moderado</td><td>Importante</td></tr>
+<tr><td>Muy grave / mortal</td><td>Moderado</td><td>Importante</td><td>Intolerable</td></tr>
+</table>
+<p>El color de la casilla marca la prioridad: un riesgo <strong>intolerable</strong> obliga a parar la actividad hasta reducirlo; uno <strong>moderado</strong> se planifica; uno <strong>trivial</strong> no requiere acción inmediata. Sobre esta base, cada metodología añade matices.</p>
+
+<h2>4 metodologías de evaluación de riesgos</h2>
+
+<h3>1. Matriz simple 3×3 o 5×5</h3>
+<p>Es la más extendida y la que recomienda ISO 45001 para empezar. Se cruza probabilidad y consecuencia en una tabla de 3×3 o 5×5 y se lee el nivel de riesgo directamente de la casilla. <strong>Ideal para pymes</strong> y para la mayoría de riesgos: es rápida, visual y fácil de explicar en la revisión por la dirección. Su límite es que trata todos los riesgos con la misma vara, sin distinguir cuánta gente está expuesta ni con qué frecuencia.</p>
+
+<h3>2. Método William Fine</h3>
+<p>Añade un tercer factor a la ecuación: la <strong>exposición</strong> (con qué frecuencia se está ante el peligro). Su fórmula es <strong>Grado de peligrosidad = Consecuencia × Exposición × Probabilidad</strong>. Es útil cuando necesitas <strong>priorizar inversiones</strong>, porque incorpora un factor de justificación económica: permite comparar el coste de la medida correctora frente al riesgo que elimina. Se usa mucho en industria con muchos puestos y presupuestos que hay que defender.</p>
+
+<h3>3. Método NTP 330 (INSST)</h3>
+<p>Es el método del Instituto Nacional de Seguridad y Salud en el Trabajo español, muy habitual en España. Sustituye la "probabilidad" por el <strong>nivel de deficiencia</strong> (cuántos y cómo de graves son los fallos detectados) y el <strong>nivel de exposición</strong>. Su resultado, el <strong>nivel de riesgo (NR = ND × NE × NC)</strong>, es trazable y auditable, lo que lo hace muy defendible ante inspección. Requiere algo más de formación del evaluador que la matriz simple.</p>
+
+<h3>4. Guía GTC 45 (Colombia / Latam)</h3>
+<p>Muy usada en el ámbito latinoamericano, especialmente en Colombia. Combina nivel de deficiencia, exposición y consecuencia en un <strong>nivel de probabilidad</strong> y de ahí al nivel de riesgo, pero añade una capa muy útil: la <strong>clasificación de peligros por tipo</strong> (físico, químico, biológico, biomecánico, psicosocial, etc.). Encaja bien con las exigencias documentales de la región y con el enfoque preventivo de la NR-1 brasileña o la normativa colombiana.</p>
+
+<h2>¿Cuál elegir?</h2>
+<p>No hay una "mejor": hay la que puedes aplicar bien y de forma constante. Como orientación:</p>
+<ul>
+<li><strong>Pyme o empresa que empieza</strong>: matriz simple 5×5. Sencilla, suficiente y fácil de mantener.</li>
+<li><strong>Industria con muchos puestos y que justifica inversiones</strong>: William Fine.</li>
+<li><strong>Empresa en España que busca trazabilidad ante inspección</strong>: NTP 330.</li>
+<li><strong>Organización latinoamericana</strong>: GTC 45 por su encaje normativo.</li>
+</ul>
+<p>Y sea cual sea, recuerda lo que de verdad valora un auditor: que los <strong>criterios estén definidos por escrito antes</strong> de evaluar, que la evaluación esté <strong>actualizada</strong> (revisada tras cambios, incidentes o nuevas actividades) y que de cada riesgo relevante salga una <strong>medida de control</strong> con responsable y plazo. Una matriz perfecta que nadie revisa no vale nada; una matriz sencilla viva y usada para decidir vale oro.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Aprende a montar tu evaluación de riesgos paso a paso:</strong> en el <a href="../../curso-iso-45001/">curso de Implementador ISO 45001</a> trabajamos la identificación de peligros, las metodologías de evaluación y la jerarquía de controles con casos reales. Y cuando la tengas lista, comprueba que resiste una revisión con nuestra guía de <a href="../auditoria-interna-iso-45001/">auditoría interna ISO 45001 paso a paso</a>.</p></div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días</p></div></footer>
+</body>
+</html>
