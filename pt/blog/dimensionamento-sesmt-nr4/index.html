@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dimensionamento do SESMT: como calcular (NR-4)</title>
+<meta name="description" content="Como fazer o dimensionamento do SESMT segundo a NR-4: o que é, como o grau de risco e o número de empregados definem a equipe, quem faz parte e a relação com a ISO 45001.">
+<link rel="canonical" href="https://cursosiso.com/pt/blog/dimensionamento-sesmt-nr4/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="Dimensionamento do SESMT: como calcular segundo a NR-4">
+<meta property="og:description" content="Como dimensionar o SESMT pela NR-4: o papel do grau de risco e do número de empregados, quem compõe a equipe e como a ISO 45001 potencializa a gestão de SST.">
+<meta property="og:url" content="https://cursosiso.com/pt/blog/dimensionamento-sesmt-nr4/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-45001-pt.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Dimensionamento do SESMT: como calcular segundo a NR-4">
+<meta name="twitter:description" content="Como dimensionar o SESMT pela NR-4: grau de risco, número de empregados, quem compõe a equipe e a relação com a ISO 45001.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-45001-pt.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post h3{font-size:1.15rem;margin-top:1.6rem;margin-bottom:.4rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.95rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Dimensionamento do SESMT: como calcular segundo a NR-4", "description": "Como fazer o dimensionamento do SESMT segundo a NR-4: o que é, como o grau de risco e o número de empregados definem a equipe, quem faz parte e a relação com a ISO 45001.", "inLanguage": "pt-BR", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-07-19", "dateModified": "2026-07-19", "image": "https://cursosiso.com/assets/og/iso-45001-pt.svg", "mainEntityOfPage": "https://cursosiso.com/pt/blog/dimensionamento-sesmt-nr4/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://cursosiso.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "Dimensionamento do SESMT: como calcular segundo a NR-4", "item": "https://cursosiso.com/pt/blog/dimensionamento-sesmt-nr4/"}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../../pt/">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../../pt/#cursos">Cursos</a><a href="../../../pt/blog/">Blog</a><a class="lang" href="../../../" hreflang="es" lang="es">ES</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../../pt/">Início</a></li><li><a href="../">Blog</a></li><li aria-current="page">Segurança do trabalho</li></ol></div>
+<h1>Dimensionamento do SESMT: como calcular segundo a NR-4</h1>
+<p class="meta">Academia ISO · 19 de julho de 2026 · Segurança do trabalho</p>
+
+<p>Dimensionar o SESMT é uma das primeiras obrigações de qualquer empresa que precisa estruturar a segurança do trabalho — e também uma das que mais gera dúvida. Quantos profissionais eu preciso? Preciso de engenheiro e médico ou só de técnico? A resposta não é um "achismo": está na <strong>NR-4</strong>, e depende de duas variáveis simples. Neste artigo mostramos como fazer o dimensionamento passo a passo, quem compõe a equipe e como a gestão da segurança pode ir muito além do mínimo legal.</p>
+
+<h2>O que é o SESMT?</h2>
+<p>SESMT é a sigla de <strong>Serviço Especializado em Engenharia de Segurança e em Medicina do Trabalho</strong>. É a equipe interna de profissionais que a empresa deve manter para promover a saúde e proteger a integridade dos trabalhadores no ambiente de trabalho. A base legal é a <strong>NR-4</strong> (Norma Regulamentadora nº 4), que define quando o serviço é obrigatório e com quantos profissionais.</p>
+
+<h2>De que depende o dimensionamento?</h2>
+<p>O dimensionamento do SESMT depende de <strong>duas variáveis combinadas</strong>:</p>
+<ul>
+<li><strong>Grau de risco (GR) da atividade</strong>: um número de 1 a 4 atribuído a cada atividade econômica (CNAE) no Quadro I da NR-4. Quanto maior o risco da atividade, maior o grau — a construção civil pesada e a indústria costumam ter GR 3 ou 4; escritórios e comércio, GR 1 ou 2.</li>
+<li><strong>Número de empregados no estabelecimento</strong>: quanto mais trabalhadores, maior a equipe exigida.</li>
+</ul>
+<p>Cruzando essas duas variáveis no <strong>Quadro II da NR-4</strong>, você encontra quantos profissionais de cada tipo o estabelecimento precisa ter. É importante entender a lógica: <strong>não é o mesmo cruzamento para todas as empresas</strong>. Uma empresa de GR 4 com 100 empregados já é obrigada a ter SESMT; uma de GR 1 com o mesmo número de empregados pode ainda não ser.</p>
+
+<h2>Quem faz parte do SESMT?</h2>
+<p>A NR-4 prevê cinco tipos de profissionais, que entram na equipe conforme o dimensionamento:</p>
+<table>
+<tr><th>Profissional</th><th>Papel</th></tr>
+<tr><td>Técnico de Segurança do Trabalho</td><td>Atuação de campo: inspeções, orientação de EPIs, treinamentos, apoio à CIPA</td></tr>
+<tr><td>Engenheiro de Segurança do Trabalho</td><td>Análises técnicas, projetos e medidas de engenharia de controle de risco</td></tr>
+<tr><td>Médico do Trabalho</td><td>Saúde ocupacional, exames e coordenação do PCMSO</td></tr>
+<tr><td>Enfermeiro do Trabalho</td><td>Assistência de enfermagem e apoio à saúde ocupacional</td></tr>
+<tr><td>Auxiliar/Técnico de Enfermagem do Trabalho</td><td>Apoio operacional em enfermagem ocupacional</td></tr>
+</table>
+<p>Nas empresas de menor porte ou grau de risco, o dimensionamento normalmente exige apenas o técnico de segurança; conforme sobem o número de empregados e o grau de risco, entram engenheiro, médico e a equipe de enfermagem.</p>
+
+<h2>Exemplo prático (orientativo)</h2>
+<p>Imagine uma indústria de <strong>grau de risco 3</strong> com <strong>600 empregados</strong> em um único estabelecimento. Ao cruzar esses dois dados no Quadro II da NR-4, a empresa se enquadra na obrigação de manter um SESMT com técnicos de segurança e, dependendo da faixa exata, engenheiro e profissionais de saúde ocupacional.</p>
+<p>Este exemplo é apenas ilustrativo: <strong>o número exato de cada profissional deve ser lido diretamente no Quadro II da versão vigente da NR-4</strong>, porque as faixas são específicas e a norma é atualizada periodicamente. O erro mais comum é usar uma tabela desatualizada — confira sempre a redação em vigor no site do Ministério do Trabalho.</p>
+
+<h2>SESMT e a lógica de gestão: onde entra a ISO 45001</h2>
+<p>Cumprir o dimensionamento da NR-4 é o mínimo legal: garante que a empresa tem gente suficiente. Mas ter a equipe não significa ter um <strong>sistema</strong> que reduz acidentes de verdade. É aí que entra a <strong>ISO 45001</strong>, a norma internacional de gestão de segurança e saúde ocupacional. Ela dá ao SESMT o método: identificação de perigos, avaliação de riscos, hierarquia de controles, indicadores e melhoria contínua.</p>
+<p>Na prática, a NR-4 diz <em>quantos</em> profissionais você precisa; a ISO 45001 diz <em>como</em> fazer esse time gerar resultado. Para o profissional de SST, dominar essa lógica de gestão é o que separa quem apenas cumpre a norma de quem estrutura a segurança da empresa — e é também o caminho para os cargos melhor remunerados, como mostramos em <a href="../quanto-ganha-tecnico-seguranca-do-trabalho/">quanto ganha um técnico de segurança do trabalho</a>.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Vá além do mínimo legal:</strong> no <a href="../../../pt/curso-iso-45001/">curso Gestor ISO 45001 — Do Zero ao Implementador SST</a> você aprende a transformar a equipe do SESMT em um sistema de gestão que reduz acidentes, passa em auditoria e agrega valor real à empresa.</p></div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formação EAD em normas ISO para profissionais de gestão, qualidade, segurança e tecnologia.</p></div><div><h3>Cursos</h3><ul><li><a href="../../../pt/curso-iso-45001/">Curso ISO 45001 (PT-BR)</a></li><li><a href="../../../pt/curso-iso-42001/">Curso ISO/IEC 42001 (PT-BR)</a></li></ul></div><div><h3>Mais</h3><ul><li><a href="../../../pt/blog/">Blog</a></li><li><a href="../../../">Cursos en español</a></li></ul></div></div><p>© 2026 · Página gerenciada pela Isotecnia · Pagamentos processados pela Hotmart · Garantia de reembolso de 15 dias</p></div></footer>
+</body>
+</html>
