@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCMSO (NR-7): o que é, para que serve e quem faz</title>
+<meta name="description" content="O que é o PCMSO da NR-7: para que serve, quem é obrigado, o que são ASO e exames ocupacionais, relação com o PGR/GRO e como a ISO 45001 potencializa a gestão de saúde.">
+<link rel="canonical" href="https://cursosiso.com/pt/blog/pcmso-nr7-o-que-e-como-funciona/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="PCMSO (NR-7): o que é, para que serve e quem faz">
+<meta property="og:description" content="Guia do PCMSO pela NR-7: obrigatoriedade, ASO, exames ocupacionais, relatório analítico, integração com o PGR e a relação com a ISO 45001.">
+<meta property="og:url" content="https://cursosiso.com/pt/blog/pcmso-nr7-o-que-e-como-funciona/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-45001-pt.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PCMSO (NR-7): o que é, para que serve e quem faz">
+<meta name="twitter:description" content="Guia do PCMSO pela NR-7: obrigatoriedade, ASO, exames ocupacionais, integração com o PGR e a relação com a ISO 45001.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-45001-pt.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post h3{font-size:1.15rem;margin-top:1.6rem;margin-bottom:.4rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.95rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.faq details{border:1px solid var(--linea);border-radius:6px;padding:.2rem 1rem;margin:.7rem 0;background:#fff}
+.faq summary{font-weight:600;cursor:pointer;padding:.7rem 0;color:var(--azul)}
+.faq details[open] summary{margin-bottom:.4rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "PCMSO (NR-7): o que é, para que serve e quem faz", "description": "O que é o PCMSO da NR-7: para que serve, quem é obrigado, o que são ASO e exames ocupacionais, relação com o PGR/GRO e como a ISO 45001 potencializa a gestão de saúde.", "inLanguage": "pt-BR", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-07-23", "dateModified": "2026-07-23", "image": "https://cursosiso.com/assets/og/iso-45001-pt.svg", "mainEntityOfPage": "https://cursosiso.com/pt/blog/pcmso-nr7-o-que-e-como-funciona/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://cursosiso.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "PCMSO (NR-7): o que é, para que serve e quem faz", "item": "https://cursosiso.com/pt/blog/pcmso-nr7-o-que-e-como-funciona/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Toda empresa é obrigada a ter PCMSO?", "acceptedAnswer": {"@type": "Answer", "text": "Como regra, toda organização que admite trabalhadores como empregados deve elaborar e implementar o PCMSO. A NR-7 prevê situações de dispensa ou de programa simplificado para organizações de menor porte e grau de risco (por exemplo, MEI e algumas empresas de graus de risco 1 e 2 com poucos empregados), mas isso depende da redação vigente e do enquadramento no eSocial. Na dúvida, considere obrigatório e confirme com o médico responsável."}}, {"@type": "Question", "name": "Qual a diferença entre PCMSO e PGR?", "acceptedAnswer": {"@type": "Answer", "text": "O PGR (Programa de Gerenciamento de Riscos, da NR-1) identifica e controla os riscos do ambiente de trabalho. O PCMSO (NR-7) cuida da saúde do trabalhador exposto a esses riscos: define quais exames médicos cada função precisa e monitora a saúde ao longo do tempo. O PCMSO deve partir dos riscos levantados no PGR — um alimenta o outro."}}, {"@type": "Question", "name": "O que é o ASO?", "acceptedAnswer": {"@type": "Answer", "text": "ASO é o Atestado de Saúde Ocupacional, o documento emitido pelo médico após cada exame ocupacional (admissional, periódico, de retorno ao trabalho, de mudança de função e demissional). Ele registra se o trabalhador está apto ou inapto para a função e é uma das exigências mais fiscalizadas da NR-7."}}, {"@type": "Question", "name": "Quem é responsável pelo PCMSO?", "acceptedAnswer": {"@type": "Answer", "text": "O PCMSO deve estar sob a responsabilidade de um médico do trabalho (ou, quando a norma permite, de outro médico habilitado), chamado de médico coordenador. Ele define os exames, emite os ASO e elabora o relatório analítico anual. A empresa custeia o programa e os exames, que são gratuitos para o trabalhador."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../../pt/">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../../pt/#cursos">Cursos</a><a href="../../../pt/blog/">Blog</a><a class="lang" href="../../../" hreflang="es" lang="es">ES</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../../pt/">Início</a></li><li><a href="../">Blog</a></li><li aria-current="page">Segurança e saúde</li></ol></div>
+<h1>PCMSO (NR-7): o que é, para que serve e quem faz</h1>
+<p class="meta">Academia ISO · 23 de julho de 2026 · Segurança e saúde</p>
+
+<p>Ao lado do PGR, o <strong>PCMSO</strong> é um dos programas mais cobrados em fiscalização e um dos que mais confundem quem está começando na segurança do trabalho. O que exatamente ele controla? Toda empresa precisa ter? Qual a diferença para o PGR? E o que é aquele papel do exame admissional — o ASO? Neste guia explicamos o que é o PCMSO segundo a <strong>NR-7</strong>, para que serve, quem faz, o que são os exames ocupacionais e o ASO, e como um sistema de gestão como a ISO 45001 transforma esse programa legal em prevenção de verdade.</p>
+
+<h2>O que é o PCMSO?</h2>
+<p>PCMSO é a sigla de <strong>Programa de Controle Médico de Saúde Ocupacional</strong>. É o programa, exigido pela <strong>NR-7</strong> (Norma Regulamentadora nº 7), que cuida da <strong>saúde do trabalhador</strong> em relação aos riscos a que ele está exposto no trabalho. Enquanto o PGR olha para o ambiente e os riscos, o PCMSO olha para a <strong>pessoa</strong>: acompanha, por meio de exames médicos, se a exposição está afetando a saúde de quem trabalha.</p>
+<p>O objetivo não é apenas cumprir uma exigência legal, mas <strong>rastrear precocemente</strong> danos à saúde — antes que virem uma doença ocupacional consolidada, um afastamento ou um passivo trabalhista.</p>
+
+<h2>Para que serve o PCMSO?</h2>
+<p>Na prática, o PCMSO cumpre três funções principais:</p>
+<ul>
+<li><strong>Prevenir e rastrear doenças ocupacionais</strong>, detectando alterações na saúde ligadas à exposição a riscos (ruído, agentes químicos, esforço físico, riscos psicossociais etc.).</li>
+<li><strong>Definir e organizar os exames médicos</strong> de cada função, de acordo com os riscos identificados no PGR.</li>
+<li><strong>Gerar dados de saúde coletiva</strong> por meio do relatório analítico anual, que ajuda a empresa a corrigir o ambiente de trabalho e a direcionar ações de prevenção.</li>
+</ul>
+
+<h2>Quem é obrigado a ter PCMSO?</h2>
+<p>Como regra geral, <strong>toda organização que admite trabalhadores como empregados</strong> deve elaborar e implementar o PCMSO. A NR-7 prevê situações de <strong>dispensa</strong> ou de <strong>programa simplificado</strong> para organizações de menor porte e grau de risco (por exemplo, o MEI e determinadas empresas de graus de risco 1 e 2 com número reduzido de empregados), mas o enquadramento depende da redação vigente da norma e das regras do eSocial.</p>
+<p>Importante: as faixas de dispensa e simplificação mudam com as revisões da NR. <strong>Confirme sempre a redação vigente</strong> da NR-7 e a orientação do médico responsável antes de decidir se sua empresa está dispensada — presumir dispensa por engano é um erro caro em fiscalização.</p>
+
+<h2>Os exames ocupacionais e o ASO</h2>
+<p>O coração operacional do PCMSO são os <strong>exames médicos ocupacionais</strong>. Para cada um, o médico emite o <strong>ASO — Atestado de Saúde Ocupacional</strong>, que registra se o trabalhador está <strong>apto ou inapto</strong> para a função.</p>
+<table>
+<tr><th>Exame</th><th>Quando é feito</th></tr>
+<tr><td>Admissional</td><td>Antes de o trabalhador começar a exercer a função</td></tr>
+<tr><td>Periódico</td><td>Em intervalos definidos conforme o risco e a idade do trabalhador</td></tr>
+<tr><td>De retorno ao trabalho</td><td>Após afastamento igual ou superior a 30 dias por doença/acidente</td></tr>
+<tr><td>De mudança de função</td><td>Quando a alteração expõe o trabalhador a novos riscos</td></tr>
+<tr><td>Demissional</td><td>No desligamento, dentro dos prazos previstos na norma</td></tr>
+</table>
+<p>Os exames são <strong>custeados pela empresa</strong> e gratuitos para o trabalhador. Guardar os ASO e os prontuários pelos prazos exigidos é uma das obrigações mais fiscalizadas — a falta do ASO admissional, por exemplo, é autuação praticamente certa.</p>
+
+<h2>PCMSO e PGR: um alimenta o outro</h2>
+<p>Um erro comum é tratar PCMSO e <a href="../gro-pgr-nr1-iso-45001/">PGR</a> como programas independentes. Eles são <strong>complementares</strong>: o PGR levanta os riscos do ambiente; o PCMSO usa esse levantamento para decidir <em>quais exames</em> cada função precisa e para monitorar a saúde de quem está exposto. Um PCMSO que não parte dos riscos do PGR é apenas uma pilha de exames genéricos — não previne nada.</p>
+<p>Fecha o ciclo o <strong>relatório analítico anual</strong> do PCMSO: ele consolida os resultados de saúde do ano e deve realimentar o PGR, indicando onde o ambiente precisa de correção. É esse vaivém entre os dois programas que caracteriza uma gestão de SST madura.</p>
+
+<h2>PCMSO e ISO 45001: da obrigação legal ao sistema de gestão</h2>
+<p>Ter PCMSO cumpre a NR-7 — é o mínimo legal. Mas empilhar ASOs numa gaveta não reduz, por si só, os afastamentos. É aí que entra a <strong>ISO 45001</strong>, a norma internacional de gestão de segurança e saúde ocupacional. Ela pega os dados do PCMSO e do PGR e os transforma em um ciclo de <strong>melhoria contínua</strong>: identificar perigos, avaliar riscos, aplicar a hierarquia de controles, medir indicadores de saúde e agir sobre as causas.</p>
+<p>Na prática, a NR-7 diz <em>quais exames</em> você precisa fazer; a ISO 45001 diz <em>o que fazer com o resultado</em> para que a empresa realmente adoeça menos. Dominar essa lógica de gestão é o que diferencia o profissional que apenas cumpre a norma daquele que estrutura a saúde ocupacional da empresa — e costuma abrir as portas dos cargos melhor remunerados, como mostramos em <a href="../quanto-ganha-tecnico-seguranca-do-trabalho/">quanto ganha um técnico de segurança do trabalho</a>.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Vá além do mínimo legal:</strong> no <a href="../../../pt/curso-iso-45001/">curso Gestor ISO 45001 — Do Zero ao Implementador SST</a> você aprende a integrar PCMSO, PGR e indicadores de saúde num sistema de gestão que reduz afastamentos, passa em auditoria e agrega valor real à empresa.</p></div>
+
+<h2>Perguntas frequentes sobre o PCMSO</h2>
+<div class="faq">
+<details><summary>Toda empresa é obrigada a ter PCMSO?</summary><p>Como regra, toda organização que admite trabalhadores como empregados deve elaborar e implementar o PCMSO. A NR-7 prevê situações de dispensa ou de programa simplificado para organizações de menor porte e grau de risco (por exemplo, MEI e algumas empresas de graus de risco 1 e 2 com poucos empregados), mas isso depende da redação vigente e do enquadramento no eSocial. Na dúvida, considere obrigatório e confirme com o médico responsável.</p></details>
+<details><summary>Qual a diferença entre PCMSO e PGR?</summary><p>O PGR (Programa de Gerenciamento de Riscos, da NR-1) identifica e controla os riscos do ambiente de trabalho. O PCMSO (NR-7) cuida da saúde do trabalhador exposto a esses riscos: define quais exames médicos cada função precisa e monitora a saúde ao longo do tempo. O PCMSO deve partir dos riscos levantados no PGR — um alimenta o outro.</p></details>
+<details><summary>O que é o ASO?</summary><p>ASO é o Atestado de Saúde Ocupacional, o documento emitido pelo médico após cada exame ocupacional (admissional, periódico, de retorno ao trabalho, de mudança de função e demissional). Ele registra se o trabalhador está apto ou inapto para a função e é uma das exigências mais fiscalizadas da NR-7.</p></details>
+<details><summary>Quem é responsável pelo PCMSO?</summary><p>O PCMSO deve estar sob a responsabilidade de um médico do trabalho (ou, quando a norma permite, de outro médico habilitado), chamado de médico coordenador. Ele define os exames, emite os ASO e elabora o relatório analítico anual. A empresa custeia o programa e os exames, que são gratuitos para o trabalhador.</p></details>
+</div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formação EAD em normas ISO para profissionais de gestão, qualidade, segurança e tecnologia.</p></div><div><h3>Cursos</h3><ul><li><a href="../../../pt/curso-iso-45001/">Curso ISO 45001 (PT-BR)</a></li><li><a href="../../../pt/curso-iso-42001/">Curso ISO/IEC 42001 (PT-BR)</a></li></ul></div><div><h3>Mais</h3><ul><li><a href="../../../pt/blog/">Blog</a></li><li><a href="../../../">Cursos en español</a></li></ul></div></div><p>© 2026 · Página gerenciada pela Isotecnia · Pagamentos processados pela Hotmart · Garantia de reembolso de 15 dias</p></div></footer>
+</body>
+</html>
