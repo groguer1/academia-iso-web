@@ -1,0 +1,28 @@
+name: Inyectar etiqueta GA4
+
+on:
+  workflow_dispatch:
+    inputs:
+      measurement_id:
+        description: 'ID de medicion GA4 (formato G-XXXXXXXXXX)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  inyectar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Inyectar gtag en todos los HTML
+        run: python3 .github/scripts/inject_ga.py "${{ github.event.inputs.measurement_id }}"
+
+      - name: Commit y push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && echo "Sin cambios" || (git commit -m "GA4: etiqueta ${{ github.event.inputs.measurement_id }} en todas las paginas" && git push)
