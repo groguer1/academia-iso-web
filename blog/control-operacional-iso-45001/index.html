@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control operacional ISO 45001 (8.1): qué exige y ejemplos</title>
+<meta name="description" content="Qué pide la cláusula 8.1 de ISO 45001:2018 —jerarquía de controles, gestión del cambio, compras, contratistas y externalización—, cómo encaja con la Ley de Prevención y ejemplos de controles.">
+<link rel="canonical" href="https://cursosiso.com/blog/control-operacional-iso-45001/">
+<meta property="og:title" content="Control operacional ISO 45001 (8.1): qué exige y ejemplos">
+<meta property="og:description" content="Qué pide la cláusula 8.1 de ISO 45001:2018 —jerarquía de controles, gestión del cambio, compras, contratistas y externalización—, cómo encaja con la Ley de Prevención y ejemplos de controles.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cursosiso.com/blog/control-operacional-iso-45001/">
+<meta property="og:locale" content="es_ES">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHQ990S1DG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KHQ990S1DG');</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Control operacional en ISO 45001 (cláusula 8.1): jerarquía de controles, cambios y contratistas", "description": "Qué pide la cláusula 8.1 de ISO 45001:2018 —jerarquía de controles, gestión del cambio, compras, contratistas y externalización—, cómo encaja con la Ley de Prevención y ejemplos de controles.", "datePublished": "2026-10-05", "dateModified": "2026-10-05", "inLanguage": "es-ES", "author": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://cursosiso.com/blog/control-operacional-iso-45001/"}}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cursosiso.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Control operacional ISO 45001", "item": "https://cursosiso.com/blog/control-operacional-iso-45001/"}]}
+</script>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Es obligatorio seguir la jerarquía de controles de ISO 45001?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La cláusula 8.1.2 pide un proceso para eliminar peligros y reducir riesgos usando la jerarquía en ese orden: eliminar, sustituir, controles de ingeniería y reorganización del trabajo, controles administrativos con formación y, en último lugar, equipos de protección individual."}}, {"@type": "Question", "name": "¿Qué relación tiene la cláusula 8.1 con la Ley de Prevención de Riesgos Laborales?", "acceptedAnswer": {"@type": "Answer", "text": "La jerarquía de controles recoge la misma lógica que los principios de la acción preventiva del artículo 15 de la Ley 31/1995: evitar los riesgos, sustituir lo peligroso, anteponer la protección colectiva a la individual y dar instrucciones. Y el control de contratistas conecta con la coordinación de actividades empresariales del artículo 24."}}, {"@type": "Question", "name": "¿Hay que controlar a los contratistas en ISO 45001?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Dentro de la cláusula 8.1.4 (compras) hay un apartado específico para contratistas y otro para procesos externalizados. En España, además, el artículo 24 de la Ley 31/1995 obliga a coordinarse cuando trabajadores de varias empresas coinciden en un mismo centro."}}]}
+</script>
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+.hero{background:#fff;border-bottom:1px solid var(--linea)}
+.hero .wrap{padding:64px 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2.5rem;align-items:center}
+.hero h1{font-size:clamp(1.9rem,4.4vw,2.9rem);margin:.7rem 0 1rem}
+.hero .sub{font-size:1.15rem;color:var(--gris);max-width:56ch;margin-bottom:1.4rem}
+.kicker{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--curso);font-weight:700}
+.precio{font-size:1.55rem;font-weight:700;color:var(--azul);margin-right:1.2rem;white-space:nowrap}
+.compra{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.cta{display:inline-block;background:var(--acento);color:#fff;text-decoration:none;padding:.85rem 1.7rem;border-radius:6px;font-weight:700;font-size:1.02rem;border:none}
+.cta:hover{background:#CF4A15}
+.nota-compra{font-size:.83rem;color:var(--gris);width:100%}
+.spine{display:flex;flex-direction:column;gap:.35rem;border-left:4px solid var(--curso);padding-left:1rem;font-family:'DM Serif Display',Georgia,serif;color:var(--gris)}
+.spine span{font-size:1.05rem;line-height:1.35}
+.spine .sp-num{color:var(--curso);font-size:1.25rem}
+.spine .sp-label{font-family:'Inter',sans-serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.4rem}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.spine{flex-direction:row;flex-wrap:wrap;border-left:none;border-top:4px solid var(--curso);padding:.8rem 0 0;gap:.9rem}.spine .sp-label{width:100%}}
+section{padding:54px 0}
+section.alt{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.1rem}
+.card{background:#fff;border:1px solid var(--linea);border-radius:8px;padding:1.3rem 1.4rem}
+section.alt .card{background:var(--fondo)}
+.card h3{font-size:1.12rem;margin-bottom:.5rem}
+.card p{font-size:.95rem;color:var(--gris);margin:0}
+ul.check{list-style:none;max-width:62ch}
+ul.check li{padding:.45rem 0 .45rem 2rem;position:relative}
+ul.check li::before{content:"✓";position:absolute;left:.3rem;color:var(--verde);font-weight:700}
+details.mod{background:#fff;border:1px solid var(--linea);border-radius:7px;margin-bottom:.65rem}
+section.alt details.mod{background:var(--fondo)}
+details.mod summary{padding:.95rem 1.15rem;cursor:pointer;font-weight:600;list-style:none;display:flex;gap:.9rem;align-items:baseline}
+details.mod summary::-webkit-details-marker{display:none}
+details.mod summary::after{content:"+";margin-left:auto;color:var(--curso);font-weight:700;font-size:1.2rem;line-height:1}
+details.mod[open] summary::after{content:"−"}
+details.mod .mnum{font-family:'DM Serif Display',Georgia,serif;color:var(--curso);min-width:2ch}
+details.mod ul{padding:0 1.2rem 1.1rem 3.1rem}
+details.mod li{margin-bottom:.3rem;color:var(--gris);font-size:.96rem}
+details.mod > div{padding:0 1.2rem 1.1rem;color:var(--gris)}
+.marco p{max-width:70ch}
+.cta-final{text-align:center;background:var(--azul);color:#fff}
+.cta-final h2{color:#fff}
+.cta-final p{color:#C9D8E6;max-width:60ch;margin:0 auto 1.4rem}
+.cta-final .precio{color:#fff}
+.garantia{font-size:.9rem;color:#9FB8D0;margin-top:1.2rem}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.fade{animation:fadeUp .5s ease-out both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.fade{animation:none}html{scroll-behavior:auto}}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.95rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.card .p-precio{font-weight:700;color:var(--azul);font-size:1.15rem;margin:.6rem 0}
+.card .cta{font-size:.95rem;padding:.65rem 1.3rem}
+.card ul{padding-left:1.1rem;color:var(--gris);font-size:.92rem;margin-bottom:.4rem}
+</style>
+</head>
+<body class="site">
+<header class="site"><div class="wrap"><a class="logo" href="../../">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../#cursos">Cursos</a><a href="../../blog/">Blog</a><a href="../../recursos/">Plantillas</a><a class="lang" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
+<main class="main">
+<article class="post">
+
+<p class="breadcrumb"><a href="/">Inicio</a> › <a href="/blog/">Blog</a> › Control operacional ISO 45001</p>
+
+<h1>Control operacional en ISO 45001 (cláusula 8.1): jerarquía de controles, cambios y contratistas</h1>
+
+<p class="meta">Actualizado: octubre de 2026 · 6 min de lectura</p>
+
+<p>La cláusula 8.1 es donde un sistema de seguridad y salud en el trabajo deja de ser una evaluación de riesgos y pasa a ser una forma de trabajar. Ya sabes qué peligros hay en cada puesto; la 8.1 pregunta qué haces para que no se materialicen, en qué orden eliges las medidas y cómo controlas lo que cambia y lo que hacen otras empresas dentro de tus instalaciones.</p>
+
+<p><strong>Qué versión se explica aquí:</strong> <strong>ISO 45001:2018</strong>. Según la ficha oficial de ISO, sigue vigente («this version remains current»), tiene una enmienda de 2024 y su sustituta está todavía en fase de borrador (ISO/DIS 45001). Mientras la nueva edición no se publique, es contra la 2018 contra la que se certifica y se audita.</p>
+
+<h2>Cómo está organizada la cláusula 8.1</h2>
+
+<p>A diferencia de la 8.1 de ISO 9001 o de ISO 14001, la de ISO 45001 está partida en cuatro apartados:</p>
+
+<table>
+<tr><th>Apartado</th><th>De qué trata</th></tr>
+<tr><td><strong>8.1.1</strong> Generalidades</td><td>Fijar criterios para los procesos, controlarlos conforme a esos criterios, conservar la información documentada necesaria y <strong>adaptar el trabajo a los trabajadores</strong>. En centros donde trabajan varias empresas, coordinar con ellas las partes del sistema que les afectan.</td></tr>
+<tr><td><strong>8.1.2</strong> Eliminar peligros y reducir riesgos</td><td>La <strong>jerarquía de controles</strong>, en un orden fijo.</td></tr>
+<tr><td><strong>8.1.3</strong> Gestión del cambio</td><td>Controlar los cambios, temporales y permanentes, que afecten al desempeño en seguridad y salud.</td></tr>
+<tr><td><strong>8.1.4</strong> Compras</td><td>Dividida en generalidades, <strong>contratistas</strong> y <strong>externalización</strong>.</td></tr>
+</table>
+
+<p>La preparación ante emergencias no está aquí: va aparte, en la 8.2.</p>
+
+<h2>La jerarquía de controles (8.1.2)</h2>
+
+<p>Es el corazón de la cláusula. La norma pide un proceso para eliminar peligros y reducir riesgos aplicando estas medidas, por este orden:</p>
+
+<ol>
+<li><strong>Eliminar</strong> el peligro.</li>
+<li><strong>Sustituir</strong> por procesos, operaciones, materiales o equipos menos peligrosos.</li>
+<li>Usar <strong>controles de ingeniería y reorganizar el trabajo</strong>.</li>
+<li>Usar <strong>controles administrativos</strong>, incluida la formación.</li>
+<li>Usar <strong>equipos de protección individual</strong> adecuados.</li>
+</ol>
+
+<p>El orden importa porque cada escalón depende menos de que alguien haga lo correcto que el siguiente. Un peligro eliminado no necesita vigilancia; un EPI solo protege si se lleva puesto, bien ajustado y en buen estado. Por eso un auditor desconfía de una evaluación de riesgos en la que casi todas las medidas son «formación» y «EPI»: suele significar que nadie se planteó los escalones de arriba.</p>
+
+<h2>Lo mismo que ya dice la Ley de Prevención</h2>
+
+<p>En España esto no es nuevo. El artículo 15 de la <a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292">Ley 31/1995 de Prevención de Riesgos Laborales</a> enumera los principios de la acción preventiva, y varios coinciden con la jerarquía:</p>
+
+<table>
+<tr><th>Jerarquía ISO 45001</th><th>Artículo 15.1 de la Ley 31/1995</th></tr>
+<tr><td>Eliminar el peligro</td><td>a) «Evitar los riesgos»</td></tr>
+<tr><td>Sustituir</td><td>f) «Sustituir lo peligroso por lo que entrañe poco o ningún peligro»</td></tr>
+<tr><td>Controles de ingeniería frente a EPI</td><td>h) «Adoptar medidas que antepongan la protección colectiva a la individual»</td></tr>
+<tr><td>Controles administrativos y formación</td><td>i) «Dar las debidas instrucciones a los trabajadores»</td></tr>
+</table>
+
+<p>Y el «adaptar el trabajo a los trabajadores» de la 8.1.1 tiene su equivalente en la letra d) del mismo artículo: adaptar el trabajo a la persona, en particular en la concepción de los puestos. Una empresa que ya cumple de verdad la ley tiene gran parte de la 8.1 hecha; lo que suele faltarle es poder enseñarlo como proceso.</p>
+
+<h2>Ejemplos de controles, escalón a escalón</h2>
+
+<table>
+<tr><th>Riesgo</th><th>Escalón alto</th><th>Escalón bajo (complemento)</th></tr>
+<tr><td>Caída al limpiar ventanales en altura</td><td>Eliminar: ventanas abatibles que se limpian desde dentro</td><td>Si no es posible: plataforma elevadora y arnés, con formación</td></tr>
+<tr><td>Exposición a un disolvente en un taller</td><td>Sustituir: producto en base agua</td><td>Ventilación localizada y guantes adecuados</td></tr>
+<tr><td>Atrapamiento en una máquina</td><td>Ingeniería: resguardo con enclavamiento</td><td>Procedimiento de consignación para mantenimiento</td></tr>
+<tr><td>Sobreesfuerzo al mover cajas</td><td>Reorganizar: mesa elevadora, cajas de menos peso</td><td>Formación en manipulación de cargas</td></tr>
+<tr><td>Atropello en el almacén</td><td>Separar físicamente pasillos de personas y carretillas</td><td>Normas de circulación y chaleco de alta visibilidad</td></tr>
+</table>
+
+<p>Casi nunca basta un solo escalón. Lo que se espera es que los de abajo complementen a los de arriba, no que los sustituyan.</p>
+
+<h2>Gestión del cambio (8.1.3)</h2>
+
+<p>Muchos accidentes ocurren justo después de cambiar algo: una máquina nueva, un turno distinto, otra distribución del almacén, un producto químico que entra por primera vez. La 8.1.3 pide un proceso para que esos cambios, tanto los permanentes como los temporales, se analicen <strong>antes</strong> de hacerlos, y para revisar las consecuencias de los que no se previeron.</p>
+
+<p>En la práctica basta con que exista un punto de control: quien propone el cambio rellena una ficha corta, el responsable de prevención valora si cambia algún riesgo y, si es así, se actualiza la evaluación antes de arrancar. La evidencia que pide el auditor es esa ficha, no un procedimiento largo.</p>
+
+<h2>Compras, contratistas y externalización (8.1.4)</h2>
+
+<p>La norma separa tres situaciones:</p>
+
+<ul>
+<li><strong>Compras en general:</strong> que lo que compras —equipos, productos, servicios— cumpla los requisitos de seguridad y salud del sistema. Un ejemplo típico: exigir la ficha de datos de seguridad antes de que un producto químico entre en el almacén.</li>
+<li><strong>Contratistas:</strong> coordinarse con las empresas que trabajan en tus instalaciones, para que sus actividades no pongan en riesgo a tu gente ni las tuyas a la suya, y tener criterios para elegirlas.</li>
+<li><strong>Externalización:</strong> si sacas fuera una función o un proceso, sigue siendo tu responsabilidad que esté controlado.</li>
+</ul>
+
+<p>En España la parte de contratistas también tiene base legal. El artículo 24 de la Ley 31/1995 dice que, cuando en un mismo centro trabajan dos o más empresas, «éstas deberán cooperar en la aplicación de la normativa sobre prevención de riesgos laborales», y que la empresa titular del centro debe darles «la información y las instrucciones adecuadas». La coordinación de actividades empresariales que ya se hace por ley es, por tanto, la principal evidencia de esta parte de la norma.</p>
+
+<h2>Cuánto hay que documentar</h2>
+
+<p>La 8.1.1 pide conservar la información documentada <strong>necesaria para tener confianza</strong> en que los procesos se llevan a cabo según lo planificado. No pide un procedimiento por tarea. Lo que el auditor va a querer ver son evidencias de que los controles funcionan: revisiones de resguardos y equipos, registros de entrega de EPI, fichas de cambio, documentación de coordinación con contratistas. La lista completa está en <a href="/blog/documentos-obligatorios-iso-45001/">documentos obligatorios de ISO 45001</a>.</p>
+
+<p>Si quieres comparar con la norma ambiental, la cláusula equivalente está explicada en <a href="/blog/control-operacional-iso-14001/">control operacional en ISO 14001</a>, y los métodos para valorar cada riesgo antes de elegir el control, en <a href="/blog/evaluacion-riesgos-iso-45001-metodologias/">evaluación de riesgos ISO 45001: 4 metodologías con ejemplos</a>.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Fórmate para implantarlo tú:</strong> el <a href="../../curso-iso-45001/">curso ISO 45001</a> recorre la norma cláusula a cláusula, de la evaluación de riesgos al control operacional y la auditoría interna.</p></div>
+
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días</p></div></footer>
+</body>
+</html>
