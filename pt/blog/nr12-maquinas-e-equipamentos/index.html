@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHQ990S1DG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KHQ990S1DG');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NR-12: treinamento, validade e o que a norma exige</title>
+<meta name="description" content="NR-12 explicada item a item: a quem se aplica, proteções, parada de emergência, bloqueio, quem pode ministrar o treinamento e por que a norma não fixa carga horária nem validade.">
+<link rel="canonical" href="https://cursosiso.com/pt/blog/nr12-maquinas-e-equipamentos/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="NR-12: treinamento, validade e o que a norma exige">
+<meta property="og:description" content="NR-12 explicada item a item: a quem se aplica, proteções, parada de emergência, bloqueio, quem pode ministrar o treinamento e por que a norma não fixa carga horária nem validade.">
+<meta property="og:url" content="https://cursosiso.com/pt/blog/nr12-maquinas-e-equipamentos/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-45001-pt.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NR-12: treinamento, validade e o que a norma exige">
+<meta name="twitter:description" content="NR-12 explicada item a item: a quem se aplica, proteções, parada de emergência, bloqueio, quem pode ministrar o treinamento e por que a norma não fixa carga horária nem validade.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-45001-pt.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post h3{font-size:1.15rem;margin-top:1.6rem;margin-bottom:.4rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.95rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.faq details{border:1px solid var(--linea);border-radius:6px;padding:.2rem 1rem;margin:.7rem 0;background:#fff}
+.tabla-wrap{overflow-x:auto}
+.faq summary{font-weight:600;cursor:pointer;padding:.7rem 0;color:var(--azul)}
+.faq details[open] summary{margin-bottom:.4rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "NR-12: treinamento, validade e o que a norma exige", "description": "NR-12 explicada item a item: a quem se aplica, proteções, parada de emergência, bloqueio, quem pode ministrar o treinamento e por que a norma não fixa carga horária nem validade.", "inLanguage": "pt-BR", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-10-14", "dateModified": "2026-10-14", "image": "https://cursosiso.com/assets/og/iso-45001-pt.svg", "mainEntityOfPage": "https://cursosiso.com/pt/blog/nr12-maquinas-e-equipamentos/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Início", "item": "https://cursosiso.com/pt/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/pt/blog/"}, {"@type": "ListItem", "position": 3, "name": "NR-12: treinamento, validade e o que a norma exige", "item": "https://cursosiso.com/pt/blog/nr12-maquinas-e-equipamentos/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Qual a validade do treinamento NR-12?", "acceptedAnswer": {"@type": "Answer", "text": "A NR-12 não fixa prazo de validade nem reciclagem periódica. A reciclagem é obrigatória sempre que houver modificações significativas nas instalações ou na operação das máquinas, ou troca de métodos, processos e organização do trabalho que impliquem novos riscos (12.16.8). E a capacitação só vale para o empregador que a realizou (12.16.6), salvo as exceções de microempresas e de operadores de injetoras."}}, {"@type": "Question", "name": "Qual a carga horária do curso NR-12?", "acceptedAnswer": {"@type": "Answer", "text": "A norma não fixa carga horária para a capacitação geral: diz que ela deve ter carga mínima definida pelo empregador, suficiente para o trabalhador executar suas atividades com segurança, e realizada durante a jornada (12.16.3, alínea c). A única carga fixada é a dos operadores de máquinas injetoras: oito horas por tipo de máquina do Anexo IX (12.16.11)."}}, {"@type": "Question", "name": "Quem pode ministrar o treinamento NR-12?", "acceptedAnswer": {"@type": "Answer", "text": "Trabalhadores ou profissionais qualificados para esse fim, com supervisão de um profissional legalmente habilitado, que responde pelo conteúdo, a forma, a carga horária, a qualificação dos instrutores e a avaliação dos capacitados (12.16.3, alínea e). Em microempresas e empresas de pequeno porte, pode ministrar um trabalhador da própria empresa capacitado em entidade oficial de ensino de educação profissional (12.16.3.1)."}}, {"@type": "Question", "name": "A NR-12 foi atualizada em 2025 ou 2026?", "acceptedAnswer": {"@type": "Answer", "text": "Não até a data desta consulta. A página oficial da NR-12 no Ministério do Trabalho e Emprego indica como última modificação a Portaria MTE nº 344, de 21 de março de 2024. A última alteração substancial foi a da Portaria SEPRT nº 916, de 30 de julho de 2019."}}, {"@type": "Question", "name": "A quais máquinas a NR-12 não se aplica?", "acceptedAnswer": {"@type": "Answer", "text": "Às movidas por força humana ou animal, às expostas em museus e feiras sem uso produtivo, aos eletrodomésticos, aos equipamentos estáticos, às ferramentas portáteis e transportáveis elétricas que atendam a norma técnica tipo C, e às máquinas certificadas pelo INMETRO que atendam todos os requisitos de construção ligados à segurança (12.1.4)."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../../pt/">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../../pt/#cursos">Cursos</a><a href="../../../pt/blog/">Blog</a><a class="lang" href="../../../" hreflang="es" lang="es">ES</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../../pt/">Início</a></li><li><a href="../">Blog</a></li><li aria-current="page">Segurança e saúde</li></ol></div>
+<h1>NR-12: treinamento, validade e o que a norma exige</h1>
+<p class="meta">Academia ISO · 14 de outubro de 2026 · Segurança e saúde</p>
+
+<p>A <strong>NR-12</strong> é a norma regulamentadora de <strong>segurança no trabalho em máquinas e equipamentos</strong>. Ela define as medidas de proteção que as máquinas devem ter, como elas devem ser mantidas e quem pode operá-las, em todas as atividades econômicas, tanto na fase de projeto e fabricação quanto na de utilização (12.1.1).</p>
+
+<p>É também uma das normas com mais mitos em torno do treinamento. Muita gente procura «quantas horas tem o curso NR-12» e «qual a validade do certificado», e a resposta que a própria norma dá surpreende: <strong>ela não fixa nem uma coisa nem outra</strong>, salvo num caso. Este guia segue o texto vigente item a item, para você saber o que ela exige de fato.</p>
+
+<h2>Qual é o texto vigente</h2>
+<p>A NR-12 atual tem a estrutura dada pela <strong>Portaria SEPRT nº 916, de 30 de julho de 2019</strong>, que o Ministério do Trabalho e Emprego descreve como a última alteração substancial: reordenou a norma, criou cortes temporais para máquinas novas e usadas e simplificou obrigações para micro e pequenas empresas. Depois disso houve ajustes pontuais, e a página oficial da norma indica como <strong>última modificação a Portaria MTE nº 344, de 21 de março de 2024</strong>. Até a data desta consulta, não há alteração da NR-12 publicada em 2025 nem em 2026.</p>
+
+<h2>A quem se aplica</h2>
+<p>A NR-12 vale para máquinas e equipamentos <strong>novos e usados</strong> (12.1.2), e para todas as fases de utilização: transporte, montagem, instalação, ajuste, operação, limpeza, manutenção, inspeção, desativação e desmonte (12.1.1.1). Também alcança quem fabrica, importa, vende, aluga ou cede máquinas (12.15).</p>
+<p>Ela <strong>não se aplica</strong> (12.1.4):</p>
+<ul>
+<li>às máquinas movidas por força humana ou animal;</li>
+<li>às expostas em museus, feiras e eventos, como antiguidades, sem uso produtivo;</li>
+<li>aos eletrodomésticos;</li>
+<li>aos equipamentos estáticos (mas vale para as máquinas instaladas neles, 12.1.4.1);</li>
+<li>às ferramentas portáteis e transportáveis elétricas que atendam norma técnica tipo C;</li>
+<li>às máquinas certificadas pelo INMETRO, desde que atendam todos os requisitos técnicos de construção relacionados à segurança.</li>
+</ul>
+<p>As máquinas destinadas comprovadamente à exportação estão isentas dos requisitos técnicos (12.1.3).</p>
+
+<h2>Treinamento NR-12: carga horária e validade</h2>
+<p>Quem opera, mantém, inspeciona ou faz qualquer intervenção em máquinas precisa ser <strong>habilitado, qualificado ou capacitado, e autorizado</strong> pelo empregador (12.16.1). A capacitação é providenciada pela empresa e tem de ser compatível com a função do trabalhador (12.16.2).</p>
+
+<h3>Carga horária: quem define é o empregador</h3>
+<p>A NR-12 diz que a capacitação deve (12.16.3):</p>
+<ul>
+<li>acontecer <strong>antes</strong> de o trabalhador assumir a função;</li>
+<li>ser <strong>sem custo</strong> para o trabalhador e <strong>dentro da jornada</strong>;</li>
+<li>ter <strong>carga horária mínima definida pelo empregador</strong>, que garanta ao trabalhador executar suas atividades com segurança;</li>
+<li>seguir o conteúdo programático do <strong>Anexo II</strong>;</li>
+<li>ser ministrada por trabalhadores ou profissionais qualificados, com supervisão de um <strong>profissional legalmente habilitado</strong>.</li>
+</ul>
+<p>Ou seja, não existe um «curso NR-12 de 8 horas» ou «de 16 horas» definido pela norma: a carga é a que o profissional responsável considerar necessária para aquela máquina e aquela função. A <strong>única exceção</strong> são os operadores de <strong>máquinas injetoras</strong> de material plástico, cujo curso tem no mínimo <strong>oito horas por tipo de máquina</strong> do Anexo IX, com conteúdo próprio e instrutor com formação técnica de nível médio (12.16.11).</p>
+
+<h3>Validade: não há prazo, há reciclagem por mudança</h3>
+<p>A norma <strong>não estabelece validade em anos</strong> nem reciclagem periódica, ao contrário da <a href="../nr10-seguranca-em-eletricidade/">NR-10</a> ou da <a href="../nr35-trabalho-em-altura/">NR-35</a>, que exigem reciclagem a cada dois anos. Na NR-12, a reciclagem é obrigatória <strong>sempre que houver modificações significativas</strong> nas instalações e na operação das máquinas, ou troca de métodos, processos e organização do trabalho que impliquem novos riscos (12.16.8). Também nesse caso a carga é definida pelo empregador e o conteúdo deve atender à situação que motivou a reciclagem (12.16.8.1).</p>
+<p>O que a norma limita é <strong>onde</strong> a capacitação vale: ela só tem validade <strong>para o empregador que a realizou</strong> e nas condições fixadas pelo profissional que a supervisionou (12.16.6). Quem muda de empresa, em regra, é capacitado de novo. Há duas exceções: o trabalhador de micro ou pequena empresa com certificado de entidade oficial de ensino profissional (12.16.3.2) e o operador de injetora com o curso do 12.16.11 (12.16.6.1).</p>
+
+<h3>Quem pode ministrar e quem assina</h3>
+<p>Pode ministrar quem for qualificado para isso, sob supervisão de um <strong>profissional legalmente habilitado</strong>, que se responsabiliza pela adequação do conteúdo, da forma, da carga horária, da qualificação dos instrutores e da avaliação (12.16.3, alínea e). O glossário da norma (Anexo IV) define as três figuras:</p>
+<ul>
+<li><strong>Qualificado</strong>: concluiu curso específico na sua área de atuação, reconhecido pelo sistema oficial de ensino.</li>
+<li><strong>Legalmente habilitado</strong>: é qualificado e tem registro no conselho de classe competente, se necessário.</li>
+<li><strong>Capacitado</strong>: recebeu capacitação sob orientação e responsabilidade de um profissional habilitado.</li>
+</ul>
+<p>Nas <strong>microempresas e empresas de pequeno porte</strong>, a capacitação pode ser dada por um trabalhador da própria empresa que tenha sido capacitado em entidade oficial de ensino de educação profissional (12.16.3.1), e nesse caso a capacitação segue todo o 12.16.3 menos a alínea «e», a do instrutor qualificado com supervisão de profissional habilitado (12.16.3.1.2). O empregador continua responsável por ela.</p>
+<p>O material didático, a lista de presença ou certificado, o currículo dos instrutores e a avaliação devem ficar disponíveis para a fiscalização (12.16.5), e a função de quem opera máquinas deve constar no registro de empregado e na CTPS (12.16.9).</p>
+
+<h3>Conteúdo programático mínimo (Anexo II)</h3>
+<p>A capacitação para operação tem etapa <strong>teórica e prática</strong> e cobre no mínimo:</p>
+<ol>
+<li>os riscos de cada máquina e as proteções contra cada um deles;</li>
+<li>como funcionam as proteções, como e por que devem ser usadas;</li>
+<li>quando uma proteção pode ser removida, e por quem (em geral, só inspeção e manutenção);</li>
+<li>o que fazer se uma proteção for danificada ou perder a função;</li>
+<li>os princípios de segurança na utilização da máquina;</li>
+<li>segurança para riscos mecânicos, elétricos e outros relevantes;</li>
+<li>método de trabalho seguro;</li>
+<li>permissão de trabalho;</li>
+<li>bloqueio da máquina durante inspeção, limpeza, lubrificação e manutenção.</li>
+</ol>
+<p>Para operadores de máquinas <strong>autopropelidas</strong>, somam-se noções de legislação de trânsito e de SST, EPC e EPI, inspeção e manutenção, sinalização, emergência e primeiros socorros, com a etapa prática supervisionada e documentada (item 1.1 do Anexo II). Esses operadores também devem portar cartão de identificação com nome, função e foto, renovado no máximo a cada ano mediante exame médico (12.16.10).</p>
+
+<h2>O que a máquina precisa ter</h2>
+<p>As medidas de proteção seguem uma ordem de prioridade: primeiro as <strong>coletivas</strong>, depois as administrativas e de organização do trabalho, e por último as <strong>individuais</strong> (12.1.8). Na prática, isso quer dizer proteger a máquina antes de entregar um <a href="../nr6-epi-o-que-e/">EPI</a>.</p>
+<ul>
+<li><strong>Sistemas de segurança nas zonas de perigo</strong>: proteções fixas, proteções móveis e dispositivos de segurança interligados (12.5.1). A <strong>proteção fixa</strong> só se remove com ferramenta; a <strong>móvel</strong> abre sem ferramenta e deve ter intertravamento (12.5.4). A categoria de segurança sai da <strong>apreciação de riscos</strong> e o sistema fica sob responsabilidade técnica de profissional legalmente habilitado (12.5.2).</li>
+<li><strong>Transmissões de força</strong> (correias, polias, engrenagens) com proteção fixa, ou móvel intertravada, que impeça o acesso por todos os lados (12.5.9).</li>
+<li><strong>Parada de emergência</strong>: um ou mais dispositivos, em local de fácil acesso e sempre desobstruídos, que nunca podem servir para dar partida (12.6.1 a 12.6.2). Ficam dispensadas as autopropelidas e as máquinas em que a parada não reduz o risco (12.6.1.2).</li>
+<li><strong>Manual de instruções</strong> em português do Brasil, disponível no local de trabalho (12.13.1 e 12.13.2). A micro ou pequena empresa sem manual de máquina fabricada antes de 24 de junho de 2012 deve elaborar uma <strong>ficha de informação</strong> com tipo, modelo, utilização prevista e medidas de segurança (12.13.5.3).</li>
+</ul>
+<p>Uma regra que tranquiliza quem tem máquinas antigas: não é obrigatório seguir normas técnicas publicadas <strong>depois</strong> da fabricação, importação ou adequação da máquina, desde que ela atenda a NR-12 de 2010 e suas alterações e as normas técnicas vigentes na época (12.1.9.2).</p>
+
+<h2>Manutenção e bloqueio</h2>
+<p>Manutenção, inspeção, reparo, limpeza e ajuste são feitos por profissionais capacitados, qualificados ou habilitados e formalmente autorizados, <strong>com a máquina parada</strong> e com (12.11.3):</p>
+<ul>
+<li>isolamento e descarga de todas as fontes de energia;</li>
+<li><strong>bloqueio mecânico e elétrico</strong> na posição desligado de todos os dispositivos de corte, com <strong>cartão ou etiqueta</strong> que traga data e hora do bloqueio, motivo e nome do responsável;</li>
+<li>medidas que garantam que não sobra energia capaz de gerar risco depois dos pontos de corte.</li>
+</ul>
+<p>Além disso, o operador faz uma <strong>inspeção rotineira</strong> no início de cada turno ou após nova preparação da máquina, e interrompe a atividade se encontrar anormalidade que afete a segurança (12.14.2). Esse registro não precisa ser feito em livro ou sistema (12.14.2.1). E os procedimentos de trabalho, elaborados a partir da apreciação de riscos, <strong>não podem ser a única medida de proteção</strong>: complementam as coletivas, não as substituem (12.14.1.1).</p>
+
+<h2>O que o trabalhador deve fazer</h2>
+<p>A NR-12 também tem deveres para o trabalhador (12.1.10): seguir os procedimentos seguros, <strong>não alterar proteções nem dispositivos de segurança</strong>, avisar o superior quando uma proteção for removida, danificada ou deixar de funcionar, participar dos treinamentos e colaborar com o empregador.</p>
+
+<h2>Checklist para a empresa</h2>
+<ol>
+<li><strong>Listar as máquinas</strong> e verificar se cada uma está ou não no alcance da NR-12 (12.1.4).</li>
+<li><strong>Fazer a apreciação de riscos</strong> de cada máquina e definir a categoria de segurança das proteções, com profissional legalmente habilitado.</li>
+<li><strong>Conferir proteções, intertravamentos e parada de emergência</strong> nas zonas de perigo e nas transmissões de força.</li>
+<li><strong>Garantir o manual em português</strong> ou, em micro e pequenas empresas com máquinas anteriores a 24 de junho de 2012, a ficha de informação.</li>
+<li><strong>Definir por escrito a carga horária</strong> de cada capacitação, com o conteúdo do Anexo II e a supervisão do profissional habilitado, e guardar material, lista, currículos e avaliações.</li>
+<li><strong>Prever a reciclagem</strong> sempre que mudar máquina, processo ou organização do trabalho, e capacitar de novo quem chega de outra empresa.</li>
+<li><strong>Implantar o bloqueio com etiqueta</strong> e os procedimentos de manutenção, e levar os riscos de máquinas ao inventário do <a href="../gro-pgr-nr1-iso-45001/">PGR da NR-1</a>.</li>
+</ol>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Das máquinas ao sistema de gestão:</strong> no <a href="../../../pt/curso-iso-45001/">curso Gestor ISO 45001 — Do Zero ao Implementador SST</a> você aprende a integrar os requisitos legais, como a NR-12, ao GRO e a um sistema de gestão que passa em auditoria. Ele <strong>não substitui a capacitação NR-12</strong>, que deve ser dada na própria empresa, com a parte prática e a supervisão que a norma exige.</p></div>
+
+<h2>Fontes</h2>
+<ul>
+<li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-12-nr-12">Página oficial da NR-12</a> no site do Ministério do Trabalho e Emprego, com o histórico de portarias e a indicação da última modificação (Portaria MTE nº 344, de 21/03/2024).</li>
+<li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-12-atualizada-2025.pdf">Texto da NR-12</a> com todas as alterações, publicado pelo MTE.</li>
+</ul>
+<p class="meta">Textos consultados em 14 de outubro de 2026.</p>
+
+<h2>Perguntas frequentes sobre a NR-12</h2>
+<div class="faq">
+<details><summary>Qual a validade do treinamento NR-12?</summary><p>A NR-12 não fixa prazo de validade nem reciclagem periódica. A reciclagem é obrigatória sempre que houver modificações significativas nas instalações ou na operação das máquinas, ou troca de métodos, processos e organização do trabalho que impliquem novos riscos (12.16.8). E a capacitação só vale para o empregador que a realizou (12.16.6), salvo as exceções de microempresas e de operadores de injetoras.</p></details>
+<details><summary>Qual a carga horária do curso NR-12?</summary><p>A norma não fixa carga horária para a capacitação geral: diz que ela deve ter carga mínima definida pelo empregador, suficiente para o trabalhador executar suas atividades com segurança, e realizada durante a jornada (12.16.3, alínea c). A única carga fixada é a dos operadores de máquinas injetoras: oito horas por tipo de máquina do Anexo IX (12.16.11).</p></details>
+<details><summary>Quem pode ministrar o treinamento NR-12?</summary><p>Trabalhadores ou profissionais qualificados para esse fim, com supervisão de um profissional legalmente habilitado, que responde pelo conteúdo, a forma, a carga horária, a qualificação dos instrutores e a avaliação dos capacitados (12.16.3, alínea e). Em microempresas e empresas de pequeno porte, pode ministrar um trabalhador da própria empresa capacitado em entidade oficial de ensino de educação profissional (12.16.3.1).</p></details>
+<details><summary>A NR-12 foi atualizada em 2025 ou 2026?</summary><p>Não até a data desta consulta. A página oficial da NR-12 no Ministério do Trabalho e Emprego indica como última modificação a Portaria MTE nº 344, de 21 de março de 2024. A última alteração substancial foi a da Portaria SEPRT nº 916, de 30 de julho de 2019.</p></details>
+<details><summary>A quais máquinas a NR-12 não se aplica?</summary><p>Às movidas por força humana ou animal, às expostas em museus e feiras sem uso produtivo, aos eletrodomésticos, aos equipamentos estáticos, às ferramentas portáteis e transportáveis elétricas que atendam a norma técnica tipo C, e às máquinas certificadas pelo INMETRO que atendam todos os requisitos de construção ligados à segurança (12.1.4).</p></details>
+</div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formação EAD em normas ISO para profissionais de gestão, qualidade, segurança e tecnologia.</p></div><div><h3>Cursos</h3><ul><li><a href="../../../pt/curso-iso-45001/">Curso ISO 45001 (PT-BR)</a></li><li><a href="../../../pt/curso-iso-42001/">Curso ISO/IEC 42001 (PT-BR)</a></li></ul></div><div><h3>Mais</h3><ul><li><a href="../../../pt/blog/">Blog</a></li><li><a href="../../../">Cursos en español</a></li></ul></div></div><p>© 2026 · Página gerenciada pela Isotecnia · Pagamentos processados pela Hotmart · Garantia de reembolso de 15 dias</p></div></footer>
+</body>
+</html>
