@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHQ990S1DG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KHQ990S1DG');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Investigación de accidentes: árbol de causas e ISO 45001</title>
+<meta name="description" content="Cómo investigar un accidente o un casi accidente: lo que obliga la Ley de Prevención, los plazos de notificación, el método del árbol de causas con un ejemplo y lo que pide la cláusula 10.2 de ISO 45001.">
+<link rel="canonical" href="https://cursosiso.com/blog/investigacion-accidentes-arbol-de-causas-iso-45001/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="Investigación de accidentes: árbol de causas e ISO 45001">
+<meta property="og:description" content="Cómo investigar un accidente o un casi accidente: lo que obliga la Ley de Prevención, los plazos de notificación, el método del árbol de causas con un ejemplo y lo que pide la cláusula 10.2 de ISO 45001.">
+<meta property="og:url" content="https://cursosiso.com/blog/investigacion-accidentes-arbol-de-causas-iso-45001/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-45001.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Investigación de accidentes: árbol de causas e ISO 45001">
+<meta name="twitter:description" content="Cómo investigar un accidente o un casi accidente: lo que obliga la Ley de Prevención, los plazos de notificación, el método del árbol de causas con un ejemplo y lo que pide la cláusula 10.2 de ISO 45001.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-45001.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post h3{font-size:1.15rem;margin-top:1.6rem;margin-bottom:.4rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.93rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+article.post ul,article.post ol{margin:0 0 1rem 1.3rem}
+article.post li{margin-bottom:.4rem}
+.ejemplo{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--azul-mid);border-radius:6px;padding:1.1rem 1.3rem;margin:1.5rem 0;font-size:.95rem}
+.ejemplo h3{margin-top:1rem}
+.ejemplo h3:first-child{margin-top:0}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.faq details{border:1px solid var(--linea);border-radius:6px;padding:.2rem 1rem;margin:.7rem 0;background:#fff}
+.faq summary{font-weight:600;cursor:pointer;padding:.7rem 0;color:var(--azul)}
+.faq details[open] summary{margin-bottom:.4rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Investigación de accidentes de trabajo: árbol de causas, la ley y la ISO 45001 (10.2)", "description": "Cómo investigar un accidente o un casi accidente: lo que obliga la Ley de Prevención, los plazos de notificación, el método del árbol de causas con un ejemplo y lo que pide la cláusula 10.2 de ISO 45001.", "inLanguage": "es", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-10-20", "dateModified": "2026-10-20", "image": "https://cursosiso.com/assets/og/iso-45001.svg", "mainEntityOfPage": "https://cursosiso.com/blog/investigacion-accidentes-arbol-de-causas-iso-45001/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cursosiso.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Investigación de accidentes de trabajo: árbol de causas, la ley y la ISO 45001 (10.2)", "item": "https://cursosiso.com/blog/investigacion-accidentes-arbol-de-causas-iso-45001/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Es obligatorio investigar los accidentes de trabajo?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. El artículo 16.3 de la Ley 31/1995 de Prevención de Riesgos Laborales obliga al empresario a investigar cuando se produce un daño para la salud de los trabajadores, o cuando la vigilancia de la salud indica que las medidas de prevención no bastan, para detectar las causas."}}, {"@type": "Question", "name": "¿Hay que investigar los casi accidentes?", "acceptedAnswer": {"@type": "Answer", "text": "La ley española habla de daños para la salud, así que no obliga expresamente a investigar un casi accidente. ISO 45001 sí lo pide: su definición de incidente incluye los sucesos que podían causar una lesión aunque no la causaran, y la cláusula 10.2 se aplica a todos los incidentes."}}, {"@type": "Question", "name": "¿Cuál es el plazo para notificar un accidente de trabajo?", "acceptedAnswer": {"@type": "Answer", "text": "El parte de accidente con baja se envía a la mutua o entidad gestora en un máximo de cinco días hábiles desde el accidente o desde la baja médica. Los accidentes sin baja van en una relación mensual, en los cinco primeros días hábiles del mes siguiente. Y si el accidente es mortal, grave, muy grave o afecta a más de cuatro trabajadores, además se comunica a la autoridad laboral en 24 horas (Orden de 16 de diciembre de 1987, artículos 3 y 6)."}}, {"@type": "Question", "name": "¿Qué es el árbol de causas?", "acceptedAnswer": {"@type": "Answer", "text": "Es un método de investigación de accidentes que describe el INSST en su NTP 274. Parte de la lesión y va hacia atrás preguntando, para cada hecho, qué tuvo que ocurrir para que se produjera, hasta llegar a las causas de organización. Busca causas, no responsables, y solo admite hechos probados."}}, {"@type": "Question", "name": "¿Qué pide ISO 45001 cuando hay un accidente?", "acceptedAnswer": {"@type": "Answer", "text": "La cláusula 10.2: reaccionar a tiempo para controlar la situación y sus consecuencias, evaluar con participación de los trabajadores si hace falta una acción correctiva investigando el incidente y sus causas, revisar la evaluación de riesgos, aplicar las medidas siguiendo la jerarquía de controles, comprobar después que han funcionado y conservar evidencia de todo ello."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../#cursos">Cursos</a><a href="../../blog/">Blog</a><a href="../../recursos/">Plantillas</a><a class="lang" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../">Inicio</a></li><li><a href="../">Blog</a></li><li aria-current="page">Seguridad y salud</li></ol></div>
+<h1>Investigación de accidentes de trabajo: árbol de causas, la ley y la ISO 45001 (10.2)</h1>
+<p class="meta">Academia ISO · 20 de octubre de 2026 · Seguridad y salud · 8 min de lectura</p>
+
+<p>Investigar un accidente no es buscar a quién culpar. Es averiguar qué falló para que no vuelva a pasar, y casi siempre lo que falló no está en el último gesto del trabajador sino bastante más atrás: en cómo estaba organizado el trabajo.</p>
+<p>En España la investigación es una obligación legal. ISO 45001 la convierte además en parte del sistema de gestión y la extiende a los casi accidentes. Este artículo explica lo que pide cada una, los plazos para notificar, y cómo usar el <strong>árbol de causas</strong>, el método que describe el INSST, con un ejemplo completo. La versión vigente es <strong>ISO 45001:2018</strong>; la revisión en curso todavía no se ha publicado.</p>
+
+<h2>Lo que obliga la ley española</h2>
+<p>La Ley 31/1995 de Prevención de Riesgos Laborales dice en su <strong>artículo 16.3</strong> que, cuando se produzca un daño para la salud de los trabajadores, o cuando la vigilancia de la salud muestre indicios de que las medidas de prevención no bastan, el empresario hará una investigación para <strong>detectar las causas</strong>.</p>
+<p>Alrededor de esa obligación hay otras tres que conviene tener juntas:</p>
+<ul>
+<li>La <strong>evaluación de riesgos</strong> se revisa, si hace falta, con ocasión de los daños para la salud que se hayan producido (artículo 16.2.a). Un accidente es la señal de que algo de la evaluación no estaba bien.</li>
+<li>El empresario guarda a disposición de la autoridad laboral la <strong>relación de accidentes y enfermedades profesionales</strong> que hayan causado una incapacidad laboral de más de un día de trabajo (artículo 23.1.e), y notifica por escrito los daños a la autoridad laboral (artículo 23.3).</li>
+<li>Los <strong>delegados de prevención</strong> tienen derecho a ser informados de los daños en cuanto el empresario los conozca, y pueden ir al lugar de los hechos, incluso fuera de su jornada (artículo 36.2.c).</li>
+</ul>
+
+<h2>Los plazos para notificar</h2>
+<p>Notificar e investigar son cosas distintas, pero se hacen a la vez. Los plazos los fija la Orden de 16 de diciembre de 1987, cuyos modelos y envío electrónico (el sistema <strong>Delt@</strong>) actualizó la Orden TAS/2926/2002:</p>
+<div class="tabla-wrap"><table>
+<tr><th>Qué</th><th>Cuándo</th><th>A quién</th></tr>
+<tr><td>Parte de accidente (con baja de al menos un día, sin contar el del accidente)</td><td>Máximo <strong>5 días hábiles</strong> desde el accidente o desde la baja médica</td><td>Mutua o entidad gestora</td></tr>
+<tr><td>Relación de accidentes sin baja médica</td><td>Mensual, en los <strong>5 primeros días hábiles</strong> del mes siguiente</td><td>Mutua o entidad gestora</td></tr>
+<tr><td>Accidente mortal, grave, muy grave o que afecte a <strong>más de cuatro trabajadores</strong></td><td>Además del parte, en un máximo de <strong>24 horas</strong></td><td>Autoridad laboral de la provincia</td></tr>
+</table></div>
+
+<h2>Lo que pide ISO 45001: la cláusula 10.2</h2>
+<p>ISO 45001 trata los incidentes y las no conformidades en la misma cláusula, la <strong>10.2</strong>. Lo primero que hay que saber es que su definición de <strong>incidente</strong> incluye los sucesos que podían causar una lesión o un daño a la salud aunque no lo hicieran: los casi accidentes. Ahí va más allá que la ley, que habla de daños.</p>
+<p>Resumida con nuestras palabras, la cláusula pide, cuando ocurre un incidente:</p>
+<ol>
+<li><strong>Reaccionar a tiempo</strong>: controlar la situación, corregirla y hacer frente a sus consecuencias.</li>
+<li><strong>Evaluar, con la participación de los trabajadores</strong>, si hace falta una acción correctiva para eliminar las causas raíz: investigar el incidente, determinar sus causas y ver si ha pasado algo parecido o podría pasar.</li>
+<li><strong>Revisar las evaluaciones de riesgos</strong> existentes.</li>
+<li><strong>Decidir y aplicar las medidas</strong> siguiendo la jerarquía de controles y la gestión del cambio, y evaluar los riesgos de los peligros nuevos o modificados antes de actuar.</li>
+<li><strong>Comprobar que las medidas han funcionado</strong> y cambiar el sistema de gestión si hace falta.</li>
+<li><strong>Conservar información documentada</strong> de la naturaleza de los incidentes, de las acciones tomadas y de sus resultados, incluida la eficacia, y comunicarla a los trabajadores.</li>
+</ol>
+<p>La misma lógica sirve para las no conformidades: la explicamos con ejemplos en <a href="../no-conformidades-acciones-correctivas-ejemplos/">No conformidades y acciones correctivas: ejemplos</a>. La participación de los trabajadores en la investigación es uno de los temas que la norma pide expresamente; lo tienes en <a href="../consulta-participacion-trabajadores-iso-45001/">Consulta y participación de los trabajadores en ISO 45001 (5.4)</a>.</p>
+
+<h2>El método del árbol de causas</h2>
+<p>El INSST lo describe en la <strong>NTP 274</strong>. Las NTP son guías de buenas prácticas, no normas obligatorias, pero esta es la referencia del método en España. Tiene dos fases.</p>
+<h3>1. Toma de datos</h3>
+<p>Se trata de reconstruir qué pasaba justo antes del accidente. La NTP insiste en cuatro reglas:</p>
+<ul>
+<li><strong>Se buscan causas, no responsables.</strong> Si la gente cree que se busca un culpable, deja de contar lo que vio.</li>
+<li><strong>Solo hechos probados</strong>, no interpretaciones ni juicios de valor. «Llevaba prisa» es una opinión; «la orden se entregó con 30 minutos de retraso» es un hecho.</li>
+<li><strong>Cuanto antes</strong>, y preguntando al accidentado, a los testigos y al mando directo.</li>
+<li><strong>En el lugar</strong>, mirando tanto las condiciones materiales (máquinas, instalaciones) como las de organización (métodos, procedimientos) y las personales (formación, experiencia).</li>
+</ul>
+<h3>2. Construir el árbol</h3>
+<p>Se empieza por el final, la lesión, y se va hacia atrás haciendo siempre la misma pregunta a cada hecho: <strong>«¿qué tuvo que ocurrir para que esto se produjera?»</strong>. Y después: «¿hizo falta algo más?». Las respuestas se enlazan de tres formas:</p>
+<div class="tabla-wrap"><table>
+<tr><th>Relación</th><th>Qué significa</th></tr>
+<tr><td>Cadena</td><td>Un hecho tiene un solo antecedente, sin el cual no habría ocurrido.</td></tr>
+<tr><td>Conjunción</td><td>Un hecho necesita dos o más antecedentes a la vez; ninguno basta por sí solo.</td></tr>
+<tr><td>Disyunción</td><td>Un mismo antecedente produce dos o más hechos distintos.</td></tr>
+</table></div>
+<p>Se sigue bajando hasta llegar a hechos sobre los que la empresa puede actuar, que casi siempre son de organización: algo que nadie tenía asignado, un procedimiento que no existía o que no se seguía, una formación que no se dio.</p>
+
+<h2>Un ejemplo completo</h2>
+<p>Un caso inventado para enseñar el método. En el almacén de una empresa de distribución, un mozo se hace un corte profundo en la palma de la mano izquierda al abrir una caja con un cúter.</p>
+<p>Las preguntas, de la lesión hacia atrás:</p>
+<ul>
+<li><strong>Corte en la palma.</strong> ¿Qué tuvo que ocurrir? Que la hoja se desviara hacia la mano que sujetaba la caja. ¿Algo más? Que no llevara guantes anticorte. <em>(Conjunción: hacían falta las dos cosas.)</em></li>
+<li><strong>La hoja se desvió.</strong> ¿Qué tuvo que ocurrir? Que cortara tirando hacia su cuerpo, con la caja en el suelo. ¿Algo más? Que la hoja estuviera desgastada y entrara a tirones. <em>(Conjunción.)</em></li>
+<li><strong>Caja en el suelo.</strong> Porque la mesa de desembalaje estaba ocupada por palés. ← Porque ese día entró más mercancía de la que cabía en la zona de recepción y nadie había previsto dónde dejarla. <em>(Cadena.)</em></li>
+<li><strong>Hoja desgastada.</strong> Porque el cúter no tenía cambio de hoja programado y las hojas de repuesto se pedían cuando alguien se acordaba. <em>(Cadena.)</em></li>
+<li><strong>Sin guantes.</strong> Porque se habían terminado en el puesto. ← Porque nadie tenía asignada la reposición de los equipos de protección. <em>(Cadena.)</em></li>
+</ul>
+<p>Al final del árbol no aparece «el trabajador fue descuidado». Aparecen tres fallos de organización: la zona de recepción no estaba dimensionada para los picos, el material de corte no tenía mantenimiento y los equipos de protección no tenían responsable.</p>
+<h3>Las medidas, por la jerarquía de controles</h3>
+<div class="tabla-wrap"><table>
+<tr><th>Nivel</th><th>Medida</th></tr>
+<tr><td>Eliminar</td><td>Pedir a los proveedores principales cajas con tira de apertura, que no necesitan cúter.</td></tr>
+<tr><td>Sustituir</td><td>Cúteres de seguridad con hoja que se retrae sola.</td></tr>
+<tr><td>Controles de ingeniería</td><td>Mesa de desembalaje fija y una zona de espera para los palés en los picos de entrada.</td></tr>
+<tr><td>Controles administrativos</td><td>Cambio de hoja programado, un responsable de reponer los equipos de protección y una instrucción de corte (siempre hacia fuera del cuerpo).</td></tr>
+<tr><td>Equipos de protección</td><td>Guantes anticorte disponibles en el puesto.</td></tr>
+</table></div>
+<p>Y lo que cierra la cláusula 10.2: revisar la evaluación de riesgos del puesto, que no contemplaba los picos de entrada, y volver al cabo de unas semanas a comprobar que las medidas se aplican y que no ha habido más cortes. La evaluación se explica en <a href="../evaluacion-riesgos-iso-45001-metodologias/">evaluación de riesgos en ISO 45001</a>.</p>
+
+<h2>Qué pide ver el auditor</h2>
+<ul>
+<li>Un <strong>registro de incidentes</strong> que incluya los casi accidentes, no solo los partes de baja. Un registro con cero casi accidentes en un año suele significar que nadie los comunica.</li>
+<li>Las <strong>investigaciones</strong>, con los hechos, las causas, quién participó y las medidas.</li>
+<li>Que las medidas tengan <strong>responsable y plazo</strong>, y que conste si se aplicaron.</li>
+<li>La <strong>comprobación de eficacia</strong>: qué se miró después y qué resultado dio.</li>
+<li>La <strong>evaluación de riesgos actualizada</strong> tras los incidentes que lo requerían.</li>
+<li>Que los trabajadores <strong>conocen el resultado</strong>. Suele preguntarlo en el propio puesto.</li>
+</ul>
+<p>Todo esto forma parte de la información documentada obligatoria de la norma: la lista completa está en <a href="../documentos-obligatorios-iso-45001/">documentos obligatorios de ISO 45001</a>.</p>
+
+<h2>Errores frecuentes</h2>
+<ul>
+<li><strong>Cerrar con «exceso de confianza» o «no prestó atención».</strong> Es una conclusión, no una causa, y no lleva a ninguna medida útil.</li>
+<li><strong>Quedarse en la primera respuesta.</strong> Si la única medida es «recordar al trabajador que use guantes», el árbol se ha cortado demasiado pronto.</li>
+<li><strong>Investigar solo los accidentes con baja.</strong> Los casi accidentes dan la misma información y salen gratis.</li>
+<li><strong>No volver a mirar.</strong> Una medida que nadie comprueba es una intención, y el auditor la tratará así.</li>
+</ul>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Fórmate para implantarlo tú:</strong> el <a href="../../curso-iso-45001/">curso ISO 45001</a> recorre la norma cláusula a cláusula, de la política y la evaluación de riesgos al control operacional, la investigación de incidentes y la <a href="../auditoria-interna-iso-45001/">auditoría interna</a>.</p></div>
+
+<h2>Fuentes</h2>
+<ul>
+<li>ISO 45001:2018, <em>Sistemas de gestión de la seguridad y salud en el trabajo — Requisitos con orientación para su uso</em>, cláusulas 3 (términos y definiciones) y 10.2. Resumida con nuestras palabras; el texto completo se adquiere en AENOR o en ISO.</li>
+<li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292">Ley 31/1995, de Prevención de Riesgos Laborales</a>, texto consolidado en el BOE: artículos 16, 23 y 36.</li>
+<li><a href="https://www.boe.es/eli/es/o/1987/12/16/(4)">Orden de 16 de diciembre de 1987</a>, modelos y plazos de notificación de accidentes de trabajo (artículos 3 y 6), y <a href="https://www.boe.es/eli/es/o/2002/11/19/tas2926">Orden TAS/2926/2002</a>, que crea el sistema Delt@.</li>
+<li>INSST, <a href="https://www.insst.es/documentacion/colecciones-tecnicas/ntp-notas-tecnicas-de-prevencion/8-serie-ntp-numeros-261-a-295-ano-1992/ntp-274-investigacion-de-accidentes-arbol-de-causas">NTP 274: Investigación de accidentes: árbol de causas</a>.</li>
+</ul>
+<p class="meta">Textos consultados el 20 de octubre de 2026.</p>
+
+<h2>Preguntas frecuentes sobre la investigación de accidentes</h2>
+<div class="faq">
+<details><summary>¿Es obligatorio investigar los accidentes de trabajo?</summary><p>Sí. El artículo 16.3 de la Ley 31/1995 de Prevención de Riesgos Laborales obliga al empresario a investigar cuando se produce un daño para la salud de los trabajadores, o cuando la vigilancia de la salud indica que las medidas de prevención no bastan, para detectar las causas.</p></details>
+<details><summary>¿Hay que investigar los casi accidentes?</summary><p>La ley española habla de daños para la salud, así que no obliga expresamente a investigar un casi accidente. ISO 45001 sí lo pide: su definición de incidente incluye los sucesos que podían causar una lesión aunque no la causaran, y la cláusula 10.2 se aplica a todos los incidentes.</p></details>
+<details><summary>¿Cuál es el plazo para notificar un accidente de trabajo?</summary><p>El parte de accidente con baja se envía a la mutua o entidad gestora en un máximo de cinco días hábiles desde el accidente o desde la baja médica. Los accidentes sin baja van en una relación mensual, en los cinco primeros días hábiles del mes siguiente. Y si el accidente es mortal, grave, muy grave o afecta a más de cuatro trabajadores, además se comunica a la autoridad laboral en 24 horas (Orden de 16 de diciembre de 1987, artículos 3 y 6).</p></details>
+<details><summary>¿Qué es el árbol de causas?</summary><p>Es un método de investigación de accidentes que describe el INSST en su NTP 274. Parte de la lesión y va hacia atrás preguntando, para cada hecho, qué tuvo que ocurrir para que se produjera, hasta llegar a las causas de organización. Busca causas, no responsables, y solo admite hechos probados.</p></details>
+<details><summary>¿Qué pide ISO 45001 cuando hay un accidente?</summary><p>La cláusula 10.2: reaccionar a tiempo para controlar la situación y sus consecuencias, evaluar con participación de los trabajadores si hace falta una acción correctiva investigando el incidente y sus causas, revisar la evaluación de riesgos, aplicar las medidas siguiendo la jerarquía de controles, comprobar después que han funcionado y conservar evidencia de todo ello.</p></details>
+</div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días</p></div></footer>
+</body>
+</html>
