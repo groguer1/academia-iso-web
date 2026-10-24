@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHQ990S1DG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KHQ990S1DG');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ISO 14001 vs ISO 45001: diferencias y cómo integrarlas</title>
+<meta name="description" content="Qué comparten ISO 14001 e ISO 45001, en qué se diferencian (aspectos ambientales frente a peligros, consulta de los trabajadores, jerarquía de controles) y cómo montar un sistema integrado.">
+<link rel="canonical" href="https://cursosiso.com/blog/iso-14001-vs-iso-45001/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="ISO 14001 vs ISO 45001: diferencias y cómo integrarlas">
+<meta property="og:description" content="Qué comparten ISO 14001 e ISO 45001, en qué se diferencian (aspectos ambientales frente a peligros, consulta de los trabajadores, jerarquía de controles) y cómo montar un sistema integrado.">
+<meta property="og:url" content="https://cursosiso.com/blog/iso-14001-vs-iso-45001/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-45001.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ISO 14001 vs ISO 45001: diferencias y cómo integrarlas">
+<meta name="twitter:description" content="Qué comparten ISO 14001 e ISO 45001, en qué se diferencian (aspectos ambientales frente a peligros, consulta de los trabajadores, jerarquía de controles) y cómo montar un sistema integrado.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-45001.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post h3{font-size:1.15rem;margin-top:1.6rem;margin-bottom:.4rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.93rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+article.post ul,article.post ol{margin:0 0 1rem 1.3rem}
+article.post li{margin-bottom:.4rem}
+.ejemplo{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--azul-mid);border-radius:6px;padding:1.1rem 1.3rem;margin:1.5rem 0;font-size:.95rem}
+.ejemplo h3{margin-top:1rem}
+.ejemplo h3:first-child{margin-top:0}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.faq details{border:1px solid var(--linea);border-radius:6px;padding:.2rem 1rem;margin:.7rem 0;background:#fff}
+.faq summary{font-weight:600;cursor:pointer;padding:.7rem 0;color:var(--azul)}
+.faq details[open] summary{margin-bottom:.4rem}
+.tabla-wrap{overflow-x:auto}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ISO 14001 vs ISO 45001: diferencias y cómo integrarlas", "description": "Qué comparten ISO 14001 e ISO 45001, en qué se diferencian (aspectos ambientales frente a peligros, consulta de los trabajadores, jerarquía de controles) y cómo montar un sistema integrado.", "inLanguage": "es", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-10-24", "dateModified": "2026-10-24", "image": "https://cursosiso.com/assets/og/iso-45001.svg", "mainEntityOfPage": "https://cursosiso.com/blog/iso-14001-vs-iso-45001/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cursosiso.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "ISO 14001 vs ISO 45001: diferencias y cómo integrarlas", "item": "https://cursosiso.com/blog/iso-14001-vs-iso-45001/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Se puede tener una sola certificación para ISO 14001 e ISO 45001?", "acceptedAnswer": {"@type": "Answer", "text": "Son dos certificados, uno por norma, pero se pueden auditar a la vez con la misma certificadora en una auditoría combinada. Comparten la estructura de cláusulas 4 a 10, así que buena parte del sistema (documentación, auditoría interna, revisión por la dirección) puede ser común."}}, {"@type": "Question", "name": "¿Cuál es la diferencia principal entre ISO 14001 e ISO 45001?", "acceptedAnswer": {"@type": "Answer", "text": "A quién protegen. ISO 14001 gestiona el impacto de la organización en el medio ambiente a partir de sus aspectos ambientales. ISO 45001 gestiona la seguridad y la salud de las personas que trabajan para ella a partir de los peligros y los riesgos laborales."}}, {"@type": "Question", "name": "¿Qué versión de cada norma está vigente?", "acceptedAnswer": {"@type": "Answer", "text": "La de gestión ambiental es ISO 14001:2026, publicada en abril de 2026; la 2015 está retirada, aunque sus certificados valen hasta el 30 de abril de 2029. La de seguridad y salud sigue siendo ISO 45001:2018: hay una revisión en curso, pero no se ha publicado."}}, {"@type": "Question", "name": "¿Qué tiene ISO 45001 que no tenga ISO 14001?", "acceptedAnswer": {"@type": "Answer", "text": "Sobre todo la cláusula 5.4, de consulta y participación de los trabajadores, que no tiene equivalente en ISO 14001 ni en ISO 9001. También la jerarquía de controles de cinco niveles para eliminar peligros y reducir riesgos."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../#cursos">Cursos</a><a href="../../blog/">Blog</a><a href="../../recursos/">Plantillas</a><a class="lang" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../">Inicio</a></li><li><a href="../">Blog</a></li><li aria-current="page">Seguridad y salud</li></ol></div>
+<h1>ISO 14001 vs ISO 45001: diferencias y cómo integrarlas</h1>
+<p class="meta">Academia ISO · 24 de octubre de 2026 · Sistemas integrados · 7 min de lectura</p>
+
+<p>ISO 14001 e ISO 45001 se piden juntas muy a menudo: la primera gestiona el <strong>medio ambiente</strong> y la segunda la <strong>seguridad y salud en el trabajo</strong>, y muchas empresas industriales, de construcción o de logística necesitan las dos. Comparten la misma estructura, así que no hace falta montar dos sistemas por separado. Lo que sí hay que saber es dónde se parecen, dónde no y qué partes conviene llevar en común.</p>
+
+<h2>Qué versión de cada norma está vigente</h2>
+<ul>
+<li><strong>ISO 14001:2026</strong>. Se publicó en abril de 2026 y la 2015 figura como retirada en la ficha oficial de ISO. Los certificados de 2015 siguen valiendo durante la transición, que acaba el <strong>30 de abril de 2029</strong>, y desde el <strong>31 de octubre de 2027</strong> las certificaciones iniciales acreditadas solo pueden emitirse contra la 2026, según el calendario de Global ACI. Lo tienes entero en <a href="../iso-14001-2026-cambios/">ISO 14001:2026: qué cambia</a>.</li>
+<li><strong>ISO 45001:2018</strong>. Sigue siendo la vigente. Hay una revisión en curso, pero todavía no se ha publicado, así que hoy se implanta y se certifica contra la de 2018.</li>
+</ul>
+
+<h2>Lo que tienen en común</h2>
+<p>Las dos siguen la <strong>estructura armonizada</strong> que ISO usa para todas sus normas de sistemas de gestión, con las mismas cláusulas de la 4 a la 10: contexto de la organización, liderazgo, planificación, apoyo, operación, evaluación del desempeño y mejora. Según ANAB, una de las razones de la revisión de 2026 de la 14001 fue precisamente alinearla con los cambios de esa estructura para que se integre mejor con las demás.</p>
+<p>En la práctica, eso significa que las dos piden lo mismo en muchos puntos:</p>
+<ul>
+<li>Analizar el <strong>contexto</strong> y las <strong>partes interesadas</strong>.</li>
+<li>Una <strong>política</strong> firmada por la dirección y <strong>objetivos</strong> medibles con su planificación.</li>
+<li>Identificar y cumplir los <strong>requisitos legales</strong> que te aplican y evaluar ese cumplimiento.</li>
+<li>Control de la <strong>información documentada</strong>, competencia, toma de conciencia y comunicación.</li>
+<li><strong>Control operacional</strong> y <strong>preparación y respuesta ante emergencias</strong>.</li>
+<li><strong>Auditoría interna</strong>, <strong>revisión por la dirección</strong>, no conformidades y mejora continua.</li>
+</ul>
+
+<h2>En qué se diferencian</h2>
+<table>
+<tr><th></th><th>ISO 14001</th><th>ISO 45001</th></tr>
+<tr><td>Qué protege</td><td>El medio ambiente</td><td>La seguridad y la salud de las personas que trabajan para la organización</td></tr>
+<tr><td>Qué se identifica</td><td>Aspectos ambientales (emisiones, residuos, vertidos, consumos) y sus impactos</td><td>Peligros y riesgos para la seguridad y salud</td></tr>
+<tr><td>Partes interesadas típicas</td><td>Administración ambiental, vecinos, clientes</td><td>Trabajadores y sus representantes, contratistas, mutua, Inspección de Trabajo</td></tr>
+<tr><td>Trabajadores</td><td>Toma de conciencia y competencia</td><td>Además, consulta y participación (5.4)</td></tr>
+<tr><td>Cómo se controla</td><td>Control operacional con perspectiva de ciclo de vida</td><td>Jerarquía de controles de cinco niveles</td></tr>
+<tr><td>Ley española de fondo</td><td>La normativa ambiental que te aplique (residuos, emisiones, aguas...)</td><td>Ley 31/1995 de Prevención de Riesgos Laborales y sus reglamentos</td></tr>
+</table>
+
+<h3>Aspectos ambientales frente a peligros</h3>
+<p>Es la diferencia de fondo. En ISO 14001 se parte de los <strong>aspectos ambientales</strong>: lo que tu actividad hace al medio ambiente, como un consumo de agua o un residuo peligroso, y se decide cuáles son significativos. Lo explicamos con ejemplos en <a href="../aspectos-ambientales-iso-14001-ejemplos/">aspectos ambientales de ISO 14001</a>. En ISO 45001 se parte de los <strong>peligros</strong>: lo que puede causar una lesión o un daño a la salud de quien trabaja, como una máquina sin protección o un producto químico, y se evalúan sus riesgos. Las metodologías están en <a href="../evaluacion-riesgos-iso-45001-metodologias/">evaluación de riesgos en ISO 45001</a>.</p>
+<p>Muchas veces es el mismo hecho visto desde dos lados: el almacén de productos químicos es un aspecto ambiental por el riesgo de derrame y un peligro laboral por la exposición de quien lo maneja. En un sistema integrado conviene que las dos evaluaciones se hagan mirando la misma lista de procesos.</p>
+
+<h3>La consulta y participación de los trabajadores</h3>
+<p>La cláusula 5.4 de ISO 45001 no tiene equivalente en ISO 14001. Pide procesos para consultar a los trabajadores no directivos y hacerles participar en decisiones como la identificación de peligros, los controles o la investigación de incidentes. En España encaja con los delegados de prevención y el comité de seguridad y salud de la LPRL. Lo tienes desarrollado en <a href="../consulta-participacion-trabajadores-iso-45001/">consulta y participación de los trabajadores</a>.</p>
+
+<h3>La jerarquía de controles</h3>
+<p>ISO 45001 obliga a eliminar peligros y reducir riesgos siguiendo un orden: eliminar el peligro, sustituirlo, controles de ingeniería y reorganización del trabajo, controles administrativos y, en último lugar, equipos de protección individual. Un plan que salta directo al EPI sin justificar por qué no se pudo hacer nada antes es una no conformidad clásica. ISO 14001 no fija una jerarquía así.</p>
+
+<h3>El ciclo de vida</h3>
+<p>ISO 14001 pide mirar los aspectos ambientales a lo largo del ciclo de vida del producto o servicio, desde el aprovisionamiento hasta el final de vida, y ANAB señala que la versión 2026 refuerza ese enfoque. ISO 45001 se centra en los lugares y las actividades de trabajo bajo control de la organización.</p>
+
+<h2>Cómo integrarlas sin duplicar trabajo</h2>
+<ul>
+<li><strong>Un solo análisis de contexto y de partes interesadas</strong>, con las cuestiones ambientales y las de seguridad y salud en el mismo documento.</li>
+<li><strong>Una política integrada</strong>, siempre que recoja los compromisos que exige cada norma: protección del medio ambiente y prevención de la contaminación por un lado, y condiciones de trabajo seguras y saludables, eliminación de peligros y consulta de los trabajadores por otro. Tienes un ejemplo de cada una en <a href="../politica-ambiental-iso-14001-ejemplo/">política ambiental</a> y <a href="../politica-sst-iso-45001-ejemplo/">política de SST</a>.</li>
+<li><strong>Una matriz de requisitos legales</strong> con las normas ambientales y las de prevención, y una sola evaluación periódica del cumplimiento. Mira <a href="../requisitos-legales-iso-14001/">requisitos legales de ISO 14001</a>.</li>
+<li><strong>Un plan de emergencias común</strong>: el incendio que evacúa a la plantilla es el mismo que puede provocar emisiones o vertidos.</li>
+<li><strong>Una auditoría interna y una revisión por la dirección conjuntas</strong>, con un apartado para cada norma. Y la certificadora puede hacer una <strong>auditoría combinada</strong>.</li>
+</ul>
+<p>Lo que no se puede fusionar es lo propio de cada norma: la evaluación de aspectos ambientales y la de riesgos laborales siguen siendo dos ejercicios con criterios distintos, y la consulta de los trabajadores de la 5.4 no tiene contrapartida ambiental.</p>
+
+<h2>¿Por cuál empezar?</h2>
+<p>Depende de qué te empuja. Si un cliente o una licitación te pide una de las dos, empieza por esa. Si no hay presión externa, ten en cuenta que en España <strong>la Ley de Prevención ya te obliga</strong> a evaluar riesgos, planificar la prevención y consultar a los trabajadores, así que buena parte del trabajo de ISO 45001 suele estar hecho. Y si vas a por la 14001 desde cero, hazlo directamente con la versión 2026.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Fórmate para implantarlas tú:</strong> el <a href="../../curso-iso-45001/">curso ISO 45001</a> y el <a href="../../curso-iso-14001/">curso ISO 14001</a> recorren cada norma cláusula a cláusula, de la política al control operacional y la auditoría interna. Si estás con los papeles, repasa los <a href="../documentos-obligatorios-iso-45001/">documentos obligatorios de ISO 45001</a> y los <a href="../documentos-obligatorios-iso-14001/">de ISO 14001</a>.</p></div>
+
+<h2>Fuentes</h2>
+<ul>
+<li>ISO, <a href="https://www.iso.org/standard/63787.html" rel="nofollow">ficha de ISO 45001:2018</a>, y ficha de ISO 14001:2026, consultadas en septiembre y octubre de 2026.</li>
+<li>Global ACI, documento Global ACI-TECH-3-TR 2029-04-30 (M), requisitos de transición a ISO 14001:2026.</li>
+<li>ANAB, resumen de los cambios clave de ISO 14001:2026 (abril de 2026).</li>
+<li><a href="https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292" rel="nofollow">Ley 31/1995 de Prevención de Riesgos Laborales</a> (texto consolidado del BOE).</li>
+</ul>
+
+<h2>Preguntas frecuentes sobre ISO 14001 e ISO 45001</h2>
+<div class="faq">
+<details><summary>¿Se puede tener una sola certificación para ISO 14001 e ISO 45001?</summary><p>Son dos certificados, uno por norma, pero se pueden auditar a la vez con la misma certificadora en una auditoría combinada. Comparten la estructura de cláusulas 4 a 10, así que buena parte del sistema (documentación, auditoría interna, revisión por la dirección) puede ser común.</p></details>
+<details><summary>¿Cuál es la diferencia principal entre ISO 14001 e ISO 45001?</summary><p>A quién protegen. ISO 14001 gestiona el impacto de la organización en el medio ambiente a partir de sus aspectos ambientales. ISO 45001 gestiona la seguridad y la salud de las personas que trabajan para ella a partir de los peligros y los riesgos laborales.</p></details>
+<details><summary>¿Qué versión de cada norma está vigente?</summary><p>La de gestión ambiental es ISO 14001:2026, publicada en abril de 2026; la 2015 está retirada, aunque sus certificados valen hasta el 30 de abril de 2029. La de seguridad y salud sigue siendo ISO 45001:2018: hay una revisión en curso, pero no se ha publicado.</p></details>
+<details><summary>¿Qué tiene ISO 45001 que no tenga ISO 14001?</summary><p>Sobre todo la cláusula 5.4, de consulta y participación de los trabajadores, que no tiene equivalente en ISO 14001 ni en ISO 9001. También la jerarquía de controles de cinco niveles para eliminar peligros y reducir riesgos.</p></details>
+</div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días</p></div></footer>
+</body>
+</html>
