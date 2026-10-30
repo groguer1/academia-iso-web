@@ -60,6 +60,15 @@ article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size
 article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
 article.post th{background:#fff;color:var(--azul)}
 .aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.descarga{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--verde);border-radius:6px;padding:1.2rem 1.4rem;margin:1.8rem 0}
+.descarga h3{margin:0 0 .4rem;font-size:1.25rem}
+.descarga p{margin:0 0 .8rem}
+.descarga form{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.descarga input[type=email]{flex:1 1 240px;padding:.7rem .8rem;border:1px solid var(--linea);border-radius:5px;font:inherit}
+.descarga button{padding:.7rem 1.2rem;background:var(--verde);color:#fff;border:0;border-radius:5px;font:inherit;font-weight:600;cursor:pointer}
+.descarga label.rgpd{flex:1 1 100%;font-size:.85rem;color:var(--gris);display:flex;gap:.5rem;align-items:flex-start}
+.descarga .estado{font-size:.92rem;margin:.6rem 0 0}
+.descarga .bajar{display:inline-block;padding:.7rem 1.2rem;background:var(--verde);color:#fff;border-radius:5px;text-decoration:none;font-weight:600}
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Matriz de riesgos y oportunidades ISO 9001: ejemplo y cómo hacerla (cláusula 6.1)", "description": "Qué exige la cláusula 6.1 de ISO 9001, si la matriz de riesgos es obligatoria, cómo puntuarla y un ejemplo completo de riesgos y oportunidades con sus acciones.", "inLanguage": "es", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-09-27", "dateModified": "2026-09-27", "image": "https://cursosiso.com/assets/og/iso-9001.svg", "mainEntityOfPage": "https://cursosiso.com/blog/matriz-riesgos-oportunidades-iso-9001/"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cursosiso.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Matriz de riesgos y oportunidades ISO 9001: ejemplo y cómo hacerla (cláusula 6.1)", "item": "https://cursosiso.com/blog/matriz-riesgos-oportunidades-iso-9001/"}]}</script>
@@ -74,6 +83,7 @@ article.post th{background:#fff;color:var(--azul)}
 <p class="meta">Academia ISO · 27 de septiembre de 2026 · Calidad</p>
 
 <p>La matriz de riesgos y oportunidades es probablemente el documento de ISO 9001 que más se descarga ya hecho y el que peor sale en auditoría. El motivo es siempre el mismo: una plantilla trae riesgos genéricos («pérdida de clientes», «fallo informático») que no salen de ningún sitio, con una puntuación que nadie sabe explicar y unas acciones que no se han hecho. Aquí explicamos qué pide de verdad la cláusula <strong>6.1</strong>, si la matriz es obligatoria, cómo puntuarla con un criterio que se sostenga y un ejemplo completo para adaptar.</p>
+<p><strong>¿Buscas la plantilla en Excel?</strong> <a href="#descarga">Descárgala gratis aquí</a>: la misma matriz del ejemplo, con el nivel calculado solo.</p>
 
 <h2>Qué pide la cláusula 6.1</h2>
 <p>Lo que sigue es el texto de la versión 2015, que es contra la que se sigue auditando la mayoría de los sistemas durante la transición (más abajo, lo que cambia con la 2026). La cláusula tiene dos apartados:</p>
@@ -132,6 +142,42 @@ article.post th{background:#fff;color:var(--azul)}
 </table>
 <p>Fíjate en la quinta fila: <strong>aceptar un riesgo también es una acción válida</strong>, siempre que sea una decisión razonada y quede escrita. La propia norma lo recoge.</p>
 
+<div class="descarga" id="descarga">
+<h3>Descarga la plantilla en Excel</h3>
+<p>La misma matriz de este artículo, lista para rellenar: hoja de riesgos con el nivel y la decisión calculados solos, hoja de oportunidades aparte, la escala 1-3 y las instrucciones. Gratis: déjanos tu correo y la descargas al momento.</p>
+<form id="form-plantilla" novalidate>
+<input type="email" name="EMAIL" required placeholder="Tu correo electrónico" autocomplete="email" aria-label="Tu correo electrónico">
+<button type="submit">Descargar la plantilla</button>
+<label class="rgpd"><input type="checkbox" name="OPT_IN" value="1" required> <span>Acepto recibir por correo novedades de cursosiso (plantillas, artículos y cursos de normas ISO). Puedes darte de baja cuando quieras. <a href="../../privacidad/">Política de privacidad</a>.</span></label>
+<input type="hidden" name="locale" value="es">
+</form>
+<p class="estado" id="estado-plantilla" role="status"></p>
+</div>
+<script>
+(function(){
+  var f=document.getElementById('form-plantilla'), e=document.getElementById('estado-plantilla');
+  var URL='https://9a7395d6.sibforms.com/serve/MUIFAAgBjM6Cv5ugNMPHmG77r5P3VtrjclU1Yorqou1DQGareI4cLaORknJ-Tp8JHvSjSLLxtwVUyLnObrL4omIf9nkG1ZGOsrHtw5V7PjxcGHdv-c9lszDI9A9xyroXcTaAFKDdN3TXpJJWvIPbRJeoBk21rMw4dun1_k6MC811B3cZ-k50i2WahnDnOvzvp8kdkYPFAwNqndISXw==';
+  f.addEventListener('submit',function(ev){
+    ev.preventDefault();
+    var mail=f.EMAIL.value.trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(mail)){e.textContent='Escribe un correo válido.';return;}
+    if(!f.OPT_IN.checked){e.textContent='Marca la casilla para poder enviarte la plantilla.';return;}
+    var b=f.querySelector('button'); b.disabled=true; b.textContent='Enviando…'; e.textContent='';
+    var d=new FormData(); d.append('EMAIL',mail); d.append('locale','es');
+    fetch(URL+'?isAjax=1',{method:'POST',body:d}).then(function(r){
+      return r.json().catch(function(){return {};}).then(function(j){
+        if(!r.ok||j.success!==true) throw new Error(j.message||('HTTP '+r.status));
+        if(window.gtag)gtag('event','descarga_plantilla',{plantilla:'matriz-riesgos-9001'});
+        f.style.display='none';
+        e.innerHTML='Listo. <a class="bajar" href="../../recursos/descargas/matriz-riesgos-oportunidades-iso-9001.xlsx" download>Descargar matriz-riesgos-oportunidades-iso-9001.xlsx</a>';
+      });
+    }).catch(function(){
+      b.disabled=false; b.textContent='Descargar la plantilla';
+      e.textContent='No se ha podido completar el alta. Inténtalo de nuevo en un momento.';
+    });
+  });
+})();
+</script>
 <h2>Las opciones para tratar un riesgo, según la norma</h2>
 <p>Una nota de 6.1.2 enumera las opciones, y sirve para comprobar que no todas tus acciones son «formar al personal»:</p>
 <ul>
@@ -168,7 +214,7 @@ article.post th{background:#fff;color:var(--azul)}
 <h2>Qué cambia con ISO 9001:2026</h2>
 <p><strong>ISO 9001:2026 se publicó el 16 de septiembre de 2026</strong> y hay <strong>hasta el 30 de septiembre de 2029</strong> para completar la transición. Según los comunicados públicos de ISO y del organismo de acreditación, uno de los cambios es que <strong>riesgos y oportunidades se tratan por separado</strong>, para que no se gestionen como si fueran la misma cosa. Una matriz como la de este artículo, con las oportunidades en su propia tabla y su propio criterio, ya va en esa dirección. El detalle de la redacción nueva está en la norma, que es de pago; el calendario completo, en <a href="../iso-9001-2026-cambios/">qué cambia ISO 9001:2026 respecto a 2015</a>.</p>
 
-<div class="aviso-curso"><p style="margin:0"><strong>Llévalo a la práctica:</strong> en el <a href="../../curso-iso-9001/">curso Gestor ISO 9001:2026 — De Cero a Implementador</a> montas el sistema desde el contexto hasta la matriz de riesgos y los objetivos, con plantillas reales y construido sobre la versión 2026.</p></div>
+<div class="aviso-curso"><p style="margin:0"><strong>Llévalo a la práctica:</strong> en el <a href="../../curso-iso-9001/">curso Gestor ISO 9001:2026 — De Cero a Implementador</a> montas el sistema desde el contexto hasta la matriz de riesgos y los objetivos, con plantillas reales y construido sobre la versión 2026. Antes de decidirte, puedes <a href="https://groguer1.github.io/curso-iso9001/iso9001-modulo1.html" target="_blank" rel="noopener">hacer gratis el módulo 1</a>.</p></div>
 
 <h2>Preguntas frecuentes</h2>
 <h3>¿Es obligatoria la matriz de riesgos en ISO 9001?</h3>
@@ -181,6 +227,6 @@ article.post th{background:#fff;color:var(--azul)}
 <p>Al menos en cada revisión por la dirección, que debe analizar la eficacia de las acciones tomadas frente a riesgos y oportunidades, y cada vez que ocurre algo que la cambia: una no conformidad importante, un cambio en el contexto, un proveedor nuevo o un cliente que impone requisitos. La cláusula 10.2 pide actualizarla tras una no conformidad si hace falta.</p>
 </article>
 </main>
-<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días</p></div></footer>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días · <a href="/privacidad/">Privacidad</a></p></div></footer>
 </body>
 </html>
