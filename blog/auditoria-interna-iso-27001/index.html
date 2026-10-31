@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHQ990S1DG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KHQ990S1DG');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auditoría interna ISO 27001: cómo hacerla y checklist</title>
+<meta name="description" content="Qué exige la cláusula 9.2 de ISO 27001:2022, cómo montar el programa a partir de los riesgos, qué preguntar en cada cláusula y en el Anexo A, y cómo se redacta un hallazgo.">
+<link rel="canonical" href="https://cursosiso.com/blog/auditoria-interna-iso-27001/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="Auditoría interna ISO 27001: cómo hacerla y checklist">
+<meta property="og:description" content="Qué exige la cláusula 9.2 de ISO 27001:2022, cómo montar el programa a partir de los riesgos, qué preguntar en cada cláusula y en el Anexo A, y cómo se redacta un hallazgo.">
+<meta property="og:url" content="https://cursosiso.com/blog/auditoria-interna-iso-27001/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-27001.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Auditoría interna ISO 27001: cómo hacerla y checklist">
+<meta name="twitter:description" content="Qué exige la cláusula 9.2 de ISO 27001:2022, cómo montar el programa a partir de los riesgos, qué preguntar en cada cláusula y en el Anexo A, y cómo se redacta un hallazgo.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-27001.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+.hero{background:#fff;border-bottom:1px solid var(--linea)}
+.hero .wrap{padding:64px 24px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2.5rem;align-items:center}
+.hero h1{font-size:clamp(1.9rem,4.4vw,2.9rem);margin:.7rem 0 1rem}
+.hero .sub{font-size:1.15rem;color:var(--gris);max-width:56ch;margin-bottom:1.4rem}
+.kicker{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:var(--curso);font-weight:700}
+.precio{font-size:1.55rem;font-weight:700;color:var(--azul);margin-right:1.2rem;white-space:nowrap}
+.compra{display:flex;align-items:center;gap:.4rem;flex-wrap:wrap}
+.cta{display:inline-block;background:var(--acento);color:#fff;text-decoration:none;padding:.85rem 1.7rem;border-radius:6px;font-weight:700;font-size:1.02rem;border:none}
+.cta:hover{background:#CF4A15}
+.nota-compra{font-size:.83rem;color:var(--gris);width:100%}
+.spine{display:flex;flex-direction:column;gap:.35rem;border-left:4px solid var(--curso);padding-left:1rem;font-family:'DM Serif Display',Georgia,serif;color:var(--gris)}
+.spine span{font-size:1.05rem;line-height:1.35}
+.spine .sp-num{color:var(--curso);font-size:1.25rem}
+.spine .sp-label{font-family:'Inter',sans-serif;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.4rem}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr}.spine{flex-direction:row;flex-wrap:wrap;border-left:none;border-top:4px solid var(--curso);padding:.8rem 0 0;gap:.9rem}.spine .sp-label{width:100%}}
+section{padding:54px 0}
+section.alt{background:#fff;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.1rem}
+.card{background:#fff;border:1px solid var(--linea);border-radius:8px;padding:1.3rem 1.4rem}
+section.alt .card{background:var(--fondo)}
+.card h3{font-size:1.12rem;margin-bottom:.5rem}
+.card p{font-size:.95rem;color:var(--gris);margin:0}
+ul.check{list-style:none;max-width:62ch}
+ul.check li{padding:.45rem 0 .45rem 2rem;position:relative}
+ul.check li::before{content:"✓";position:absolute;left:.3rem;color:var(--verde);font-weight:700}
+details.mod{background:#fff;border:1px solid var(--linea);border-radius:7px;margin-bottom:.65rem}
+section.alt details.mod{background:var(--fondo)}
+details.mod summary{padding:.95rem 1.15rem;cursor:pointer;font-weight:600;list-style:none;display:flex;gap:.9rem;align-items:baseline}
+details.mod summary::-webkit-details-marker{display:none}
+details.mod summary::after{content:"+";margin-left:auto;color:var(--curso);font-weight:700;font-size:1.2rem;line-height:1}
+details.mod[open] summary::after{content:"−"}
+details.mod .mnum{font-family:'DM Serif Display',Georgia,serif;color:var(--curso);min-width:2ch}
+details.mod ul{padding:0 1.2rem 1.1rem 3.1rem}
+details.mod li{margin-bottom:.3rem;color:var(--gris);font-size:.96rem}
+details.mod > div{padding:0 1.2rem 1.1rem;color:var(--gris)}
+.marco p{max-width:70ch}
+.cta-final{text-align:center;background:var(--azul);color:#fff}
+.cta-final h2{color:#fff}
+.cta-final p{color:#C9D8E6;max-width:60ch;margin:0 auto 1.4rem}
+.cta-final .precio{color:#fff}
+.garantia{font-size:.9rem;color:#9FB8D0;margin-top:1.2rem}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.fade{animation:fadeUp .5s ease-out both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.fade{animation:none}html{scroll-behavior:auto}}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.95rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.card .p-precio{font-weight:700;color:var(--azul);font-size:1.15rem;margin:.6rem 0}
+.card .cta{font-size:.95rem;padding:.65rem 1.3rem}
+.card ul{padding-left:1.1rem;color:var(--gris);font-size:.92rem;margin-bottom:.4rem}
+.faq details{border:1px solid var(--linea);border-radius:6px;padding:.2rem 1rem;margin:.7rem 0;background:#fff}
+.faq summary{font-weight:600;cursor:pointer;padding:.7rem 0;color:var(--azul)}
+.faq details[open] summary{margin-bottom:.4rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Auditoría interna ISO 27001: cómo hacerla y checklist por cláusulas", "description": "Qué exige la cláusula 9.2 de ISO 27001:2022, cómo montar el programa a partir de los riesgos, qué preguntar en cada cláusula y en el Anexo A, y cómo se redacta un hallazgo.", "inLanguage": "es", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-10-31", "dateModified": "2026-10-31", "image": "https://cursosiso.com/assets/og/iso-27001.svg", "mainEntityOfPage": "https://cursosiso.com/blog/auditoria-interna-iso-27001/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cursosiso.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Auditoría interna ISO 27001: cómo hacerla y checklist por cláusulas", "item": "https://cursosiso.com/blog/auditoria-interna-iso-27001/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Es obligatoria la auditoría interna en ISO 27001?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La cláusula 9.2 exige auditorías internas a intervalos planificados y conservar como información documentada el programa y los resultados. La norma no fija la frecuencia: la decide tu programa según la importancia de los procesos y los resultados de auditorías anteriores. En la práctica, la entidad de certificación espera ver al menos una auditoría interna completa antes de la fase 2 y una por año de ciclo."}}, {"@type": "Question", "name": "¿Hay que auditar los 93 controles del Anexo A cada año?", "acceptedAnswer": {"@type": "Answer", "text": "La norma no lo dice. Lo que exige es que el programa cubra el sistema, y los controles que tu Declaración de Aplicabilidad declara aplicables forman parte de él. Lo habitual es repartirlos en el ciclo de tres años, con más frecuencia para los que tratan los riesgos más altos, y dejar escrito en el programa por qué se reparten así."}}, {"@type": "Question", "name": "¿Quién puede hacer la auditoría interna de ISO 27001?", "acceptedAnswer": {"@type": "Answer", "text": "Alguien competente que no audite su propio trabajo: la norma pide objetividad e imparcialidad. El responsable de sistemas no debería auditar los controles técnicos que él mismo administra. En una empresa pequeña se resuelve con un auditor externo solo para la interna, con auditorías cruzadas o formando a una segunda persona."}}, {"@type": "Question", "name": "¿Qué norma explica cómo auditar un SGSI?", "acceptedAnswer": {"@type": "Answer", "text": "La ISO/IEC 27007:2020, que da directrices para auditar sistemas de gestión de seguridad de la información y se apoya en la ISO 19011. ISO indica en su ficha que será sustituida por una nueva edición en preparación. No es certificable ni obligatoria: es una guía."}}, {"@type": "Question", "name": "¿En qué se diferencia de la auditoría de certificación?", "acceptedAnswer": {"@type": "Answer", "text": "La interna la hace la organización para sí misma y es un requisito de la norma. La de certificación la hace una entidad acreditada, siguiendo la ISO/IEC 17021-1 y la ISO/IEC 27006-1:2024, que es la específica para certificar sistemas de seguridad de la información, y decide si se emite el certificado. El auditor externo revisa tus informes internos, así que la calidad de la interna se nota en la externa."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../#cursos">Cursos</a><a href="../../blog/">Blog</a><a href="../../recursos/">Plantillas</a><a class="lang" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../">Inicio</a></li><li><a href="../">Blog</a></li><li aria-current="page">Seguridad de la información</li></ol></div>
+<h1>Auditoría interna ISO 27001: cómo hacerla y checklist por cláusulas</h1>
+<p class="meta">Academia ISO · 31 de octubre de 2026 · Seguridad de la información</p>
+
+<p>La auditoría interna es el punto en el que un SGSI deja de ser un conjunto de documentos y se pone a prueba. En ISO 27001 tiene una dificultad que no tienen la 9001 ni la 14001: además de las cláusulas 4 a 10, hay que comprobar los controles del Anexo A que tu Declaración de Aplicabilidad da por aplicables, y muchos son técnicos. Esta guía explica qué pide la norma, cómo repartir el trabajo y qué preguntar en cada punto.</p>
+
+<p><strong>Versión de referencia:</strong> ISO/IEC 27001:2022 con su enmienda de 2024 (Amd 1, sobre cambio climático), que según la ficha de ISO es la edición vigente a 31 de octubre de 2026. El plazo para pasar los certificados de la edición 2013 a la 2022 terminó el 31 de octubre de 2025.</p>
+
+<h2>Qué exige la cláusula 9.2</h2>
+<p>En la edición 2022 la cláusula se divide en dos apartados. El <strong>9.2.1</strong> pide hacer auditorías internas a intervalos planificados para saber si el sistema cumple los requisitos de la propia organización y los de la norma, y si está implantado y se mantiene de forma eficaz. El <strong>9.2.2</strong> pide un <strong>programa de auditoría</strong> que fije frecuencia, métodos, responsabilidades, planificación e informes, teniendo en cuenta la importancia de los procesos y los resultados de auditorías anteriores. Para cada auditoría hay que definir criterios y alcance, elegir auditores que garanticen objetividad e imparcialidad e informar de los resultados a la dirección que corresponda.</p>
+<p>Lo que hay que <strong>conservar</strong> como información documentada es la prueba de que el programa se ha ejecutado y sus resultados. La lista completa de lo que la norma exige documentar está en <a href="../documentos-obligatorios-iso-27001/">documentos obligatorios de ISO 27001:2022</a>.</p>
+
+<h2>Paso 1: el programa, a partir de los riesgos</h2>
+<p>El programa es la vista de todo el ciclo: qué se audita, cuándo y quién. En un SGSI la forma más defendible de priorizar es la propia <strong>evaluación de riesgos</strong>: los procesos y controles que tratan los riesgos más altos se auditan con más frecuencia. Un ejemplo para una empresa de software de 40 personas:</p>
+<table>
+<tr><th>Área</th><th>Frecuencia</th><th>Por qué</th></tr>
+<tr><td>Cláusulas 4 a 10 (contexto, riesgos, objetivos, revisión, mejora)</td><td>Anual</td><td>Es el núcleo del sistema y lo que la certificadora mira en cada visita</td></tr>
+<tr><td>Control de accesos, gestión de identidades, copias de seguridad</td><td>Anual</td><td>Tratan los riesgos más altos de la evaluación</td></tr>
+<tr><td>Desarrollo seguro y gestión de cambios</td><td>Anual</td><td>Es la actividad principal de la empresa</td></tr>
+<tr><td>Proveedores y servicios en la nube</td><td>Anual</td><td>Los datos de clientes están alojados fuera</td></tr>
+<tr><td>Seguridad física de la oficina</td><td>Una vez en el ciclo de tres años</td><td>Riesgo bajo: no hay servidores propios en la oficina</td></tr>
+<tr><td>Resto de controles aplicables de la SoA</td><td>Repartidos en el ciclo</td><td>Cobertura completa en tres años</td></tr>
+</table>
+<p>La norma no obliga a revisar los 93 controles cada año; obliga a que el programa sea coherente con la importancia de lo que se audita. Si se reparten, el programa tiene que decir por qué.</p>
+
+<h2>Paso 2: el auditor, objetivo e imparcial</h2>
+<p>Nadie audita su propio trabajo. En seguridad de la información esto pesa más que en otras normas, porque quien administra los sistemas suele ser también quien configura los controles. En una empresa pequeña hay tres salidas: contratar un auditor externo solo para la interna, hacer auditorías cruzadas entre áreas, o formar a una segunda persona. La guía de referencia para auditar un SGSI es la <strong>ISO/IEC 27007:2020</strong>, que se apoya en la ISO 19011; ISO anuncia en su ficha que la sustituirá una edición nueva, ya en preparación.</p>
+
+<h2>Paso 3: el checklist por cláusulas</h2>
+<p>Un buen checklist no copia la norma con casillas: para cada punto dice <strong>qué evidencia se va a pedir</strong>. Estas son preguntas de partida para adaptar:</p>
+<table>
+<tr><th>Cláusula</th><th>Qué preguntar</th><th>Evidencia que pedir</th></tr>
+<tr><td>4. Contexto</td><td>¿Están identificadas las cuestiones internas y externas y las partes interesadas? ¿Se ha valorado si el cambio climático es relevante, como añade la enmienda de 2024? ¿El alcance dice qué queda dentro y qué fuera?</td><td>Análisis de contexto, documento de alcance</td></tr>
+<tr><td>5. Liderazgo</td><td>¿La política está aprobada y comunicada? ¿Están asignados los roles de seguridad?</td><td>Política firmada, organigrama de seguridad, actas</td></tr>
+<tr><td>6. Planificación</td><td>¿La evaluación de riesgos sigue el método documentado y está al día? ¿Cada riesgo tiene propietario y decisión de tratamiento? ¿La SoA cuadra con el plan de tratamiento?</td><td>Metodología, registro de riesgos, plan de tratamiento, SoA, objetivos</td></tr>
+<tr><td>7. Soporte</td><td>¿El personal sabe qué hacer ante un incidente? ¿Hay registros de formación? ¿Los documentos tienen versión y aprobación?</td><td>Entrevistas, registros de formación, control documental</td></tr>
+<tr><td>8. Operación</td><td>¿Se ha repetido la evaluación de riesgos tras los cambios importantes? ¿Se aplica el plan de tratamiento?</td><td>Evaluaciones fechadas, seguimiento del plan</td></tr>
+<tr><td>9. Evaluación</td><td>¿Se miden los indicadores definidos? ¿Hubo auditoría interna y revisión por la dirección con todas sus entradas?</td><td>Cuadro de indicadores, informe de la auditoría anterior, acta de revisión</td></tr>
+<tr><td>10. Mejora</td><td>¿Las no conformidades tienen análisis de causa y acción correctiva con eficacia verificada?</td><td>Registro de no conformidades y acciones</td></tr>
+</table>
+
+<h2>Paso 4: el Anexo A, comprobando el control y no el documento</h2>
+<p>El Anexo A de la edición 2022 tiene <strong>93 controles en cuatro temas</strong>: organizativos (37), de personas (8), físicos (14) y tecnológicos (34). Los criterios de auditoría son los que tu SoA declara aplicables, y el error más común es comprobar que existe la política del control en vez de comprobar que el control funciona. Algunos ejemplos de cómo se prueba un control:</p>
+<ul>
+<li><strong>Altas y bajas de accesos.</strong> Pedir la lista de personas que salieron de la empresa en los últimos seis meses y comprobar en el directorio y en las aplicaciones principales que sus cuentas están desactivadas, y en qué fecha.</li>
+<li><strong>Copias de seguridad.</strong> No basta el registro de que la copia se hizo: pedir la última prueba de restauración y quién la hizo.</li>
+<li><strong>Proveedores.</strong> Elegir dos proveedores críticos y ver su contrato o acuerdo de tratamiento de datos, y cómo se ha revisado su servicio.</li>
+<li><strong>Incidentes.</strong> Tomar un incidente del registro y seguirlo de principio a fin: detección, clasificación, respuesta, lecciones aprendidas.</li>
+<li><strong>Concienciación.</strong> Preguntar a dos o tres personas al azar qué harían si reciben un correo sospechoso y si saben a quién avisar.</li>
+</ul>
+<p>Para que la SoA sirva de criterio de auditoría tiene que estar bien construida; cómo hacerla y justificar las exclusiones está en <a href="../declaracion-de-aplicabilidad-soa-iso-27001/">la Declaración de Aplicabilidad (SoA) de ISO 27001</a>.</p>
+
+<h2>Paso 5: el informe y cómo se redacta un hallazgo</h2>
+<p>Una no conformidad tiene tres partes: el <strong>requisito</strong> que se incumple, la <strong>evidencia</strong> concreta y por qué esa evidencia demuestra el incumplimiento. Comparar:</p>
+<ul>
+<li><strong>Mal redactado:</strong> «La gestión de accesos no funciona bien».</li>
+<li><strong>Bien redactado:</strong> «El procedimiento de bajas exige desactivar las cuentas el último día de trabajo. De las seis bajas del primer semestre, dos personas conservaban la cuenta activa en el CRM a fecha de auditoría (3 de octubre). No se cumple el control de derechos de acceso declarado aplicable en la SoA».</li>
+</ul>
+<p>El informe separa no conformidades, observaciones y oportunidades de mejora. Las no conformidades pasan al circuito de acción correctiva, que se explica en <a href="../no-conformidades-acciones-correctivas-ejemplos/">no conformidades y acciones correctivas</a>, y los resultados entran en la revisión por la dirección.</p>
+
+<h2>Los errores que el auditor de certificación detecta enseguida</h2>
+<ul>
+<li><strong>Auditar documentos, no sistemas:</strong> ver que hay política de copias sin pedir una restauración.</li>
+<li><strong>Que el administrador de sistemas audite sus propios controles.</strong></li>
+<li><strong>Una SoA y un programa que no cuadran:</strong> controles declarados aplicables que nunca entran en el programa.</li>
+<li><strong>Hacer la interna dos semanas antes de la certificación,</strong> sin tiempo para cerrar acciones.</li>
+<li><strong>Cero hallazgos año tras año,</strong> que suele indicar que no se está buscando.</li>
+</ul>
+
+<h2>Auditoría interna y de certificación</h2>
+<p>La de certificación la hace una entidad acreditada (en España, por ENAC) siguiendo la ISO/IEC 17021-1 y la <strong>ISO/IEC 27006-1:2024</strong>, la norma específica para quienes certifican sistemas de seguridad de la información. Se hace en dos fases, documental y de campo, y el certificado dura tres años con auditorías de seguimiento. Antes de la fase 2 el auditor querrá ver la auditoría interna y la revisión por la dirección hechas. El presupuesto de todo el proceso está desglosado en <a href="../cuanto-cuesta-certificarse-iso-27001/">cuánto cuesta certificarse en ISO 27001</a>.</p>
+<p>Si la empresa audita también otros sistemas, los equivalentes están en el <a href="../checklist-auditoria-interna-iso-9001/">checklist de auditoría interna ISO 9001</a>, en <a href="../auditoria-interna-iso-14001/">auditoría interna ISO 14001: cómo hacerla y checklist por cláusulas</a> y en <a href="../auditoria-interna-iso-45001/">auditoría interna ISO 45001: guía paso a paso</a>.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Fórmate para implantarlo tú:</strong> en el <a href="../../curso-iso-27001/">curso Gestor ISO 27001 + 27701</a> el módulo 11 trata la auditoría interna (programa, técnicas de auditoría del SGSI e informe) y el 12, la certificación por fases.</p></div>
+
+<h2>Preguntas frecuentes</h2>
+<div class="faq">
+<details><summary>¿Es obligatoria la auditoría interna en ISO 27001?</summary><p>Sí. La cláusula 9.2 exige auditorías internas a intervalos planificados y conservar como información documentada el programa y los resultados. La norma no fija la frecuencia: la decide tu programa según la importancia de los procesos y los resultados de auditorías anteriores. En la práctica, la entidad de certificación espera ver al menos una auditoría interna completa antes de la fase 2 y una por año de ciclo.</p></details>
+<details><summary>¿Hay que auditar los 93 controles del Anexo A cada año?</summary><p>La norma no lo dice. Lo que exige es que el programa cubra el sistema, y los controles que tu Declaración de Aplicabilidad declara aplicables forman parte de él. Lo habitual es repartirlos en el ciclo de tres años, con más frecuencia para los que tratan los riesgos más altos, y dejar escrito en el programa por qué se reparten así.</p></details>
+<details><summary>¿Quién puede hacer la auditoría interna de ISO 27001?</summary><p>Alguien competente que no audite su propio trabajo: la norma pide objetividad e imparcialidad. El responsable de sistemas no debería auditar los controles técnicos que él mismo administra. En una empresa pequeña se resuelve con un auditor externo solo para la interna, con auditorías cruzadas o formando a una segunda persona.</p></details>
+<details><summary>¿Qué norma explica cómo auditar un SGSI?</summary><p>La ISO/IEC 27007:2020, que da directrices para auditar sistemas de gestión de seguridad de la información y se apoya en la ISO 19011. ISO indica en su ficha que será sustituida por una nueva edición en preparación. No es certificable ni obligatoria: es una guía.</p></details>
+<details><summary>¿En qué se diferencia de la auditoría de certificación?</summary><p>La interna la hace la organización para sí misma y es un requisito de la norma. La de certificación la hace una entidad acreditada, siguiendo la ISO/IEC 17021-1 y la ISO/IEC 27006-1:2024, que es la específica para certificar sistemas de seguridad de la información, y decide si se emite el certificado. El auditor externo revisa tus informes internos, así que la calidad de la interna se nota en la externa.</p></details>
+</div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días · <a href="/privacidad/">Privacidad</a></p></div></footer>
+</body>
+</html>
