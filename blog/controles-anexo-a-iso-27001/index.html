@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHQ990S1DG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KHQ990S1DG');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Controles del Anexo A de ISO 27001:2022: los 93 explicados</title>
+<meta name="description" content="Los 93 controles del Anexo A de ISO 27001:2022 en sus cuatro temas, los 11 nuevos frente a la edición de 2013, cómo se eligen con la evaluación de riesgos y la SoA.">
+<link rel="canonical" href="https://cursosiso.com/blog/controles-anexo-a-iso-27001/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="Controles del Anexo A de ISO 27001:2022: los 93 explicados">
+<meta property="og:description" content="Los 93 controles del Anexo A de ISO 27001:2022 en sus cuatro temas, los 11 nuevos frente a la edición de 2013, cómo se eligen con la evaluación de riesgos y la SoA.">
+<meta property="og:url" content="https://cursosiso.com/blog/controles-anexo-a-iso-27001/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/iso-27001.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Controles del Anexo A de ISO 27001:2022: los 93 explicados">
+<meta name="twitter:description" content="Los 93 controles del Anexo A de ISO 27001:2022 en sus cuatro temas, los 11 nuevos frente a la edición de 2013, cómo se eligen con la evaluación de riesgos y la SoA.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/iso-27001.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post h3{font-size:1.15rem;margin-top:1.6rem;margin-bottom:.4rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.93rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+article.post ul,article.post ol{margin:0 0 1rem 1.3rem}
+article.post li{margin-bottom:.4rem}
+.ejemplo{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--azul-mid);border-radius:6px;padding:1.1rem 1.3rem;margin:1.5rem 0;font-size:.95rem}
+.ejemplo h3{margin-top:1rem}
+.ejemplo h3:first-child{margin-top:0}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.faq details{border:1px solid var(--linea);border-radius:6px;padding:.2rem 1rem;margin:.7rem 0;background:#fff}
+.faq summary{font-weight:600;cursor:pointer;padding:.7rem 0;color:var(--azul)}
+.faq details[open] summary{margin-bottom:.4rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Controles del Anexo A de ISO 27001:2022: los 93 explicados", "description": "Los 93 controles del Anexo A de ISO 27001:2022 en sus cuatro temas, los 11 nuevos frente a la edición de 2013, cómo se eligen con la evaluación de riesgos y la SoA.", "inLanguage": "es", "author": {"@type": "Organization", "name": "Academia ISO"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}, "datePublished": "2026-11-20", "dateModified": "2026-11-20", "mainEntityOfPage": "https://cursosiso.com/blog/controles-anexo-a-iso-27001/"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cursosiso.com/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cursosiso.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Controles del Anexo A de ISO 27001:2022: los 93 explicados", "item": "https://cursosiso.com/blog/controles-anexo-a-iso-27001/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Cuántos controles tiene el Anexo A de ISO 27001:2022?", "acceptedAnswer": {"@type": "Answer", "text": "93, repartidos en cuatro temas: 37 organizativos, 8 de personas, 14 físicos y 34 tecnológicos. La edición de 2013 tenía 114 en 14 dominios."}}, {"@type": "Question", "name": "¿Hay que aplicar los 93 controles?", "acceptedAnswer": {"@type": "Answer", "text": "No. La evaluación de riesgos decide cuáles hacen falta, y la Declaración de Aplicabilidad tiene que nombrar los 93 y justificar por qué se incluye o se excluye cada uno. Excluir un control sin motivo es una no conformidad."}}, {"@type": "Question", "name": "¿Qué controles son nuevos en la edición de 2022?", "acceptedAnswer": {"@type": "Answer", "text": "Once: inteligencia de amenazas (5.7), seguridad en el uso de servicios en la nube (5.23), preparación de las TIC para la continuidad (5.30), monitorización de la seguridad física (7.4), gestión de la configuración (8.9), eliminación de información (8.10), enmascaramiento de datos (8.11), prevención de fuga de datos (8.12), actividades de monitorización (8.16), filtrado web (8.23) y codificación segura (8.28)."}}, {"@type": "Question", "name": "¿Dónde se explica cómo implantar cada control?", "acceptedAnswer": {"@type": "Answer", "text": "En ISO/IEC 27002:2022, que da para cada control su propósito y una guía de implantación. El Anexo A de la 27001 solo enuncia el control; la 27002 no es certificable, es la guía."}}, {"@type": "Question", "name": "¿Sigue valiendo un certificado contra la edición de 2013?", "acceptedAnswer": {"@type": "Answer", "text": "No. El periodo de transición a la 2022 terminó el 31 de octubre de 2025, y desde entonces los certificados contra la 2013 ya no son válidos."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../#cursos">Cursos</a><a href="../../blog/">Blog</a><a href="../../recursos/">Plantillas</a><a class="lang" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../">Inicio</a></li><li><a href="../">Blog</a></li><li aria-current="page">Seguridad de la información</li></ol></div>
+<h1>Controles del Anexo A de ISO 27001:2022: los 93 explicados</h1>
+<p class="meta">Academia ISO · 20 de noviembre de 2026 · Seguridad de la información · 7 min de lectura</p>
+
+<p>El <strong>Anexo A</strong> de ISO 27001 es la lista de controles de seguridad de la información que la norma pone sobre la mesa. En la edición de 2022 son <strong>93 controles</strong>, agrupados en cuatro temas. No hay que aplicarlos todos: los elige la evaluación de riesgos y se justifican uno a uno en la Declaración de Aplicabilidad. Aquí tienes cómo está organizado, qué cambió respecto a 2013 y cómo se trabaja con él.</p>
+
+<h2>Los cuatro temas</h2>
+<table>
+<tr><th>Tema</th><th>Sección</th><th>Controles</th><th>De qué tratan</th></tr>
+<tr><td>Organizativos</td><td>5.1 a 5.37</td><td>37</td><td>Políticas, roles, gestión de activos, control de acceso, proveedores, incidentes, continuidad y cumplimiento legal</td></tr>
+<tr><td>De personas</td><td>6.1 a 6.8</td><td>8</td><td>Selección, condiciones de contratación, concienciación y formación, régimen disciplinario, confidencialidad, teletrabajo y notificación de eventos</td></tr>
+<tr><td>Físicos</td><td>7.1 a 7.14</td><td>14</td><td>Perímetros y accesos, oficinas, protección frente a amenazas físicas, equipos, soportes de almacenamiento y puesto despejado</td></tr>
+<tr><td>Tecnológicos</td><td>8.1 a 8.34</td><td>34</td><td>Dispositivos, privilegios, autenticación, malware, copias de seguridad, registros, redes, criptografía y desarrollo seguro</td></tr>
+</table>
+<p>La edición de 2013 tenía 114 controles en 14 dominios (A.5 a A.18). La de 2022 no quitó contenido: fusionó controles que se solapaban, actualizó el resto y añadió once.</p>
+
+<h2>Los once controles nuevos</h2>
+<p>Son los que más trabajo dan a quien venía de la edición de 2013, porque no tienen equivalente directo:</p>
+<table>
+<tr><th>Control</th><th>Qué pide, en resumen</th></tr>
+<tr><td>5.7 Inteligencia de amenazas</td><td>Recoger y analizar información sobre amenazas que afectan a la empresa</td></tr>
+<tr><td>5.23 Seguridad en el uso de servicios en la nube</td><td>Reglas para contratar, usar, gestionar y dejar servicios en la nube</td></tr>
+<tr><td>5.30 Preparación de las TIC para la continuidad</td><td>Que los sistemas puedan recuperarse a tiempo según los objetivos de continuidad</td></tr>
+<tr><td>7.4 Monitorización de la seguridad física</td><td>Vigilar las instalaciones para detectar accesos no autorizados</td></tr>
+<tr><td>8.9 Gestión de la configuración</td><td>Definir, documentar y controlar la configuración segura de equipos, software y redes</td></tr>
+<tr><td>8.10 Eliminación de información</td><td>Borrar la información cuando ya no se necesita</td></tr>
+<tr><td>8.11 Enmascaramiento de datos</td><td>Ocultar datos, sobre todo personales, cuando no hace falta verlos completos</td></tr>
+<tr><td>8.12 Prevención de fuga de datos</td><td>Medidas para detectar y evitar la salida no autorizada de información</td></tr>
+<tr><td>8.16 Actividades de monitorización</td><td>Vigilar redes y sistemas para detectar comportamientos anómalos</td></tr>
+<tr><td>8.23 Filtrado web</td><td>Controlar el acceso a webs externas para reducir la exposición a contenido malicioso</td></tr>
+<tr><td>8.28 Codificación segura</td><td>Aplicar principios de programación segura en el desarrollo de software</td></tr>
+</table>
+
+<h2>Cómo se eligen: evaluación de riesgos y SoA</h2>
+<p>El orden es este, y equivocarlo es el error más frecuente:</p>
+<ol>
+<li><strong>Evaluación de riesgos</strong> (cláusula 6.1.2): qué puede pasarle a la información y con qué probabilidad e impacto.</li>
+<li><strong>Tratamiento de riesgos</strong> (6.1.3): qué controles hacen falta para reducir esos riesgos. Pueden salir del Anexo A o de otra fuente.</li>
+<li><strong>Comparación con el Anexo A</strong>: la norma obliga a repasar los 93 para comprobar que no se ha olvidado ninguno necesario.</li>
+<li><strong>Declaración de Aplicabilidad</strong>: un documento que nombra los 93, dice si se aplica cada uno, por qué, y si ya está implantado. Tienes la estructura en <a href="../declaracion-de-aplicabilidad-soa-iso-27001/">la guía de la SoA</a>.</li>
+</ol>
+<p>Excluir un control es legítimo si no hay riesgo que lo justifique: una empresa sin desarrollo propio puede excluir la codificación segura. Lo que el auditor no acepta es una exclusión sin motivo, o una que contradiga la propia evaluación de riesgos.</p>
+
+<h2>Los atributos de ISO/IEC 27002</h2>
+<p>La guía que acompaña al Anexo A, <strong>ISO/IEC 27002:2022</strong>, explica cada control y le asigna cinco atributos para poder ordenarlos de otras maneras: tipo de control (preventivo, detectivo o correctivo), propiedades de la información que protege (confidencialidad, integridad y disponibilidad), conceptos de ciberseguridad (identificar, proteger, detectar, responder y recuperar), capacidades operativas y dominios de seguridad. No son obligatorios, pero ayudan, por ejemplo, a ver si todos tus controles son preventivos y te falta capacidad de detectar.</p>
+
+<h2>Por dónde empezar</h2>
+<p>Si partes de cero, haz primero un <a href="../gap-analysis-iso-27001/">gap analysis</a>: una fila por control con lo que ya existe y la evidencia. Esa hoja se convierte en el borrador de la SoA. Y no empieces por los tecnológicos: el auditor mira antes las cláusulas 4 a 10, y en especial la evaluación de riesgos. Tienes la lista de lo que hay que tener por escrito en <a href="../documentos-obligatorios-iso-27001/">documentos obligatorios de ISO 27001</a>.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Fórmate para implantarlo tú:</strong> el <a href="../../curso-iso-27001/">curso ISO 27001 + 27701</a> recorre la norma cláusula a cláusula y los controles del Anexo A, de la evaluación de riesgos y la Declaración de Aplicabilidad a la auditoría.</p></div>
+
+<h2>Preguntas frecuentes sobre el Anexo A</h2>
+<div class="faq">
+<details><summary>¿Cuántos controles tiene el Anexo A de ISO 27001:2022?</summary><p>93, repartidos en cuatro temas: 37 organizativos, 8 de personas, 14 físicos y 34 tecnológicos. La edición de 2013 tenía 114 en 14 dominios.</p></details><details><summary>¿Hay que aplicar los 93 controles?</summary><p>No. La evaluación de riesgos decide cuáles hacen falta, y la Declaración de Aplicabilidad tiene que nombrar los 93 y justificar por qué se incluye o se excluye cada uno. Excluir un control sin motivo es una no conformidad.</p></details><details><summary>¿Qué controles son nuevos en la edición de 2022?</summary><p>Once: inteligencia de amenazas (5.7), seguridad en el uso de servicios en la nube (5.23), preparación de las TIC para la continuidad (5.30), monitorización de la seguridad física (7.4), gestión de la configuración (8.9), eliminación de información (8.10), enmascaramiento de datos (8.11), prevención de fuga de datos (8.12), actividades de monitorización (8.16), filtrado web (8.23) y codificación segura (8.28).</p></details><details><summary>¿Dónde se explica cómo implantar cada control?</summary><p>En ISO/IEC 27002:2022, que da para cada control su propósito y una guía de implantación. El Anexo A de la 27001 solo enuncia el control; la 27002 no es certificable, es la guía.</p></details><details><summary>¿Sigue valiendo un certificado contra la edición de 2013?</summary><p>No. El periodo de transición a la 2022 terminó el 31 de octubre de 2025, y desde entonces los certificados contra la 2013 ya no son válidos.</p></details>
+</div>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días · <a href="/privacidad/">Privacidad</a></p></div></footer>
+</body>
+</html>
