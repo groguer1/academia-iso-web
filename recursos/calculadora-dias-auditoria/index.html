@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KHQ990S1DG"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-KHQ990S1DG');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de días de auditoría ISO 9001, 14001 y 45001</title>
+<meta name="description" content="Calcula los días de auditoría de certificación con las tablas oficiales de IAF MD 5:2023: auditoría inicial, seguimientos y renovación para ISO 9001, ISO 14001 e ISO 45001.">
+<link rel="canonical" href="https://cursosiso.com/recursos/calculadora-dias-auditoria/">
+<link rel="icon" type="image/svg+xml" href="https://cursosiso.com/favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Academia ISO">
+<meta property="og:title" content="Calculadora de días de auditoría ISO 9001, 14001 y 45001">
+<meta property="og:description" content="Calcula los días de auditoría de certificación con las tablas oficiales de IAF MD 5:2023: auditoría inicial, seguimientos y renovación para ISO 9001, ISO 14001 e ISO 45001.">
+<meta property="og:url" content="https://cursosiso.com/recursos/calculadora-dias-auditoria/">
+<meta property="og:image" content="https://cursosiso.com/assets/og/home-es.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Calculadora de días de auditoría ISO 9001, 14001 y 45001">
+<meta name="twitter:description" content="Calcula los días de auditoría de certificación con las tablas oficiales de IAF MD 5:2023: auditoría inicial, seguimientos y renovación para ISO 9001, ISO 14001 e ISO 45001.">
+<meta name="twitter:image" content="https://cursosiso.com/assets/og/home-es.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--azul:#1A3A5C;--azul-mid:#2563A8;--acento:#E85820;--verde:#2D8B5A;--rojo:#C0392B;--morado:#5B4B8A;--tinta:#22303C;--gris:#54657A;--fondo:#FAFBFC;--linea:#E3E9EF;--curso:var(--azul-mid)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--tinta);background:var(--fondo);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;color:var(--azul);line-height:1.22}
+h2{font-size:1.7rem;margin-bottom:1.2rem}
+p{margin-bottom:1rem}
+a{color:var(--azul-mid)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--azul-mid);outline-offset:2px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+header.site{background:#fff;border-bottom:1px solid var(--linea);position:sticky;top:0;z-index:10}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;min-height:62px;flex-wrap:wrap;gap:.3rem .8rem;padding-top:8px;padding-bottom:8px}
+.logo{font-family:'DM Serif Display',Georgia,serif;font-size:1.3rem;color:var(--azul);text-decoration:none;display:flex;align-items:center;gap:.55rem}
+.logo::before{content:"";width:6px;height:24px;background:var(--acento)}
+nav.main{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap}
+nav.main a{color:var(--tinta);text-decoration:none;font-size:.93rem}
+nav.main a:hover{color:var(--azul-mid);text-decoration:underline}
+nav.main a.lang{border:1px solid var(--linea);border-radius:5px;padding:.15rem .6rem;font-size:.85rem;color:var(--gris)}
+section{padding:54px 0}
+footer.site{background:#0F2438;color:#9FB8D0;padding:44px 0;font-size:.9rem}
+footer.site a{color:#C9D8E6;text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.6rem;margin-bottom:1.6rem}
+footer.site h3{color:#fff;font-size:1rem;margin-bottom:.6rem}
+footer.site li{list-style:none;margin-bottom:.35rem}
+.breadcrumb{font-size:.85rem;color:var(--gris);padding-top:14px}
+.breadcrumb a{color:var(--gris)}
+.breadcrumb ol{list-style:none;display:flex;gap:.5rem;flex-wrap:wrap}
+.breadcrumb li+li::before{content:"›";margin-right:.5rem}
+article.post{max-width:720px;margin:0 auto;padding:40px 24px 64px}
+article.post h1{font-size:clamp(1.8rem,4vw,2.5rem);margin:1rem 0 .6rem}
+article.post h2{margin-top:2.2rem}
+article.post h3{font-size:1.15rem;margin-top:1.6rem;margin-bottom:.4rem}
+article.post .meta{color:var(--gris);font-size:.9rem;margin-bottom:1.6rem}
+article.post table{border-collapse:collapse;width:100%;margin:1.2rem 0;font-size:.93rem}
+article.post th,article.post td{border:1px solid var(--linea);padding:.55rem .7rem;text-align:left;vertical-align:top}
+article.post th{background:#fff;color:var(--azul)}
+article.post ul,article.post ol{margin:0 0 1rem 1.3rem}
+article.post li{margin-bottom:.4rem}
+.ejemplo{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--azul-mid);border-radius:6px;padding:1.1rem 1.3rem;margin:1.5rem 0;font-size:.95rem}
+.ejemplo h3{margin-top:1rem}
+.ejemplo h3:first-child{margin-top:0}
+.aviso-curso{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:6px;padding:1.1rem 1.3rem;margin:1.8rem 0}
+.faq details{border:1px solid var(--linea);border-radius:6px;padding:.2rem 1rem;margin:.7rem 0;background:#fff}
+.faq summary{font-weight:600;cursor:pointer;padding:.7rem 0;color:var(--azul)}
+.faq details[open] summary{margin-bottom:.4rem}
+.calc{background:#fff;border:1px solid var(--linea);border-left:4px solid var(--acento);border-radius:8px;padding:1.2rem 1.4rem;margin:1.6rem 0}
+.calc label{display:block;font-weight:600;color:var(--azul);margin:.8rem 0 .3rem}
+.calc select,.calc input{width:100%;font:inherit;padding:.5rem .6rem;border:1px solid var(--linea);border-radius:5px;background:#fff}
+.calc .ayuda{font-size:.88rem;color:var(--gris);margin:.4rem 0 0}
+.resultado table{margin-top:1rem}
+.fuente{font-size:.85rem;color:var(--gris)}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebApplication", "name": "Calculadora de días de auditoría ISO 9001, 14001 y 45001", "description": "Calcula los días de auditoría de certificación con las tablas oficiales de IAF MD 5:2023: auditoría inicial, seguimientos y renovación para ISO 9001, ISO 14001 e ISO 45001.", "url": "https://cursosiso.com/recursos/calculadora-dias-auditoria/", "applicationCategory": "BusinessApplication", "operatingSystem": "Cualquiera (navegador)", "inLanguage": "es", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"}, "publisher": {"@type": "Organization", "name": "Academia ISO", "url": "https://cursosiso.com/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://cursosiso.com/"}, {"@type": "ListItem", "position": 2, "name": "Recursos", "item": "https://cursosiso.com/recursos/"}, {"@type": "ListItem", "position": 3, "name": "Calculadora de días de auditoría ISO 9001, 14001 y 45001", "item": "https://cursosiso.com/recursos/calculadora-dias-auditoria/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Quién decide los días de auditoría de certificación?", "acceptedAnswer": {"@type": "Answer", "text": "La entidad de certificación, pero no a su criterio: las entidades acreditadas tienen que seguir el documento IAF MD 5, que fija una tabla de días según el número de personas y, en medio ambiente y seguridad y salud, la complejidad de la actividad. Después ajusta esos días según las características de tu empresa."}}, {"@type": "Question", "name": "¿Cuántos días dura una auditoría ISO 9001 para una empresa de 20 personas?", "acceptedAnswer": {"@type": "Answer", "text": "Según la tabla QMS 1 de IAF MD 5:2023, una empresa de 16 a 25 personas efectivas parte de 3 días para la auditoría inicial (fase 1 + fase 2). La certificadora puede ajustarlo según el riesgo de la actividad, los centros o los turnos."}}, {"@type": "Question", "name": "¿Cuánto dura una auditoría de seguimiento?", "acceptedAnswer": {"@type": "Answer", "text": "IAF MD 5 dice que, cada año, el seguimiento suma alrededor de un tercio del tiempo de la auditoría inicial, y que no es conveniente que dure menos de un día de auditoría."}}, {"@type": "Question", "name": "¿Y la renovación a los tres años?", "acceptedAnswer": {"@type": "Answer", "text": "Alrededor de dos tercios del tiempo que necesitaría hoy una auditoría inicial, calculado con los datos actuales de la empresa, no con los del primer año."}}, {"@type": "Question", "name": "¿Sirve para ISO 27001?", "acceptedAnswer": {"@type": "Answer", "text": "No. Los días de auditoría de ISO 27001 los fija otra norma, ISO/IEC 27006-1, que no publica sus tablas en abierto. Esta calculadora cubre solo calidad, medio ambiente y seguridad y salud."}}]}</script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="../../">Academia ISO</a><nav class="main" aria-label="principal"><a href="../../#cursos">Cursos</a><a href="../../blog/">Blog</a><a href="../../recursos/">Plantillas</a><a class="lang" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT-BR</a></nav></div></header>
+<main>
+<article class="post">
+<div class="breadcrumb"><ol><li><a href="../../">Inicio</a></li><li><a href="../">Recursos</a></li><li aria-current="page">Calculadora de días de auditoría</li></ol></div>
+<h1>Calculadora de días de auditoría ISO 9001, 14001 y 45001</h1>
+<p class="meta">Academia ISO · 27 de noviembre de 2026 · Herramienta gratuita</p>
+
+<p>Los días de una auditoría de certificación no los inventa la certificadora: las entidades acreditadas los calculan con el documento <strong>IAF MD 5:2023</strong>, a partir del número de personas y, en medio ambiente y seguridad y salud, de la complejidad de la actividad. Esta calculadora aplica esas tablas y te da los días de la auditoría inicial, de los seguimientos y de la renovación.</p>
+
+<div class="calc">
+<label for="norma">Norma</label>
+<select id="norma">
+<option value="qms">ISO 9001 (calidad)</option>
+<option value="ems">ISO 14001 (medio ambiente)</option>
+<option value="ohs">ISO 45001 (seguridad y salud)</option>
+</select>
+<label for="personas">Personas efectivas dentro del alcance</label>
+<input id="personas" type="number" min="1" max="10700" value="20" inputmode="numeric">
+<div id="bloque-cat">
+<label for="cat">Complejidad de la actividad</label>
+<select id="cat"></select>
+<p class="ayuda" id="ayuda-cat"></p>
+</div>
+<div class="resultado" id="resultado" aria-live="polite"></div>
+</div>
+
+<h2>Cómo se calcula</h2>
+<ul>
+<li><strong>Auditoría inicial (fase 1 + fase 2):</strong> el valor de la tabla de IAF MD 5 para tu número de personas y tu nivel de complejidad.</li>
+<li><strong>Seguimiento (años 1 y 2):</strong> cada año, alrededor de un tercio de la inicial. IAF MD 5 añade que no es conveniente que dure menos de un día.</li>
+<li><strong>Renovación (año 3):</strong> alrededor de dos tercios de lo que llevaría hoy una auditoría inicial, con los datos de ese momento.</li>
+<li><strong>Redondeo:</strong> a la media jornada más cercana (5,3 días son 5,5; 5,2 días son 5). Un día de auditoría son normalmente 8 horas, y no se pueden quitar días alargando la jornada.</li>
+</ul>
+
+<h2>Qué cuenta como persona efectiva</h2>
+<p>Las personas que trabajan dentro del alcance del sistema, incluidos los turnos y el personal temporal o de temporada (en temporada, la plantilla típica del pico). Las jornadas parciales se pasan a equivalentes a jornada completa. En calidad y medio ambiente, la certificadora puede reducir el cómputo si mucha gente hace tareas repetitivas iguales; en seguridad y salud, en principio no, porque esos puestos también tienen riesgos.</p>
+
+<h2>Lo que la calculadora no puede saber</h2>
+<p>La tabla es el punto de partida. La certificadora sube o baja los días según tu caso: varios centros, turnos, procesos subcontratados, un sector muy regulado, sanciones o procedimientos abiertos, o un alcance más pequeño de lo normal. IAF MD 5 dice que, en los casos típicos, la duración final no debería quedar por debajo del <strong>80 %</strong> de lo calculado con la tabla.</p>
+<p>No cubre los sistemas integrados (por ejemplo, 9001 + 14001 + 45001 en una sola auditoría, que tienen su propio documento, IAF MD 11) ni la ISO 27001, cuyos días fija otra norma, ISO/IEC 27006-1.</p>
+
+<h2>De días a euros</h2>
+<p>El presupuesto de la certificadora es, en la práctica, esos días por su tarifa diaria, más desplazamientos. Como la tarifa diaria es lo que cambia entre entidades acreditadas, compara los presupuestos por días: si dos certificadoras te proponen días muy distintos para la misma empresa, pregunta por qué. Lo explicamos con más detalle en cuánto cuesta certificarse en <a href="../../blog/cuanto-cuesta-certificarse-iso-9001/">ISO 9001</a> y en <a href="../../blog/cuanto-cuesta-certificarse-iso-45001/">ISO 45001</a>.</p>
+
+<p class="fuente">Fuente: IAF MD 5:2023, «Determination of Audit Time of Quality, Environmental, and Occupational Health &amp; Safety Management Systems», Issue 4, Version 3 (14 de junio de 2023), tablas QMS 1, EMS 1 y OH&amp;S 1. IAF cerró el 1 de enero de 2026 y su sitio lo ocupa la Global Accreditation Cooperation (Global ACI), que mantiene sus documentos en vigor mientras no aprueba los suyos. Hemos usado la <a href="https://www.cai.cz/wp-content/uploads/2023/09/01_08-P035-IAF-MD5_2023_20230901.pdf" rel="noopener">copia publicada por el acreditador checo</a>.</p>
+
+<div class="aviso-curso"><p style="margin:0"><strong>Antes de la auditoría, el sistema:</strong> en los cursos de <a href="../../curso-iso-9001/">ISO 9001</a>, <a href="../../curso-iso-14001/">ISO 14001</a> e <a href="../../curso-iso-45001/">ISO 45001</a> aprendes a implantarlo tú, de la primera cláusula a la auditoría interna.</p></div>
+
+<h2>Preguntas frecuentes</h2>
+<div class="faq">
+<details><summary>¿Quién decide los días de auditoría de certificación?</summary><p>La entidad de certificación, pero no a su criterio: las entidades acreditadas tienen que seguir el documento IAF MD 5, que fija una tabla de días según el número de personas y, en medio ambiente y seguridad y salud, la complejidad de la actividad. Después ajusta esos días según las características de tu empresa.</p></details><details><summary>¿Cuántos días dura una auditoría ISO 9001 para una empresa de 20 personas?</summary><p>Según la tabla QMS 1 de IAF MD 5:2023, una empresa de 16 a 25 personas efectivas parte de 3 días para la auditoría inicial (fase 1 + fase 2). La certificadora puede ajustarlo según el riesgo de la actividad, los centros o los turnos.</p></details><details><summary>¿Cuánto dura una auditoría de seguimiento?</summary><p>IAF MD 5 dice que, cada año, el seguimiento suma alrededor de un tercio del tiempo de la auditoría inicial, y que no es conveniente que dure menos de un día de auditoría.</p></details><details><summary>¿Y la renovación a los tres años?</summary><p>Alrededor de dos tercios del tiempo que necesitaría hoy una auditoría inicial, calculado con los datos actuales de la empresa, no con los del primer año.</p></details><details><summary>¿Sirve para ISO 27001?</summary><p>No. Los días de auditoría de ISO 27001 los fija otra norma, ISO/IEC 27006-1, que no publica sus tablas en abierto. Esta calculadora cubre solo calidad, medio ambiente y seguridad y salud.</p></details>
+</div>
+
+<script>
+(function(){
+var T={qms:[[5, 1.5], [10, 2], [15, 2.5], [25, 3], [45, 4], [65, 5], [85, 6], [125, 7], [175, 8], [275, 9], [425, 10], [625, 11], [875, 12], [1175, 13], [1550, 14], [2025, 15], [2675, 16], [3450, 17], [4350, 18], [5450, 19], [6800, 20], [8500, 21], [10700, 22]],ems:[[5, 3, 2.5, 2.5, 2.5], [10, 3.5, 3, 3, 3], [15, 4.5, 3.5, 3, 3], [25, 5.5, 4.5, 3.5, 3], [45, 7, 5.5, 4, 3], [65, 8, 6, 4.5, 3.5], [85, 9, 7, 5, 3.5], [125, 11, 8, 5.5, 4], [175, 12, 9, 6, 4.5], [275, 13, 10, 7, 5], [425, 15, 11, 8, 5.5], [625, 16, 12, 9, 6], [875, 17, 13, 10, 6.5], [1175, 19, 15, 11, 7], [1550, 20, 16, 12, 7.5], [2025, 21, 17, 12, 8], [2675, 23, 18, 13, 8.5], [3450, 25, 19, 14, 9], [4350, 27, 20, 15, 10], [5450, 28, 21, 16, 11], [6800, 30, 23, 17, 12], [8500, 32, 25, 19, 13], [10700, 34, 27, 20, 14]],ohs:[[5, 3, 2.5, 2.5], [10, 3.5, 3, 3], [15, 4.5, 3.5, 3], [25, 5.5, 4.5, 3.5], [45, 7, 5.5, 4], [65, 8, 6, 4.5], [85, 9, 7, 5], [125, 11, 8, 5.5], [175, 12, 9, 6], [275, 13, 10, 7], [425, 15, 11, 8], [625, 16, 12, 9], [875, 17, 13, 10], [1175, 19, 15, 11], [1550, 20, 16, 12], [2025, 21, 17, 12], [2675, 23, 18, 13], [3450, 25, 19, 14], [4350, 27, 20, 15], [5450, 28, 21, 16], [6800, 30, 23, 17], [8500, 32, 25, 19], [10700, 34, 27, 20]]};
+var CAT={
+ qms:null,
+ ems:[["Alta","Fabricación o transformación con impactos significativos en varios aspectos ambientales."],["Media","Fabricación con impactos significativos en algunos aspectos."],["Baja","Montaje y pocos aspectos significativos."],["Limitada","Actividad tipo oficina."]],
+ ohs:[["Alta","Un fallo en el control del riesgo podría costar una vida o causar una lesión o enfermedad grave (por ejemplo, minería, química, construcción, metal, gestión de residuos, sanidad)."],["Media","Un fallo podría causar una lesión o enfermedad (por ejemplo, alimentación, agricultura, madera, textil)."],["Baja","Un fallo causaría una lesión o enfermedad leve."]]
+};
+var $=function(i){return document.getElementById(i)};
+function r2(x){return Math.round(x*2)/2}
+function f(x){return String(x).replace('.',',')}
+function pintaCat(){
+ var n=$('norma').value,c=CAT[n],s=$('cat');
+ if(!c){$('bloque-cat').style.display='none';return}
+ $('bloque-cat').style.display='';s.innerHTML='';
+ c.forEach(function(x,i){var o=document.createElement('option');o.value=i;o.textContent=x[0];if(i==1)o.selected=true;s.appendChild(o)});
+}
+function calcula(){
+ var n=$('norma').value,p=parseInt($('personas').value,10),out=$('resultado');
+ $('ayuda-cat').textContent=CAT[n]?CAT[n][$('cat').value||0][1]:'';
+ if(!p||p<1){out.innerHTML='<p>Escribe el número de personas.</p>';return}
+ if(p>10700){out.innerHTML='<p>Por encima de 10.700 personas la tabla sigue la misma progresión: pide el cálculo a la certificadora.</p>';return}
+ var fila=T[n].filter(function(r){return p<=r[0]})[0];
+ var ini=n==='qms'?fila[1]:fila[1+parseInt($('cat').value,10)];
+ var seg=Math.max(1,r2(ini/3)),ren=r2(ini*2/3),tot=ini+2*seg+ren;
+ var nota=n==='qms'?'<p class="ayuda">En calidad, la tabla corresponde a una actividad de riesgo medio. Si un fallo de tu producto o servicio puede poner en peligro vidas (alimentación, farmacia, sanidad, construcción compleja…), la certificadora sumará tiempo; si el riesgo es bajo (oficinas, comercio, educación…), puede restarlo.</p>':'';
+ out.innerHTML='<table><tr><th>Auditoría</th><th>Días</th></tr>'+
+ '<tr><td>Inicial (fase 1 + fase 2)</td><td><strong>'+f(ini)+'</strong></td></tr>'+
+ '<tr><td>Seguimiento año 1</td><td>'+f(seg)+'</td></tr>'+
+ '<tr><td>Seguimiento año 2</td><td>'+f(seg)+'</td></tr>'+
+ '<tr><td>Renovación año 3</td><td>'+f(ren)+'</td></tr>'+
+ '<tr><td><strong>Ciclo de tres años</strong></td><td><strong>'+f(tot)+'</strong></td></tr></table>'+
+ '<p class="ayuda">Tras los ajustes de la certificadora, la inicial no debería bajar, en los casos típicos, de '+f(r2(ini*0.8))+' días (el 80 %).</p>'+nota;
+}
+$('norma').addEventListener('change',function(){pintaCat();calcula()});
+$('personas').addEventListener('input',calcula);
+$('cat').addEventListener('change',calcula);
+pintaCat();calcula();
+})();
+</script>
+</article>
+</main>
+<footer class="site"><div class="wrap"><div class="cols"><div><h3>Academia ISO</h3><p>Formación online en normas ISO para profesionales de la gestión, la calidad, la seguridad y la tecnología.</p></div><div><h3>Cursos</h3><ul><li><a href="../../curso-iso-9001/">Curso ISO 9001</a></li><li><a href="../../curso-iso-14001/">Curso ISO 14001</a></li><li><a href="../../curso-iso-27001/">Curso ISO 27001 + 27701</a></li><li><a href="../../curso-iso-45001/">Curso ISO 45001</a></li><li><a href="../../curso-iso-42001/">Curso ISO/IEC 42001</a></li></ul></div><div><h3>Más</h3><ul><li><a href="../../blog/">Blog</a></li><li><a href="../../pt/">Cursos em português</a></li></ul></div></div><p>© 2026 · Página gestionada por Isotecnia · Pagos procesados por Hotmart · Garantía de reembolso de 15 días · <a href="/privacidad/">Privacidad</a></p></div></footer>
+</body>
+</html>
